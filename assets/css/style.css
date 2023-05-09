@@ -2,7 +2,7 @@
     --clr-accent-dark: hsl(0, 71%, 48%);
     --clr-accent-light: hsl(0, 96%, 70%);
 
-    --clr-primary: hsl(221, 23%, 21%);
+    --clr-primary: hsl(215deg 66.67% 24.71%);
 
     --clr-neutral: hsl(73, 87%, 69%);
     --clr-neutraldark: hsl(212, 23%, 46%);
@@ -61,6 +61,7 @@ html{
 /* Set core body defaults */
 body {
     background-image: url('../images/geoMasterdtfmind\ \(1980\ ×\ 1080px\).png');
+    background-color: var(--clr-primary);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: auto 100%; /* Scale image to 100% of container width */

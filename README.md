@@ -1,15 +1,15 @@
-# geoMastermind 🔴
+# geoMastermind 🔵
 
 ![Max_Fps Gaming Cafe Website Responsiveness](assets/readme/geoMastermindBanner.png)
 
-Visit the deployed site: [geoMastermind](https://kimbergstroem.github.io/PP2/)
+<b>Visit the deployed site:</b> [geoMastermind](https://kimbergstroem.github.io/PP2/)
 
 
 Get ready to put your geography skills to the test with GeoMastermind! 
 
-This exciting mini game, built with JavaScript as base and HTML/CSS, challenges you to answer ten questions about locations, landmarks, cultures, and more from around the world. 
+This exciting mini game, built with <b>JavaScript</b> as base and <b>HTML/CSS</b>, challenges you to answer ten questions about locations, landmarks, cultures, and more from around the world. 
 
-With different levels of difficulty, you can compete against yourself or challenge your friends to see who can achieve the highest score. With its fun and engaging gameplay, GeoMastermind is the perfect way to learn more about the world and test your knowledge. Are you ready to become a GeoMastermind?
+With different levels of difficulty, you can compete against yourself or challenge your friends to see who can achieve the highest score. With its fun and engaging gameplay, <b>GeoMastermind</b> is the perfect way to learn more about the world and test your knowledge. Are you ready to become a <b>geoMastermind</b>?
 
 ![GitHub top language](https://camo.githubusercontent.com/74837de6a05b9a1c4bc511f79c44c2b4eccb6ec8de382295e6cccbfbed1ac6f0/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6d61726b646f776e2d2532333030303030302e7376673f7374796c653d666c61743d6d61726b646f776e266c6f676f436f6c6f723d7768697465)
 ![Language uses](https://img.shields.io/github/languages/count/kimbergstroem/PP2)
@@ -18,7 +18,7 @@ With different levels of difficulty, you can compete against yourself or challen
 ---
 
 
-## <span id="readme-top">CONTENTS</span> 🔴
+## <span id="readme-top">CONTENTS</span> 🔵
 
 * [User Experience](#user-experience-ux)
   * [User Stories](#user-stories)
@@ -58,12 +58,12 @@ With different levels of difficulty, you can compete against yourself or challen
 ---
 
 
-## User Experience (UX) 🔴
+## User Experience (UX) 🔵
 
 #### Key information for the site
 
 
-### User Stories 🔻
+### User Stories 🔹
 
 #### Client Goals
 
@@ -86,34 +86,54 @@ With different levels of difficulty, you can compete against yourself or challen
 --- 
 
 
-## Design 🔴
+## Design 🔵
 
-### Colour Scheme 🔻
+### Colour Scheme 🔹
+
+![geoMastermind WebbApp Colour Palette](assets/readme/colorPalette.png)
+
+We wanted to choose colours that reflected the environment of the universum, so we have chosen a variety of Blue(<b>water</b>), Green(<b>nature</b>) and Yellow(<b>sun</b>) for our site.
+
+This colors are going to be implemented as <b>60-30-10</b> rule with the base of the color #0E304F. We want to have a more dark theme on the website, along with the light colors.
+
+The colour palette was created using the [Coolors website](https://coolors.co/aeffd8-8affc1-8fdc97-ac8887-9f4a54).
+
+### Typography 🔹
 
 
-### Typography 🔻
-
-
-### Imagery 🔻
+### Imagery 🔹
 
 All the images displayed in this site was originelly downloaded by the sites below, and modified in Photoshop.
 
-### Wireframes 🔻
+### Wireframes 🔹
 
+![geoMastermind Web app Overview](assets/readme/wireframes/wireframeOverview.png)
+
+Wireframes were created for mobile and desktop. I used the webbapplication called [Balsamiq](https://balsamiq.cloud/suu74na/psiivfn/r6B57) for creating the wireframes for webbapplication <b>geoMastermind</b>.
+
+Click on the links below to see an large seperated image of each page.
+
+[Home Page](assets/readme/wireframes/wireframeIndex.png)
+
+[HighScore Page](assets/readme/wireframes/wireframeHighscore.png)
+
+[Game Page](assets/readme/wireframes/wireframeGame.png)
+
+[Mobile Version Design](assets/readme/wireframes/wireframeMobile.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 --- 
 
 
-## Features 🔴
+## Features 🔵
 
 
-### Accessibility 🔻
+### Accessibility 🔹
 
 I have been mindful during coding to ensure that the website is as accessible friendly as possible. I have achieved this by:
 
-* Using semantic HTML elemts as, header(), section(), article(), footer(), nav(), details().
+* Using semantic HTML elements as, header(), section(), nav().
 * Declare the Language in the beginning of every html page.
 * Using descriptive ALT attributes on images and links on the site.
 * Using a hover state on all buttons on the site to make it clear to the user if they are hovering over a button or not.
@@ -126,14 +146,14 @@ I have been mindful during coding to ensure that the website is as accessible fr
 --- 
 
 
-## Technologies Used 🔴
+## Technologies Used 🔵
 
 
-### Languages Used 🔻
+### Languages Used 🔹
 
-Hyper Text Markup Language (HTML), Cascading Style Sheets (CSS) and Javascript (JS) were used to create this website.
+Hyper Text Markup Language (<b>HTML</b>), Cascading Style Sheets (<b>CSS</b>) and Javascript (<b>JS</b>) were used to create this website.
 
-### Frameworks, Libraries & Programs Used 🔻
+### Frameworks, Libraries & Programs Used 🔹
 
 [Balsamiq](https://balsamiq.cloud/) - Used to create wireframes.
 
@@ -160,7 +180,7 @@ Google Dev Tools (Google Browser) - To troubleshoot and test features, solve iss
 --- 
 
 
-## Deployment & Local Development 🔴
+## Deployment & Local Development 🔵
 
 Github Pages was used to deploy the live website. The instructions to achieve this are below:
 
@@ -172,7 +192,7 @@ Github Pages was used to deploy the live website. The instructions to achieve th
 6. Click Save. Your live Github Pages site is now deployed at the URL shown.
 
 
-### Local Development 🔻
+### Local Development 🔹
 
 #### How to Fork
 
@@ -197,15 +217,15 @@ To clone the PP1 repository:
 --- 
 
 
-## Testing 🔴
+## Testing 🔵
 
-### Functionality Testing 🔻
-
-
-### Buggs 🔻
+### Functionality Testing 🔹
 
 
-### Validation 🔻
+### Buggs 🔹
+
+
+### Validation 🔹
 
 
 #### W3C Validator
@@ -225,19 +245,19 @@ To clone the PP1 repository:
 
 --- 
 
-## Credits 🔴
+## Credits 🔵
 
 
-### Code Used 🔻
+### Code Used 🔹
 
 
-### Content 🔻
+### Content 🔹
 
 
-###  Media 🔻
+###  Media 🔹
 
   
-###  Acknowledgments 🔻
+###  Acknowledgments 🔹
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
