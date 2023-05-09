@@ -18,7 +18,7 @@ With different levels of difficulty, you can compete against yourself or challen
 ---
 
 
-## CONTENTS 🔴
+## <span id="readme-top">CONTENTS</span> 🔴
 
 * [User Experience](#user-experience-ux)
   * [User Stories](#user-stories)
@@ -81,7 +81,7 @@ With different levels of difficulty, you can compete against yourself or challen
 
 
 
-<p align="right">(<a href="readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 --- 
 
@@ -101,7 +101,7 @@ All the images displayed in this site was originelly downloaded by the sites bel
 ### Wireframes 🔻
 
 
-<p align="right">(<a href="readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 --- 
 
@@ -121,7 +121,7 @@ I have been mindful during coding to ensure that the website is as accessible fr
 * Ensuring that there is a sufficient colour contrast throughout the site.
 * Ensuring menus are accessible by marking the current page as current for screen readers.
 
-<p align="right">(<a href="readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 --- 
 
@@ -155,7 +155,7 @@ Google Dev Tools (Google Browser) - To troubleshoot and test features, solve iss
 
 [Shields.io](https://shields.io/) To add badges to the README
 
-<p align="right">(<a href="readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 --- 
 
@@ -192,7 +192,7 @@ To clone the PP1 repository:
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 
-<p align="right">(<a href="readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 --- 
 
@@ -221,7 +221,7 @@ To clone the PP1 repository:
 #### Full Testing
 
 
-<p align="right">(<a href="readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 --- 
 
@@ -240,7 +240,7 @@ To clone the PP1 repository:
 ###  Acknowledgments 🔻
 
 
-<p align="right">(<a href="readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 --- 
 
