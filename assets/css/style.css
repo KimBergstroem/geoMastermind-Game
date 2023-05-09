@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Nunito:wght@300&family=Roboto&display=swap');
+
+
 :root {
     --clr-accent-dark: hsl(0, 71%, 48%);
     --clr-accent-light: hsl(0, 96%, 70%);
@@ -73,12 +76,13 @@ body {
 }
 
 h1, h2{
-    font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
     color: var(--clr-neutral);
 }
 
 p, h3, h4, h5{
-    color: var(--clr-neutral-white);
+  font-family: 'Nunito','Roboto', sans-serif;
+  color: var(--clr-neutral-white);
 }
 
 .main-wrapper{
@@ -106,18 +110,18 @@ p, h3, h4, h5{
 .button-group .button {
     background-color: #ebe9cd;
     color: green;
-    font-size:30px;
+    font-size: 23px;
     font-weight: bold;
     border: none;
     border-radius: 10px;
-    padding: 15px 32px;
+    padding: 10px 32px;
     margin: 2rem auto;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
     width: 15rem;
-    height: 5rem;
+    height: 4rem;
     display: block;
   }
 

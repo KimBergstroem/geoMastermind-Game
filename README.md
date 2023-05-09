@@ -1,6 +1,6 @@
 # geoMastermind 🔵
 
-![Max_Fps Gaming Cafe Website Responsiveness](assets/readme/geoMastermindBanner.png)
+![geoMastermind WebbApp Responsiveness](assets/readme/geoMastermindBanner.png)
 
 <b>Visit the deployed site:</b> [geoMastermind](https://kimbergstroem.github.io/PP2/)
 
@@ -100,6 +100,15 @@ The colour palette was created using the [Coolors website](https://coolors.co/ae
 
 ### Typography 🔹
 
+Google Fonts was used for the following fonts:
+
+* "Lato" is used for headings and bigger content on the site. It is a sans serif typeface family.
+
+![LatoBlack900](assets/readme/fontstyleBlack900Lato.png)
+
+* "Nunito" is used for the body text, paragraphs which are the questions and answer. Nunito is a sans-serif typeface designed by Vernon Adams. It has a rounded, friendly and modern style, and its letterforms are clean and legible.
+
+![PoppinsRegular400](assets/readme/fontstyleNunito.png)
 
 ### Imagery 🔹
 
