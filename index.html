@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="description" content="Mini Game Online With 10 Questions About Geography">
-<meta name="keywords" content="Geography guesser, Geo, Mini, Game, Online, Highscore">
-<meta name="author" content="geoMastermind">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Mini Game Online With 10 Questions About Geography">
+    <meta name="keywords" content="Geography guesser, Geo, Mini, Game, Online, Highscore">
+    <meta name="author" content="geoMastermind">
 
-<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-<title>geoMastermind</title>
+    <title>geoMastermind</title>
 </head>
+
 <body>
 
-<div class="main-wrapper">
+    <div class="main-wrapper">
 
-    <header>
-        <div class="title">
-            <h2>GEOMASTERMIND</h2>
-            <h1>QUIZ GAME</h1>
-        </div>
-    </header>
-
-    <section>
-        <div class="main-content">
-            <h3>10 PLACES 10 QUESTIONS</h3>
-
-            <div class="button-group">
-                <button aria-label="Start" class="button"><i class="fa-solid fa-minus"></i> Start <i class="fa-solid fa-minus"></i></button>
-                <button aria-label="Highscore" class="button"><i class="fa-solid fa-crown"></i> Highscore</button>
-                <button aria-label="Rules" class="button" id="rules"><i class="fa-solid fa-book"></i> Rules</button>
+        <header>
+            <div class="title">
+                <h2>GEOMASTERMIND</h2>
+                <h1>QUIZ GAME</h1>
             </div>
-        </div>
-    </section>
+        </header>
 
-</div>
+        <section>
+            <div class="main-content">
+                <h3>10 PLACES 10 QUESTIONS</h3>
 
-<script src="https://kit.fontawesome.com/66c113ad0a.js" crossorigin="anonymous"></script>
-<script src="assets/js/script.js"></script>
+                <div class="button-group">
+                    <button aria-label="Start" class="button"><i class="fa-solid fa-minus"></i> Start <i
+                            class="fa-solid fa-minus"></i></button>
+                    <button aria-label="Highscore" class="button"><i class="fa-solid fa-crown"></i> Highscore</button>
+                    <button aria-label="Rules" class="button" onclick="openPopup()"><i class="fa-solid fa-book"></i> Rules</button>
+                        <div id="popup" class="hidden">
+                            <p>Rules for playing at geoMastermind</p>
+                            <button aria-label="Return"  class="return-button" onclick="closePopup()">Return</button>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/66c113ad0a.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>

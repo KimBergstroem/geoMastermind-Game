@@ -80,7 +80,7 @@ h5 {
 
 .main-wrapper {
   position: absolute;
-  top: 50%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -110,7 +110,7 @@ h5 {
   border: none;
   border-radius: 10px;
   padding: 10px 32px;
-  margin: 2rem auto;
+  margin: 1rem auto;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -127,6 +127,23 @@ h5 {
 
 .button-group .button:hover {
   background-color: #d3d043;
+}
+
+/* Hidden by default */
+.hidden {
+  display: none;
+}
+
+/* Style the popup */
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  padding: 20px;
+  border: 1px solid black;
+  z-index: 1;
 }
 
 
