@@ -141,6 +141,34 @@ p, h3, h4, h5{
         background-size: auto 100%; /* Scale image to 100% of container height */
         background-position: top; /* Align image to the top */
     }
+    .main-wrapper{
+      position: absolute;
+      top: 53%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+  }
+  .title{
+    font-weight: bold;
+    margin: 1rem  0.5rem auto;
+}
+.button-group .button {
+  background-color: #ebe9cd;
+  color: green;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 32px;
+  margin: 1rem auto;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 14rem;
+  height: 3rem;
+  display: block;
+}
 }
 @media (max-width: 940px) {
     body {
