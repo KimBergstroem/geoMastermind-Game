@@ -2,15 +2,12 @@
 
 
 :root {
-    --clr-accent-dark: hsl(0, 71%, 48%);
-    --clr-accent-light: hsl(0, 96%, 70%);
-
-    --clr-primary: hsl(215deg 66.67% 24.71%);
-
-    --clr-neutral: hsl(73, 87%, 69%);
-    --clr-neutraldark: hsl(212, 23%, 46%);
-    --clr-neutral-white: hsl(0, 0%, 93%);
-    --clr-neutral-black: hsl(0, 0%, 3%);
+  --clr-primary: hsl(215deg 66.67% 24.71%);
+  --clr-headers: hsl(73, 87%, 69%);
+  --clr-neutraldark: hsl(212, 23%, 46%);
+  --clr-text: hsl(55, 48%, 78%);
+  --clr-neutral-white: hsl(0, 0%, 93%);
+  --clr-neutral-black: hsl(0, 0%, 3%);
 }
 
 /* Tips from this css reset https://andy-bell.co.uk/a-modern-css-reset/ */
@@ -22,32 +19,23 @@
 }
 
 /* Remove default margin */
-*{
-    padding: 0;
-    margin: 0;
-    border: 0;
-    font-family: 'Poppins', sans-serif;
-    list-style-type: none;
-    text-decoration: none;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 /* Set core root defaults */
 html:focus-within {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
 }
 
 /* Make images easier to work with */
@@ -57,123 +45,148 @@ picture {
   display: block;
 }
 
-html{
-    height: 100%;
+html {
+  height: 100%;
 }
 
 /* Set core body defaults */
 body {
-    background-image: url('../images/geoMasterdtfmind\ \(1980\ ×\ 1080px\).png');
-    background-color: var(--clr-primary);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: auto 100%; /* Scale image to 100% of container width */
-    background-position: center;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    min-height: 100vh;
+  background-image: url('../images/geoMasterdtfmind\ \(1980\ ×\ 1080px\).png');
+  background-color: var(--clr-primary);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto 100%;
+  /* Scale image to 100% of container width */
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  min-height: 100vh;
 }
 
-h1, h2{
+h1,
+h2 {
   font-family: 'Lato', sans-serif;
-    color: var(--clr-neutral);
+  color: var(--clr-headers);
 }
 
-p, h3, h4, h5{
-  font-family: 'Nunito','Roboto', sans-serif;
+p,
+h3,
+h4,
+h5 {
+  font-family: 'Nunito', 'Roboto', sans-serif;
   color: var(--clr-neutral-white);
 }
 
-.main-wrapper{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.main-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.title{
-    font-weight: bold;
-    margin: 2rem auto;
-}
-.title h2{
-    color: white;
+.title {
+  font-weight: bold;
+  margin: 2rem auto;
 }
 
-.main-content{
-    margin: auto;
-    width: 100%;
+.title h2 {
+  font-size: clamp(2.5rem, 6vw, 3.75rem);
+  color: white;
+}
+
+.main-content {
+  margin: auto;
+  width: 100%;
 }
 
 /* Button Style- - Front Page */
 .button-group .button {
-    background-color: #ebe9cd;
-    color: green;
-    font-size: 23px;
-    font-weight: bold;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 32px;
-    margin: 2rem auto;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    cursor: pointer;
-    width: 15rem;
-    height: 4rem;
-    display: block;
-  }
-
-  .button-group .button:not(:last-child) {
-    border-bottom: none; /* Prevent double borders */
-  }
-  
-  .button-group .button:hover {
-    background-color: #3e8e41;
-  }
-
-
-
-  @media (max-width: 480px) {
-    body {
-        background-image: url('../images/geoMasterdtfmind\ \(360\ ×\ 640px\).png');
-        background-size: auto 100%; /* Scale image to 100% of container height */
-        background-position: top; /* Align image to the top */
-    }
-    .main-wrapper{
-      position: absolute;
-      top: 53%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-  }
-  .title{
-    font-weight: bold;
-    margin: 1rem  0.5rem auto;
-}
-.button-group .button {
-  background-color: #ebe9cd;
-  color: green;
-  font-size: 18px;
+  background-color: var(--clr-text);
+  color: rgb(19, 131, 19);
+  font-size: 1.438rem;
   font-weight: bold;
   border: none;
   border-radius: 10px;
   padding: 10px 32px;
-  margin: 1rem auto;
+  margin: 2rem auto;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
-  width: 14rem;
-  height: 3rem;
+  width: 15rem;
+  height: 4rem;
   display: block;
 }
+
+.button-group .button:not(:last-child) {
+  border-bottom: none;
+  /* Prevent double borders */
 }
-@media (max-width: 940px) {
-    body {
-        background-image: url('../images/geoMasterdtfmind\ \(1366\ ×\ 768px\).png');
-        background-size: auto 100%; /* Scale image to 100% of container height */
-        background-position: top; /* Align image to the top */
-    }
+
+.button-group .button:hover {
+  background-color: #d3d043;
+}
+
+
+/* MOBILE RESPONSIVE STYLESHEET STARTS HERE */
+
+@media (max-width: 30rem) {
+  body {
+    background-image: url('../images/geoMasterdtfmind\ \(360\ ×\ 640px\).png');
+    background-size: auto 100%;
+    /* Scale image to 100% of container height */
+    background-position: top;
+    /* Align image to the top */
+  }
+
+  .main-wrapper {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .title {
+    font-weight: bold;
+    margin: 1rem 0.5rem auto;
+  }
+
+  .button-group .button {
+    background-color: var(--clr-text);
+    color: green;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 32px;
+    margin: 1rem auto;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 14rem;
+    height: 3rem;
+    display: block;
+  }
+
+  .main-content h3 {
+    font-size: 1rem;
+  }
+
+  .title h2 {
+    font-size: 8vw;
+  }
+}
+
+@media (max-width: 58.75rem) {
+  body {
+    background-image: url('../images/geoMasterdtfmind\ \(1366\ ×\ 768px\).png');
+    background-size: auto 100%;
+    /* Scale image to 100% of container height */
+    background-position: top;
+    /* Align image to the top */
+  }
 }
