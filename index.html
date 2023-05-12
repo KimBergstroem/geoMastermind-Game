@@ -16,7 +16,7 @@
 
 <body>
 
-    <div id="main-wrapper"> <!-- Front Page - Meny Page -->
+    <div id="main-wrapper" class="main-wrapper"> <!-- Front Page - Meny Page -->
 
         <header>
             <div class="title">
@@ -30,10 +30,10 @@
                 <h3>10 PLACES 10 QUESTIONS</h3>
 
                 <div class="button-group">
-                    <button aria-label="Start" class="button buttonStart" onclick="displayQuiz()"><i class="fa-solid fa-minus"></i> Start <i
+                    <button aria-label="Start" class="btn-mainMeny buttonStart" onclick="showQuiz()"><i class="fa-solid fa-minus"></i> Start <i
                             class="fa-solid fa-minus"></i></button>
-                    <button aria-label="Highscore" class="button"><i class="fa-solid fa-crown"></i> Highscore</button>
-                    <button aria-label="Rules" class="button" onclick="openPopup()"><i class="fa-solid fa-book"></i> Rules</button>
+                    <button aria-label="Highscore" class="btn-mainMeny buttonHighScore"><i class="fa-solid fa-crown"></i> Highscore</button>
+                    <button aria-label="Rules" class="btn-mainMeny" onclick="openPopup()"><i class="fa-solid fa-book"></i> Rules</button>
                         <div id="popup" class="hidden">
                             <h1 class="titleSection">Rules</h1>
                             <p class="rulesP">
@@ -51,9 +51,20 @@
 
     </div>
 
-    <div class="quiz-wrapper"><!-- Game Page - Quiz Page -->
+    <div id="quiz-wrapper" class="quiz-wrapper hidden"><!-- Game Page - Quiz Page -->
         
-        
+        <div class="app"> 
+            <h1>Simple Quiz</h1>
+            <div class="quiz">
+                <h2 class="question">Question goes here</h2>
+                <div id="answer-button">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+            </div>
+        </div>
 
     </div>
 

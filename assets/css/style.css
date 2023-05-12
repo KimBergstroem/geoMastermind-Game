@@ -114,7 +114,7 @@ h5 {
 }
 
 /* Button Style- - Front Page */
-.button-group .button {
+.button-group .btn-mainMeny {
   background-color: var(--clr-contentBg);
   color: rgb(19, 131, 19);
   font-size: 1.438rem;
@@ -132,12 +132,12 @@ h5 {
   display: block;
 }
 
-.button-group .button:not(:last-child) {
+.button-group .btn-mainMeny:not(:last-child) {
   border-bottom: none;
   /* Prevent double borders */
 }
 
-.button-group .button:hover {
+.button-group .btn-mainMeny:hover {
   background-color: #d3d043;
 }
 
@@ -192,6 +192,51 @@ h5 {
   font-size: 3rem;
 }
 
+.hidden {
+  display: none;
+}
+
+/* Quiz Wrapper */
+.app{
+  background: var(--clr-contentBg);
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.app h1{
+  font-size: 25px;
+  color: var(--clr-neutral-black);
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+
+.quiz{
+  padding: 20px 0;
+}
+
+.quiz h2{
+  font-size: 18px;
+}
+
+.btn{
+  background: white;
+  color: var(--clr-neutral-black);
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid var(--clr-neutral-black);
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pinter;
+}
+
+
+
 
 /* MOBILE RESPONSIVE STYLESHEET STARTS HERE */
 
@@ -218,7 +263,7 @@ h5 {
     margin: 1rem 0.5rem auto;
   }
 
-  .button-group .button {
+  .button-group .btn-mainMeny {
     background-color: var(--clr-contentBg);
     color: green;
     font-size: 1.125rem;

@@ -15,16 +15,21 @@ function openPopup() {
     popup.classList.add("hidden");
   }
 
+
+
+
   // Game Page //
 
-  document.getElementById("buttonStart").addEventListener("click", displayQuiz);
-
-  function displayQuiz(){
-      let mainWrapper = document.getElementById("main-wrapper");
+  function showQuiz() {
+    let mainWrapper = document.getElementById("main-wrapper");
+    let quizWrapper = document.getElementById("quiz-wrapper");
   
-      // set the hidden attribute to true to hide the main-wrapper
-      mainWrapper.hidden = true;
+    mainWrapper.classList.add("hidden");
+    quizWrapper.classList.remove("hidden");
   }
+  
+
+
 
 
 
