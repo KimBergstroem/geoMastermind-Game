@@ -185,7 +185,8 @@ h5 {
   height: 2rem;
 }
 
-.titleSection {
+.titleSection,
+.app .titleSection {
   font-palette: --titleSection;
   font-family: 'Rocher';
   text-align: center;
