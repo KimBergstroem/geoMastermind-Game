@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Nunito:wght@300&family=Roboto&display=swap');
 
 
+/* Thank you Ollie Williams for cool text style */
+@font-face {
+  font-family: 'Rocher';
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+@font-palette-values --titleSection {
+  font-family: Rocher;
+  base-palette: 7;
+}
+/* ******************************************************************* */
+
 :root {
   --clr-primary: hsl(215deg 66.67% 24.71%);
   --clr-headers: hsl(73, 87%, 69%);
   --clr-neutraldark: hsl(212, 23%, 46%);
-  --clr-text: hsl(55, 48%, 78%);
+  --clr-contentBg: hsl(55, 48%, 78%);
   --clr-neutral-white: hsl(0, 0%, 93%);
   --clr-neutral-black: hsl(0, 0%, 3%);
 }
@@ -103,7 +115,7 @@ h5 {
 
 /* Button Style- - Front Page */
 .button-group .button {
-  background-color: var(--clr-text);
+  background-color: var(--clr-contentBg);
   color: rgb(19, 131, 19);
   font-size: 1.438rem;
   font-weight: bold;
@@ -137,13 +149,47 @@ h5 {
 /* Style the popup */
 #popup {
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: red;
+  background-color: var(--clr-contentBg);
+  width: 600px;
+  height: 450px;
   padding: 20px;
   border: 1px solid black;
+  border-radius: 1rem;
   z-index: 1;
+}
+
+.button-group ol li {
+  color: var(--clr-neutral-black);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 15px 45px;
+  list-style-type: square;
+}
+.button-group ol {
+  text-align: left;
+}
+
+.return-button{
+  background-color: lightcoral;
+  font-weight: bold;
+  border: none;
+  margin-top: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 7rem;
+  height: 2rem;
+}
+
+.titleSection {
+  font-palette: --titleSection;
+  font-family: 'Rocher';
+  text-align: center;
+  font-size: 3rem;
 }
 
 
@@ -153,6 +199,7 @@ h5 {
   body {
     background-image: url('../images/geoMasterdtfmind\ \(360\ ×\ 640px\).png');
     background-size: auto 100%;
+    background-color: var(--clr-primary);
     /* Scale image to 100% of container height */
     background-position: top;
     /* Align image to the top */
@@ -172,7 +219,7 @@ h5 {
   }
 
   .button-group .button {
-    background-color: var(--clr-text);
+    background-color: var(--clr-contentBg);
     color: green;
     font-size: 1.125rem;
     font-weight: bold;
@@ -202,8 +249,48 @@ h5 {
   body {
     background-image: url('../images/geoMasterdtfmind\ \(1366\ ×\ 768px\).png');
     background-size: auto 100%;
+    background-color: var(--clr-primary);
     /* Scale image to 100% of container height */
     background-position: top;
     /* Align image to the top */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #popup {
+    top: 30%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+  }
+  .button-group ol li {
+    color: var(--clr-neutral-black);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 15px 15px;
+    list-style-type: square;
+  }
+  .button-group ol {
+    text-align: left;
+  }
+  
+  .return-button{
+    background-color: lightcoral;
+    font-weight: bold;
+    border: none;
+    margin-top: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 7rem;
+    height: 2rem;
+  }
+  
+  .titleSection {
+    font-palette: --titleSection;
+    font-family: 'Rocher';
+    text-align: center;
+    font-size: 3rem;
   }
 }
