@@ -90,7 +90,7 @@ h5 {
   color: var(--clr-neutral-white);
 }
 
-.main-wrapper {
+#main-wrapper {
   position: absolute;
   top: 53%;
   left: 50%;
@@ -205,7 +205,7 @@ h5 {
     /* Align image to the top */
   }
 
-  .main-wrapper {
+  #main-wrapper {
     position: absolute;
     top: 53%;
     left: 50%;

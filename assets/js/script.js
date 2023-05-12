@@ -1,7 +1,4 @@
-console.log("Just checking connections");
-
-// This is the Rule JS //
-
+// Rule PopUp Window on Front Page //
 function openPopup() {
     // Get the popup element
     var popup = document.getElementById("popup");
@@ -17,3 +14,20 @@ function openPopup() {
     // Add the "hidden" class to hide the popup
     popup.classList.add("hidden");
   }
+
+  // Game Page //
+
+  document.getElementById("buttonStart").addEventListener("click", displayQuiz);
+
+  function displayQuiz(){
+      let mainWrapper = document.getElementById("main-wrapper");
+  
+      // set the hidden attribute to true to hide the main-wrapper
+      mainWrapper.hidden = true;
+  }
+
+
+
+  // Score Dashboard Page //
+
+  

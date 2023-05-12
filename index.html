@@ -16,7 +16,7 @@
 
 <body>
 
-    <div class="main-wrapper">
+    <div id="main-wrapper"> <!-- Front Page - Meny Page -->
 
         <header>
             <div class="title">
@@ -30,7 +30,7 @@
                 <h3>10 PLACES 10 QUESTIONS</h3>
 
                 <div class="button-group">
-                    <button aria-label="Start" class="button"><i class="fa-solid fa-minus"></i> Start <i
+                    <button aria-label="Start" class="button buttonStart" onclick="displayQuiz()"><i class="fa-solid fa-minus"></i> Start <i
                             class="fa-solid fa-minus"></i></button>
                     <button aria-label="Highscore" class="button"><i class="fa-solid fa-crown"></i> Highscore</button>
                     <button aria-label="Rules" class="button" onclick="openPopup()"><i class="fa-solid fa-book"></i> Rules</button>
@@ -50,6 +50,13 @@
         </section>
 
     </div>
+
+    <div class="quiz-wrapper"><!-- Game Page - Quiz Page -->
+        
+        
+
+    </div>
+
 
     <script src="https://kit.fontawesome.com/66c113ad0a.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
