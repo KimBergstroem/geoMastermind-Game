@@ -16,60 +16,78 @@
 
 <body>
 
-    <div id="main-wrapper" class="main-wrapper"> <!-- Front Page - Meny Page -->
-
+    <!-- 
+    ######################################################################################
+    ############################ MAIN PAGE - STARTS HERE #################################
+    ######################################################################################
+    -->
+    <div id="main-wrapper" class="main-wrapper">
         <header>
-            <div class="title">
+            <div class="main-title">
                 <h2>GEOMASTERMIND</h2>
                 <h1>QUIZ GAME</h1>
             </div>
         </header>
 
-        <section>
-            <div class="main-content">
+        <section aria-label="Main Content">
+            <div class="main-section">
                 <h3>10 PLACES 10 QUESTIONS</h3>
 
                 <div class="button-group">
-                    <button aria-label="Start" class="btn-mainMeny buttonStart" onclick="showQuiz()"><i class="fa-solid fa-minus"></i> Start <i
-                            class="fa-solid fa-minus"></i></button>
-                    <button aria-label="Highscore" class="btn-mainMeny buttonHighScore"><i class="fa-solid fa-crown"></i> Highscore</button>
-                    <button aria-label="Rules" class="btn-mainMeny" onclick="openPopup()"><i class="fa-solid fa-book"></i> Rules</button>
-                        <div id="popup" class="hidden">
-                            <h1 class="titleSection">Rules</h1>
-                            <p class="rulesP">
-                                <ol>
-                                    <li>20 seconds per Question</li>
-                                    <li>Only 1 guess</li>
-                                    <li>Cannot go back once clicked "Next"</li>
-                                </ol> 
-                            </p>
-                            <button aria-label="Return"  class="return-button" onclick="closePopup()">Return</button>
-                        </div>
+                    <button aria-label="Start" class="main-btn buttonStart" onclick="showQuiz()"><i
+                            class="fa-solid fa-minus"></i> Start <i class="fa-solid fa-minus"></i></button>
+                    <button aria-label="Highscore" class="main-btn buttonHighScore"><i
+                            class="fa-solid fa-crown"></i> Highscore</button>
+                    <button aria-label="Rules" class="main-btn" onclick="openPopup()"><i
+                            class="fa-solid fa-book"></i> Rules</button>
+                    <div id="popup" class="hidden">
+                        <h1 class="titleSection">Rules</h1>
+                        <p class="rulesP">
+                            <ol>
+                                <li>20 seconds per Question</li>
+                                <li>Only 1 guess</li>
+                                <li>Cannot go back once clicked "Next"</li>
+                            </ol>
+                        </p>
+                        <button aria-label="Return" id="return-btn" onclick="closePopup()">Return</button>
+                    </div>
                 </div>
             </div>
         </section>
-
     </div>
+    <!-- 
+    ######################################################################################
+    ############################# MAIN PAGE - ENDS HERE ##################################
+    ######################################################################################
+    -->
 
-    <div id="quiz-wrapper" class="quiz-wrapper hidden"><!-- Game Page - Quiz Page -->
-        
-        <div class="app"> 
+
+    <!-- 
+    ######################################################################################
+    ############################ GAME PAGE - STARTS HERE #################################
+    ######################################################################################
+    -->
+    <div id="quiz-wrapper" class="quiz-wrapper hidden">
+        <div class="quiz-section">
             <h1 class="titleSection">QUIZ</h1>
             <div class="quiz">
-                <h2 id="question">Question goes here</h2>
+                <h2 id="question"></h2>
                 <div id="answer-buttons">
-                    <button class="btn">Answer 1</button>
-                    <button class="btn">Answer 2</button>
-                    <button class="btn">Answer 3</button>
-                    <button class="btn">Answer 4</button>
+                    <button aria-label="Answer 1" class="btn">Answer 1</button>
+                    <button aria-label="Answer 2" class="btn">Answer 2</button>
+                    <button aria-label="Answer 3" class="btn">Answer 3</button>
+                    <button aria-label="Answer 4" class="btn">Answer 4</button>
                 </div>
-                <button id="next-btn">Next</button>
-                <button id="back-btn">Back To Main</button>
+                <button aria-label="Next question" id="next-btn">Next</button>
+                <button aria-label="Return to main" id="back-btn">Return to Main</button>
             </div>
         </div>
-
     </div>
-
+    <!-- 
+    ######################################################################################
+    ############################# GAME PAGE - ENDS HERE ##################################
+    ######################################################################################
+    -->
 
     <script src="https://kit.fontawesome.com/66c113ad0a.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>

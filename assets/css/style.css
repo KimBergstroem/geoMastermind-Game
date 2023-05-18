@@ -98,23 +98,23 @@ h5 {
   text-align: center;
 }
 
-.title {
+.main-title {
   font-weight: bold;
   margin: 2rem auto;
 }
 
-.title h2 {
+.main-title h2 {
   font-size: clamp(2.5rem, 6vw, 3.75rem);
   color: white;
 }
 
-.main-content {
+.main-section {
   margin: auto;
   width: 100%;
 }
 
 /* Button Style- - Front Page */
-.button-group .btn-mainMeny {
+.button-group .main-btn {
   background-color: var(--clr-contentBg);
   color: rgb(19, 131, 19);
   font-size: 1.438rem;
@@ -132,12 +132,12 @@ h5 {
   display: block;
 }
 
-.button-group .btn-mainMeny:not(:last-child) {
+.button-group .main-btn:not(:last-child) {
   border-bottom: none;
   /* Prevent double borders */
 }
 
-.button-group .btn-mainMeny:hover {
+.button-group .main-btn:hover {
   background-color: #d3d043;
 }
 
@@ -161,6 +161,17 @@ h5 {
   z-index: 1;
 }
 
+#return-btn{
+  background-color: lightcoral;
+  color: var(--clr-neutral-black);
+  font-weight: 800;
+  width: 150px;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 .button-group ol li {
   color: var(--clr-neutral-black);
   font-size: 1.5rem;
@@ -172,21 +183,8 @@ h5 {
   text-align: left;
 }
 
-.return-button{
-  background-color: lightcoral;
-  font-weight: 800;
-  border: none;
-  margin-top: 2rem;
-  border-radius: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  cursor: pointer;
-  width: 7rem;
-  height: 2rem;
-}
-
 .titleSection,
-.app .titleSection {
+.quiz-section .titleSection {
   font-palette: --titleSection;
   font-family: 'Rocher';
   text-align: center;
@@ -198,7 +196,7 @@ h5 {
 }
 
 /* Quiz Wrapper */
-.app{
+.quiz-section{
   background: var(--clr-contentBg);
   width: 90%;
   max-width: 600px;
@@ -207,7 +205,7 @@ h5 {
   padding: 30px;
 }
 
-.app h1{
+.quiz-section h1{
   font-size: 25px;
   color: var(--clr-neutral-black);
   font-weight: 600;
@@ -246,17 +244,7 @@ h5 {
   cursor: no-drop;
 }
 
-#next-btn{
-  background-color: lightcoral;
-  color: var(--clr-neutral-black);
-  font-weight: 800;
-  width: 150px;
-  padding: 10px;
-  margin: 20px auto 0;
-  border-radius: 10px;
-  cursor: pointer;
-  display: none;
-}
+#next-btn, 
 #back-btn{
   background-color: lightcoral;
   color: var(--clr-neutral-black);
@@ -296,12 +284,12 @@ h5 {
     text-align: center;
   }
 
-  .title {
+  .main-title {
     font-weight: bold;
     margin: 1rem 0.5rem auto;
   }
 
-  .button-group .btn-mainMeny {
+  .button-group .main-btn {
     background-color: var(--clr-contentBg);
     color: green;
     font-size: 1.125rem;
@@ -319,11 +307,11 @@ h5 {
     display: block;
   }
 
-  .main-content h3 {
+  .main-section h3 {
     font-size: 1rem;
   }
 
-  .title h2 {
+  .main-title h2 {
     font-size: 8vw;
   }
 }

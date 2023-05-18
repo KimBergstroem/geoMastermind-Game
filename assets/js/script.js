@@ -137,6 +137,7 @@ function startQuiz(){
   currentQuestionIndex = 0;
   score = 0;
   nextButton.innerHTML = "Next";
+  backButton.innerHTML = "Back";
   showQuestion();
 }
 
@@ -144,8 +145,8 @@ function showQuestion(){
   resetState();
   // Added the current question and display it to the html page 
   let currentQuestion = questions[currentQuestionIndex];
-  let questionNo = currentQuestionIndex + 1;
-  questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+  let questionNumber = currentQuestionIndex + 1;
+  questionElement.innerHTML = questionNumber + ". " + currentQuestion.question;
 
     // Added the answer text in the array to the buttons in the html page 
     currentQuestion.answers.forEach(answer => {
@@ -162,6 +163,7 @@ function showQuestion(){
 
 function resetState(){
   nextButton.style.display = "none";
+  backButton.style.display = "none";
   while(answerButtons.firstChild){
     answerButtons.removeChild(answerButtons.firstChild);
   }
@@ -211,11 +213,4 @@ function handleNextButton(){ // What happens if user clicks on Next Button
   }
 }
 
-
 startQuiz();
- 
-
-
-  // Score Dashboard Page //
-
-  
