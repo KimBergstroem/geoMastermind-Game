@@ -34,15 +34,15 @@
                 <h3>10 PLACES 10 QUESTIONS</h3>
 
                 <div class="button-group">
-                    <button aria-label="Start" class="main-btn buttonStart" onclick="showQuiz()"><i
+                    <button aria-label="Start" class="main-btn button-start" onclick="showQuiz()"><i
                             class="fa-solid fa-minus"></i> Start <i class="fa-solid fa-minus"></i></button>
-                    <button aria-label="Highscore" class="main-btn buttonHighScore"><i
-                            class="fa-solid fa-crown"></i> Highscore</button>
-                    <button aria-label="Rules" class="main-btn" onclick="openPopup()"><i
-                            class="fa-solid fa-book"></i> Rules</button>
+                    <button aria-label="Highscore" class="main-btn button-highScore"><i class="fa-solid fa-crown"></i>
+                        Highscore</button>
+                    <button aria-label="Rules" class="main-btn" onclick="openPopup()"><i class="fa-solid fa-book"></i>
+                        Rules</button>
                     <div id="popup" class="hidden">
-                        <h1 class="titleSection">Rules</h1>
-                        <p class="rulesP">
+                        <h1 class="title-section">Rules</h1>
+                        <p class="rules-p">
                             <ol>
                                 <li>20 seconds per Question</li>
                                 <li>Only 1 guess</li>
@@ -68,20 +68,23 @@
     ######################################################################################
     -->
     <div id="quiz-wrapper" class="quiz-wrapper hidden">
-        <div class="quiz-section">
-            <h1 class="titleSection">QUIZ</h1>
-            <div class="quiz">
-                <h2 id="question"></h2>
-                <div id="answer-buttons">
-                    <button aria-label="Answer 1" class="btn">Answer 1</button>
-                    <button aria-label="Answer 2" class="btn">Answer 2</button>
-                    <button aria-label="Answer 3" class="btn">Answer 3</button>
-                    <button aria-label="Answer 4" class="btn">Answer 4</button>
+        <section aria-label="Quiz Content">
+            <div class="quiz-section">
+                <h1 class="title-section">QUIZ</h1>
+                <div class="quiz">
+                    <div class="quiz-image" id="quiz-image"></div>
+                    <h2 id="question"></h2>
+                    <div id="answer-buttons">
+                        <button aria-label="Answer 1" class="quiz-btn">Answer 1</button>
+                        <button aria-label="Answer 2" class="quiz-btn">Answer 2</button>
+                        <button aria-label="Answer 3" class="quiz-btn">Answer 3</button>
+                        <button aria-label="Answer 4" class="quiz-btn">Answer 4</button>
+                    </div>
+                    <button aria-label="Next question" id="next-btn">Next</button>
+                    <button aria-label="Return to main" id="back-btn">Return to Main</button>
                 </div>
-                <button aria-label="Next question" id="next-btn">Next</button>
-                <button aria-label="Return to main" id="back-btn">Return to Main</button>
             </div>
-        </div>
+        </section>
     </div>
     <!-- 
     ######################################################################################

@@ -19,6 +19,7 @@ function openPopup() {
 const mainWrapper = document.getElementById("main-wrapper");
 const quizWrapper = document.getElementById("quiz-wrapper");
 const backHome = document.getElementById("back-btn");
+const image = document.getElementById("quiz-image");
 
   function showQuiz() {
     mainWrapper.classList.add("hidden");
@@ -33,7 +34,8 @@ const backHome = document.getElementById("back-btn");
   // Questions / Answers 
 const questions = [
   {
-    question: "In wich country is this picture from?", // Question 1
+    image: "<img src='assets/images/quiz/pyramid.svg'>",
+    question: "helpå me iwth thiethi", // Question 1
     answers: [
       { text: "Paris", correct: false},
       { text: "London", correct: false},
@@ -42,6 +44,7 @@ const questions = [
     ]
   },
   {
+    image: "<img src='assets/images/geoMasterdtfmind (360 × 640px).png'>",
     question: "In wich city is this statue?", // Question 2
     answers: [
       { text: "New York", correct: true}, // Correct Answer
@@ -51,6 +54,7 @@ const questions = [
     ]
   },
   {
+    image: "<img src='assets/images/geoMasterdtfmind (360 × 640px).png'>",
     question: "Were can you find this animal?", // Question 3
     answers: [
       { text: "Sweden", correct: true}, // Correct Answer
@@ -60,6 +64,7 @@ const questions = [
     ]
   },
   {
+    image: "assets/images/questionImages/pyramids.svg",
     question: "Were is this picture taken from?", // Question 4
     answers: [
       { text: "Turkey", correct: false},
@@ -69,6 +74,7 @@ const questions = [
     ]
   },
   {
+    image: "assets/images/questionImages/pyramids.svg",
     question: "What place can you find this building?", // Question 5
     answers: [
       { text: "Paris", correct: false}, 
@@ -78,6 +84,7 @@ const questions = [
     ]
   },
   {
+    image: "assets/images/questionImages/pyramids.svg",
     question: "Where is this picture taken from?", // Question 6
     answers: [
       { text: "New Zeeland", correct: true}, // Correct Answer
@@ -87,6 +94,7 @@ const questions = [
     ]
   },
   {
+    image: "assets/images/questionImages/pyramids.svg",
     question: "This game is from wich country?", // Question 7
     answers: [
       { text: "Japan", correct: false},
@@ -96,6 +104,7 @@ const questions = [
     ]
   },
   {
+    image: "assets/images/questionImages/pyramids.svg",
     question: "What is the name of Egypts sea?", // Question 8
     answers: [
       { text: "redsea", correct: false},
@@ -105,6 +114,7 @@ const questions = [
     ]
   },
   {
+    image: "assets/images/questionImages/pyramids.svg",
     question: "Were can you find this mountain?", // Question 9
     answers: [
       { text: "Brazil", correct: true}, // Correct Answer
@@ -114,6 +124,7 @@ const questions = [
     ]
   },
   {
+    image: "assets/images/questionImages/pyramids.svg",
     question: "Random question hehe", // Question 10
     answers: [
       { text: "Random1", correct: true}, // Correct Answer
@@ -143,16 +154,20 @@ function startQuiz(){
 
 function showQuestion(){ 
   resetState();
-  // Added the current question and display it to the html page 
+  // Adds the current question and display it to the html page 
   let currentQuestion = questions[currentQuestionIndex];
   let questionNumber = currentQuestionIndex + 1;
   questionElement.innerHTML = questionNumber + ". " + currentQuestion.question;
+
+  // Set the image source
+  image.innerHTML = currentQuestion.image;
+  image.classList.add("quiz-image");
 
     // Added the answer text in the array to the buttons in the html page 
     currentQuestion.answers.forEach(answer => {
       const button = document.createElement("button");
       button.innerHTML = answer.text;
-      button.classList.add("btn");
+      button.classList.add("quiz-btn");
       answerButtons.appendChild(button);
       if(answer.correct){ // .Correct from the array 
         button.dataset.correct = answer.correct;
@@ -168,6 +183,7 @@ function resetState(){
     answerButtons.removeChild(answerButtons.firstChild);
   }
 }
+
 function selectAnswer(event){ // Checking if the answer is correct or incorrect 
   const selectedBtn = event.target;
   const isCorrect = selectedBtn.dataset.correct === "true";

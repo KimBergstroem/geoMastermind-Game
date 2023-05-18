@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Nunito:wght@300&family=Roboto&display=swap');
 
-
-/* Thank you Ollie Williams for cool text style */
+/* Thank you "Ollie Williams" for cool text style */
 @font-face {
   font-family: 'Rocher';
   src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
@@ -56,6 +55,7 @@ picture {
   max-width: 100%;
   display: block;
 }
+/* ******************************************************************* */
 
 html {
   height: 100%;
@@ -90,12 +90,19 @@ h5 {
   color: var(--clr-neutral-white);
 }
 
+
+/* **************** MAIN WRAPPER STARTS HERE **************** */
 #main-wrapper {
   position: absolute;
   top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.main-section {
+  margin: auto;
+  width: 100%;
 }
 
 .main-title {
@@ -108,12 +115,7 @@ h5 {
   color: white;
 }
 
-.main-section {
-  margin: auto;
-  width: 100%;
-}
-
-/* Button Style- - Front Page */
+/* Main-Button Style */
 .button-group .main-btn {
   background-color: var(--clr-contentBg);
   color: rgb(19, 131, 19);
@@ -132,9 +134,8 @@ h5 {
   display: block;
 }
 
-.button-group .main-btn:not(:last-child) {
+.button-group .main-btn:not(:last-child) { /* Prevent double borders */
   border-bottom: none;
-  /* Prevent double borders */
 }
 
 .button-group .main-btn:hover {
@@ -146,7 +147,7 @@ h5 {
   display: none;
 }
 
-/* Style the popup */
+/* Popup Rules Style */
 #popup {
   position: fixed;
   top: 40%;
@@ -179,12 +180,13 @@ h5 {
   margin: 15px 45px;
   list-style-type: square;
 }
+
 .button-group ol {
   text-align: left;
 }
 
-.titleSection,
-.quiz-section .titleSection {
+.title-section,
+.quiz-section .title-section {
   font-palette: --titleSection;
   font-family: 'Rocher';
   text-align: center;
@@ -194,8 +196,10 @@ h5 {
 .hidden {
   display: none;
 }
+/* **************** MAIN WRAPPER ENDS HERE **************** */
 
-/* Quiz Wrapper */
+
+/* **************** QUIZ WRAPPER STARTS HERE **************** */
 .quiz-section{
   background: var(--clr-contentBg);
   width: 90%;
@@ -221,7 +225,7 @@ h5 {
   font-size: 18px;
 }
 
-.btn{
+.quiz-btn{
   background: white;
   color: var(--clr-neutral-black);
   font-weight: 500;
@@ -235,12 +239,12 @@ h5 {
   transition: all 0.3s;
 }
 
-.btn:hover:not([disabled]){ /* If disabled, no black over effect will be displayed */
+.quiz-btn:hover:not([disabled]){ /* If disabled, no black over effect will be displayed */
   background: var(--clr-neutral-black);
   color: var(--clr-neutral-white);
 }
 
-.btn:disabled{ /* Changes the mouse icon to a "block" icon when hovering the question. */
+.quiz-btn:disabled{ /* Changes the mouse icon to a "block" icon when hovering the question. */
   cursor: no-drop;
 }
 
@@ -260,12 +264,14 @@ h5 {
 .correct{
   background-color: rgb(152, 207, 152);
 }
+
 .incorrect{
   background-color: rgb(230, 134, 134);
 }
+/* **************** QUIZ WRAPPER ENDS HERE **************** */
 
-/* MOBILE RESPONSIVE STYLESHEET STARTS HERE */
 
+/* **************** MOBILE RESPONSIVE STYLESHEET STARTS HERE **************** */
 @media (max-width: 30rem) {
   body {
     background-image: url('../images/geoMasterdtfmind\ \(360\ ×\ 640px\).png');
@@ -358,7 +364,7 @@ h5 {
     height: 2rem;
   }
   
-  .titleSection {
+  .title-section {
     font-palette: --titleSection;
     font-family: 'Rocher';
     text-align: center;
