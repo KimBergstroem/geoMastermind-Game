@@ -18,6 +18,7 @@ function openPopup() {
   // Game Page 
 const mainWrapper = document.getElementById("main-wrapper");
 const quizWrapper = document.getElementById("quiz-wrapper");
+const backHome = document.getElementById("back-btn");
 
   function showQuiz() {
     mainWrapper.classList.add("hidden");
@@ -127,6 +128,7 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
+const backButton = document.getElementById("back-btn");
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -164,7 +166,6 @@ function resetState(){
     answerButtons.removeChild(answerButtons.firstChild);
   }
 }
-
 function selectAnswer(event){ // Checking if the answer is correct or incorrect 
   const selectedBtn = event.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
@@ -189,6 +190,8 @@ function showScore(){
   questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;  // The character "`" (backtick) is used in this code snippet to define a template literal or a template string in JavaScript.  Becomes more readable and easier to work with. 
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "block";
+  backHome.style.display = "block";
+  backHome.addEventListener("click", backToMain);
 }
 
 nextButton.addEventListener("click", ()=>{
