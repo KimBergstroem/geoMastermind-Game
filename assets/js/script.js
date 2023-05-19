@@ -33,6 +33,7 @@ const image = document.getElementById("quiz-image"); // Represents the image ele
 
 const questionElement = document.getElementById("question"); // Represents the question within the quiz
 const questionCounter = document.getElementById("question-counter"); // Represents the question counter within the quiz
+const questionTimer = quizWrapper.querySelector(".timer .timer-sec"); // Represents the time the user have on each question in the quiz
 const answerButtons = document.getElementById("answer-buttons"); // Represents the container for answer buttons
 const nextButton = document.getElementById("next-btn"); // Represents the next button element to take user to next question
 const backButton = document.getElementById("back-btn"); // Represents the back button element to take user back to mainWrapper
@@ -40,6 +41,8 @@ const backButton = document.getElementById("back-btn"); // Represents the back b
 // Variable declarations for quiz tracking
 let currentQuestionIndex = 0; // Keeps track of the current question index
 let score = 0; // Stores the score accumulated by the user
+let counter;
+let timeValue = 15;
 
   function showQuiz() {
     mainWrapper.classList.add("hidden");
@@ -162,6 +165,7 @@ const questions = [
 function startQuiz(){
   currentQuestionIndex = 0; // Reset the current question index to the beginning
   score = 0; // Reset the score to 0
+  startTimer(10);
   nextButton.innerHTML = "Next"; // Set the innerHTML of the Next button to "Next"
   backButton.innerHTML = "Back"; // Set the innerHTML of the Back button to "Back"
   showQuestion(); // Display the first question
@@ -242,13 +246,23 @@ nextButton.addEventListener("click", () => {
 
 function handleNextButton(){ // Handles the click on the Next Button
   currentQuestionIndex++; // Increase the index to move to the next question in the array
-
   if (currentQuestionIndex < questions.length) { 
     showQuestion(); // Display the next question if there are more questions in the array
+    clearInterval(counter);
+    startTimer(timeValue);
   } else {
     showScore(); // Display the final score if there are no more questions in the array
   }
 }
+
+function startTimer(time){
+  counter = setInterval(timer, 1000);
+  function timer(){
+    questionTimer.textContent = time;
+    time--;
+  }
+}
+
 
 // Reset function
 function resetState(){
