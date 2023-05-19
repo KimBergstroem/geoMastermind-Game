@@ -1,4 +1,9 @@
-// Rule PopUp Window on Front Page //
+/**
+ * ########################################################################################
+ * ############################# POPUP BOX WITH RULES #####################################
+ * ########################################################################################.
+ */
+
 function openPopup() {
     // Get the popup element
     var popup = document.getElementById("popup");
@@ -15,11 +20,26 @@ function openPopup() {
     popup.classList.add("hidden");
   }
 
-  // Game Page 
-const mainWrapper = document.getElementById("main-wrapper");
-const quizWrapper = document.getElementById("quiz-wrapper");
-const backHome = document.getElementById("back-btn");
-const image = document.getElementById("quiz-image");
+/**
+ * ########################################################################################
+ * ############################## QUIZ GAME DASHBOARD #####################################
+ * ########################################################################################.
+ */
+
+// Variable declarations for DOM elements
+const mainWrapper = document.getElementById("main-wrapper"); // Represents the main wrapper element
+const quizWrapper = document.getElementById("quiz-wrapper"); // Represents the quiz wrapper element
+const image = document.getElementById("quiz-image"); // Represents the image element within the quiz
+
+const questionElement = document.getElementById("question"); // Represents the question within the quiz
+const questionCounter = document.getElementById("question-counter"); // Represents the question counter within the quiz
+const answerButtons = document.getElementById("answer-buttons"); // Represents the container for answer buttons
+const nextButton = document.getElementById("next-btn"); // Represents the next button element to take user to next question
+const backButton = document.getElementById("back-btn"); // Represents the back button element to take user back to mainWrapper
+
+// Variable declarations for quiz tracking
+let currentQuestionIndex = 0; // Keeps track of the current question index
+let score = 0; // Stores the score accumulated by the user
 
   function showQuiz() {
     mainWrapper.classList.add("hidden");
@@ -31,7 +51,11 @@ const image = document.getElementById("quiz-image");
     quizWrapper.classList.add("hidden");
   }
   
-  // Questions / Answers 
+/**
+ * Represents an array of quiz questions, their associated images, and answer options.
+ * Each question object contains the question text, image, and an array of answer options.
+ * The correct answer option for each question is marked with the property `correct: true`.
+ */
 const questions = [
   {
     image: "<img src='assets/images/quiz/pyramid.svg' alt='Pyramid'>",
@@ -135,27 +159,17 @@ const questions = [
   }
 ];
 
-/* GAME DASHBOARD CONTENT */
-const questionElement = document.getElementById("question");
-const questionCounter = document.getElementById("question-counter");
-const answerButtons = document.getElementById("answer-buttons");
-const nextButton = document.getElementById("next-btn");
-const backButton = document.getElementById("back-btn");
-
-let currentQuestionIndex = 0;
-let score = 0;
-
 function startQuiz(){
-  currentQuestionIndex = 0;
-  score = 0;
-  nextButton.innerHTML = "Next";
-  backButton.innerHTML = "Back";
-  showQuestion();
+  currentQuestionIndex = 0; // Reset the current question index to the beginning
+  score = 0; // Reset the score to 0
+  nextButton.innerHTML = "Next"; // Set the innerHTML of the Next button to "Next"
+  backButton.innerHTML = "Back"; // Set the innerHTML of the Back button to "Back"
+  showQuestion(); // Display the first question
 }
 
 function showQuestion(){ 
   resetState();
-  // Adds the current question and display it to the html page 
+  // Retrieves the current question and its corresponding question number, then updates the HTML elements to display them
   let currentQuestion = questions[currentQuestionIndex];
   let questionNumber = currentQuestionIndex + 1;
   questionElement.innerHTML = currentQuestion.question;
@@ -165,7 +179,7 @@ function showQuestion(){
   image.innerHTML = currentQuestion.image;
   image.classList.add("quiz-image");
 
-    // Added the answer text in the array to the buttons in the html page 
+    // Populate answer buttons with answer text from the array
     currentQuestion.answers.forEach(answer => {
       const button = document.createElement("button");
       button.innerHTML = answer.text;
@@ -178,32 +192,28 @@ function showQuestion(){
     });
 }
 
-function resetState(){
-  nextButton.style.display = "none";
-  backButton.style.display = "none";
-  while(answerButtons.firstChild){
-    answerButtons.removeChild(answerButtons.firstChild);
-  }
-  questionCounter.innerHTML = '';
-}
+startQuiz(); // Initializes the quiz by resetting the question index and score
 
-function selectAnswer(event){ // Checking if the answer is correct or incorrect 
+function selectAnswer(event){ // Handles the selection of an answer
   const selectedBtn = event.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
-  if(isCorrect){
+
+  if (isCorrect) {
     selectedBtn.classList.add("correct");
-    score++; // If the answer is correct, add 1+ to the score
-  }else{
+    score++; // Increment the score by 1 if the answer is correct
+  } else {
     selectedBtn.classList.add("incorrect");
   }
-  // Checks if one of the .correct answer in the array having the "true value" and then adds correct statement if it is true" 
+  
+  // Marks correct answers and disables all buttons
   Array.from(answerButtons.children).forEach(button => {
-    if(button.dataset.correct === "true"){
+    if (button.dataset.correct === "true") {
       button.classList.add("correct");
     }
-    button.disabled = true; // Cant click on any other buttons
+    button.disabled = true; // Disable all buttons to prevent further selection
   });
-  nextButton.style.display = "block"; // This is so the Next button shows up so we can go to next question
+
+  nextButton.style.display = "block"; // Display the Next button for moving to the next question
 }
 
 function showScore(){
@@ -218,25 +228,34 @@ function showScore(){
     }
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "block";
-  backHome.style.display = "block";
-  backHome.addEventListener("click", backToMain);
+  backButton.style.display = "block";
+  backButton.addEventListener("click", backToMain);
 }
 
-nextButton.addEventListener("click", ()=>{
-  if(currentQuestionIndex < questions.length){
-      handleNextButton();
-  }else{
-    startQuiz();
+nextButton.addEventListener("click", () => {
+  if (currentQuestionIndex < questions.length) {
+    handleNextButton(); // Move to the next question if there are more questions
+  } else {
+    startQuiz(); // Start the quiz again if all questions have been answered
   }
-})
+});
 
-function handleNextButton(){ // What happens if user clicks on Next Button 
-  currentQuestionIndex++;// Will increase the index in the array 
-  if(currentQuestionIndex < questions.length){ 
-    showQuestion(); // Display Next Question if there is another questions index 
-  }else{
-    showScore(); // Display Score, this is the end of the game, as there is no more question in the array to loop for 
+function handleNextButton(){ // Handles the click on the Next Button
+  currentQuestionIndex++; // Increase the index to move to the next question in the array
+
+  if (currentQuestionIndex < questions.length) { 
+    showQuestion(); // Display the next question if there are more questions in the array
+  } else {
+    showScore(); // Display the final score if there are no more questions in the array
   }
 }
 
-startQuiz();
+// Reset function
+function resetState(){
+  nextButton.style.display = "none";
+  backButton.style.display = "none";
+  while(answerButtons.firstChild){
+    answerButtons.removeChild(answerButtons.firstChild);
+  }
+  questionCounter.innerHTML = '';
+}
