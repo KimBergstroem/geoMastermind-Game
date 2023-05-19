@@ -34,7 +34,7 @@ const image = document.getElementById("quiz-image");
   // Questions / Answers 
 const questions = [
   {
-    image: "<img src='assets/images/quiz/pyramid.svg'>",
+    image: "<img src='assets/images/quiz/pyramid.svg' alt='Pyramid'>",
     question: "Where can you find this buildings?", // Question 1
     answers: [
       { text: "Mexico", correct: false},
@@ -44,7 +44,7 @@ const questions = [
     ]
   },
   {
-    image: "<img src='assets/images/quiz/eiffelTower.svg'>",
+    image: "<img src='assets/images/quiz/eiffelTower.svg' alt='Eiffel tower'>",
     question: "In wich city is this statue?", // Question 2
     answers: [
       { text: "Paris", correct: true}, // Correct Answer
@@ -54,7 +54,7 @@ const questions = [
     ]
   },
   {
-    image: "<img src='assets/images/quiz/sagradaFamilia.svg'>",
+    image: "<img src='assets/images/quiz/sagradaFamilia.svg' alt='Sagrada Familia'>",
     question: "Were can you find this church?", // Question 3
     answers: [
       { text: "Barcelona, Spain", correct: true}, // Correct Answer
@@ -64,7 +64,7 @@ const questions = [
     ]
   },
   {
-    image: "<img src='assets/images/quiz/statueOfLiberty.svg'>",
+    image: "<img src='assets/images/quiz/statueOfLiberty.svg' alt='Statue of liberty'>",
     question: "Were is this building?", // Question 4
     answers: [
       { text: "Toronto", correct: false},
@@ -74,7 +74,7 @@ const questions = [
     ]
   },
   {
-    image: "<img src='assets/images/quiz/burjKhalifa.svg'>",
+    image: "<img src='assets/images/quiz/burjKhalifa.svg' alt='Burj Khalifa'>",
     question: "What city is this?", // Question 5
     answers: [
       { text: "Abu Dhabi", correct: false}, 
@@ -84,7 +84,7 @@ const questions = [
     ]
   },
   {
-    image: "<img src='assets/images/quiz/portugal.svg'>",
+    image: "<img src='assets/images/quiz/portugal.svg' alt='Famous cave in Algarve cost'>",
     question: "Were can you find this cave?", // Question 6
     answers: [
       { text: "Portugal", correct: true}, // Correct Answer
@@ -94,7 +94,7 @@ const questions = [
     ]
   },
   {
-    image: "<img src='assets/images/quiz/singapore.svg'>",
+    image: "<img src='assets/images/quiz/singapore.svg' alt='Marina Bay Sands'>",
     question: "Were is this?", // Question 7
     answers: [
       { text: "Tokyo", correct: false},
@@ -104,7 +104,7 @@ const questions = [
     ]
   },
   {
-    image: "<img src='assets/images/quiz/indonesia.svg'>",
+    image: "<img src='assets/images/quiz/indonesia.svg' alt='Sewu Temple'>",
     question: "In what Country can you find this temple?", // Question 8
     answers: [
       { text: "Mexico", correct: false},
@@ -114,7 +114,7 @@ const questions = [
     ]
   },
   {
-    image: "<img src='assets/images/quiz/greenLight.svg'>",
+    image: "<img src='assets/images/quiz/greenLight.svg' alt='Green sky light'>",
     question: "This sky can you find in which country?", // Question 9
     answers: [
       { text: "Nordwegian", correct: true}, // Correct Answer
@@ -124,7 +124,7 @@ const questions = [
     ]
   },
   {
-    image: "<img src='assets/images/quiz/greece.svg'>",
+    image: "<img src='assets/images/quiz/greece.svg' alt='White and blue buildings on a island'>",
     question: "Wich island is this?", // Question 10
     answers: [
       { text: "Santorini, Greece", correct: true}, // Correct Answer
@@ -137,7 +137,7 @@ const questions = [
 
 /* GAME DASHBOARD CONTENT */
 const questionElement = document.getElementById("question");
-const questionElement2 = document.getElementById("question-of");
+const questionCounter = document.getElementById("question-counter");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 const backButton = document.getElementById("back-btn");
@@ -159,7 +159,7 @@ function showQuestion(){
   let currentQuestion = questions[currentQuestionIndex];
   let questionNumber = currentQuestionIndex + 1;
   questionElement.innerHTML = currentQuestion.question;
-  questionElement2.innerHTML = questionNumber + " of 10 Questions";
+  questionCounter.innerHTML = questionNumber + " of 10 Questions";
 
   // Set the image source
   image.innerHTML = currentQuestion.image;
@@ -184,7 +184,7 @@ function resetState(){
   while(answerButtons.firstChild){
     answerButtons.removeChild(answerButtons.firstChild);
   }
-  questionElement2.innerHTML = '';
+  questionCounter.innerHTML = '';
 }
 
 function selectAnswer(event){ // Checking if the answer is correct or incorrect 
