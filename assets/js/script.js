@@ -210,11 +210,11 @@ function showScore(){
   resetState(); 
    // The character "`" (backtick) is used in this code snippet to define a template literal or a template string in JavaScript.  Becomes more readable and easier to work with. 
     if (score === 10){
-      questionElement.innerHTML = `You scored ${score} out of ${questions.length}! You are a  true GEO PRO!`;
+      questionElement.innerHTML = `You scored ${score} out of ${questions.length}! <br> You are a  true GEO PRO!`;
     }else if (score <=5){
-      questionElement.innerHTML = `You scored ${score} out of ${questions.length} Are you even trying?`;
+      questionElement.innerHTML = `You scored ${score} out of ${questions.length} <br> Are you even trying?`;
     }else{
-      questionElement.innerHTML = `You scored ${score} out of ${questions.length} Better luck next time!`;
+      questionElement.innerHTML = `You scored ${score} out of ${questions.length} <br> Better luck next time!`;
     }
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "block";
