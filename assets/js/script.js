@@ -42,7 +42,7 @@ const backButton = document.getElementById("back-btn"); // Represents the back b
 let currentQuestionIndex = 0; // Keeps track of the current question index
 let score = 0; // Stores the score accumulated by the user
 let counter;
-let timeValue = 15;
+let timeValue = 10;
 
   function showQuiz() {
     mainWrapper.classList.add("hidden");

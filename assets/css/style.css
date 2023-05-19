@@ -286,7 +286,32 @@ h5 {
   padding: 10px;
 }
 
-
+.calc-section{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+.timer {
+  background: #c1bd93;
+  color: hsl(0, 0%, 3%);
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 5px;
+  justify-content: space-between;
+  border-radius: 5px;
+  
+}
+.timer-sec{
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
 /* **************** QUIZ WRAPPER ENDS HERE **************** */
 
 
