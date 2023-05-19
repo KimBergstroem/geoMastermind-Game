@@ -76,10 +76,13 @@ body {
   min-height: 100vh;
 }
 
-h1,
-h2 {
+h1 {
   font-family: 'Lato', sans-serif;
   color: var(--clr-headers);
+}
+
+h2{
+  font-family: 'Lato', sans-serif;
 }
 
 p,
@@ -267,6 +270,10 @@ h5 {
 
 .incorrect{
   background-color: rgb(230, 134, 134);
+}
+
+#question{
+  text-align: center;
 }
 /* **************** QUIZ WRAPPER ENDS HERE **************** */
 

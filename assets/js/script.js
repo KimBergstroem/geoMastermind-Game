@@ -119,7 +119,7 @@ const questions = [
     answers: [
       { text: "Nordwegian", correct: true}, // Correct Answer
       { text: "Denmark", correct: false},
-      { text: "Lettia", correct: false},
+      { text: "Latvia", correct: false},
       { text: "Amsterdam", correct: false},
     ]
   },
@@ -137,6 +137,7 @@ const questions = [
 
 /* GAME DASHBOARD CONTENT */
 const questionElement = document.getElementById("question");
+const questionElement2 = document.getElementById("question-of");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 const backButton = document.getElementById("back-btn");
@@ -157,7 +158,8 @@ function showQuestion(){
   // Adds the current question and display it to the html page 
   let currentQuestion = questions[currentQuestionIndex];
   let questionNumber = currentQuestionIndex + 1;
-  questionElement.innerHTML = questionNumber + ". " + currentQuestion.question;
+  questionElement.innerHTML = currentQuestion.question;
+  questionElement2.innerHTML = questionNumber + " of 10 Questions";
 
   // Set the image source
   image.innerHTML = currentQuestion.image;
@@ -182,6 +184,7 @@ function resetState(){
   while(answerButtons.firstChild){
     answerButtons.removeChild(answerButtons.firstChild);
   }
+  questionElement2.innerHTML = '';
 }
 
 function selectAnswer(event){ // Checking if the answer is correct or incorrect 
@@ -205,7 +208,14 @@ function selectAnswer(event){ // Checking if the answer is correct or incorrect
 
 function showScore(){
   resetState(); 
-  questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;  // The character "`" (backtick) is used in this code snippet to define a template literal or a template string in JavaScript.  Becomes more readable and easier to work with. 
+   // The character "`" (backtick) is used in this code snippet to define a template literal or a template string in JavaScript.  Becomes more readable and easier to work with. 
+    if (score === 10){
+      questionElement.innerHTML = `You scored ${score} out of ${questions.length}! You are a  true GEO PRO!`;
+    }else if (score <=5){
+      questionElement.innerHTML = `You scored ${score} out of ${questions.length} Are you even trying?`;
+    }else{
+      questionElement.innerHTML = `You scored ${score} out of ${questions.length} Better luck next time!`;
+    }
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "block";
   backHome.style.display = "block";
