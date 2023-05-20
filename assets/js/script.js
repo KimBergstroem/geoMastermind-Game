@@ -201,6 +201,7 @@ startQuiz(); // Initializes the quiz by resetting the question index and score
 function selectAnswer(event){ // Handles the selection of an answer
   const selectedBtn = event.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
+  clearInterval(counter);
 
   if (isCorrect) {
     selectedBtn.classList.add("correct");
