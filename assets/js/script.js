@@ -261,6 +261,11 @@ function startTimer(time){
   function timer(){
     questionTimer.textContent = time;
     time--;
+    if (time <= 5){
+      questionTimer.style.color = "red";
+    }else{
+      questionTimer.style.color = "green";
+    }
   }
 }
 
