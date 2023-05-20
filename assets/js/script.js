@@ -261,8 +261,13 @@ function startTimer(time){
   function timer(){
     questionTimer.textContent = time;
     time--;
-    if (time <= 5){
+    if (time <= 5 && time >= 3){
+      questionTimer.style.color = "yellow";
+    }else if (time < 4 && time >= 0){
       questionTimer.style.color = "red";
+    }else if (time < 0){
+      clearInterval(counter);
+      questionTimer.textContent = "0";
     }else{
       questionTimer.style.color = "green";
     }
