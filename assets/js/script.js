@@ -257,19 +257,20 @@ function handleNextButton(){ // Handles the click on the Next Button
 }
 
 function startTimer(time){
-  counter = setInterval(timer, 1000);
+  counter = setInterval(timer, 1000); 
   function timer(){
-    questionTimer.textContent = time;
-    time--;
+    questionTimer.textContent = time; // Updates the content of the 'questionTimer' element with the current 'time' value
+    time--; // Decreases the 'time' value by 1 for the next iteration
     if (time <= 5 && time >= 3){
-      questionTimer.style.color = "yellow";
+      questionTimer.style.color = "yellow"; // Color Yellow
     }else if (time < 4 && time >= 0){
-      questionTimer.style.color = "red";
+      questionTimer.style.color = "red"; // Color Red
     }else if (time < 0){
-      clearInterval(counter);
-      questionTimer.textContent = "0";
+      clearInterval(counter); // Stops the recurring timer
+      questionTimer.textContent = "0"; // Updates the content of 'questionTimer' to "0" when 'time' reaches negative values
+      handleNextButton(); // Calls the 'handleNextButton' function to automatically move to the next question
     }else{
-      questionTimer.style.color = "green";
+      questionTimer.style.color = "green"; // Color Green
     }
   }
 }
