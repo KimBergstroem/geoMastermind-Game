@@ -259,15 +259,26 @@ To clone the PP1 repository:
 
 ### Code Used 🔹
 
+I used this YouTube channels [Kevin Powell](https://www.youtube.com/@KevinPowell) , [CodingNepal](https://www.youtube.com/@CodingNepal) , [Easy Tutorials](https://www.youtube.com/@EasyTutorials)
+
+Small code snippets and how to create different type of elements [W3 Schools](https://www.w3schools.com/css/css_form.asp)
+
 
 ### Content 🔹
 
 
 ###  Media 🔹
 
+The photos used throughout the quiz is coming from [Canvas Pro](https://unsplash.com/).
+
+The background image on the front page is created by me and the program used are [Canvas Pro](https://unsplash.com/).
   
 ###  Acknowledgments 🔹
 
+I'd like to give recognition to the individuals who supported me in finishing this project:
+
+* I'd like to express my appreciation to my family for their patience and helping me spot spell mistakes and testing issues.
+* [Jubril](https://github.com/jubril), my Code Institute Mentor.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
