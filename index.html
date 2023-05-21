@@ -37,8 +37,8 @@
                     <button aria-label="Start quiz game" class="main-btn button-start" onclick="showQuiz()"><i
                             class="fa-solid fa-minus" alt="Minus icon"></i> Start <i class="fa-solid fa-minus"
                             alt="Minus icon"></i></button>
-                    <button aria-label="View current highscore" class="main-btn button-highScore"><i
-                            class="fa-solid fa-crown" alt="Crown icon"></i>
+                    <button aria-label="View current highscore" class="main-btn button-highScore"
+                        onclick="showScoreBoard()"><i class="fa-solid fa-crown" alt="Crown icon"></i>
                         Highscore</button>
                     <button aria-label="View game rules" class="main-btn" onclick="openPopup()"><i
                             class="fa-solid fa-book" alt="Book icon"></i>
@@ -105,6 +105,32 @@
     <!-- 
     ######################################################################################
     ############################# GAME PAGE - ENDS HERE ##################################
+    ######################################################################################
+    -->
+
+    <!-- 
+    ######################################################################################
+    ######################### SCORE DASHBOARD - STARTS HERE ##############################
+    ######################################################################################
+    -->
+    <div id="scoreboard-wrapper" class="scoreboard-wrapper hidden">
+        <section aria-label="Scoreboard dashboard">
+            <div class="scoreboard-section">
+                <div class="scoreboard-content">
+                    <h1 class="title-section">HighScore</h1>
+                    <label for="fname">Enter Your Username:</label><br>
+                    <input type="text" id="username-input" name="username" required>
+                    <button onclick="addScore()">Submit</button>
+
+                    <div id="scoreboard"></div>
+                    <a href="index.html" id="return-btn">Return</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- 
+    ######################################################################################
+    ########################## SCORE DASHBOARD - ENDS HERE ###############################
     ######################################################################################
     -->
 

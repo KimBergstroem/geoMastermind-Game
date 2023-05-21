@@ -258,6 +258,7 @@ Learnt how to stop countdown here [W3 Schools](https://www.w3schools.com/jsref/m
 
 Small code snippets and how to create different type of elements [W3 Schools](https://www.w3schools.com/css/css_form.asp)
 
+How to save user inputs locally and display it with JSON.stringify() [W3 Schools](https://www.w3schools.com/js/js_json_stringify.asp), [Learn with Jason](https://www.learnwithjason.dev/blog/get-form-values-as-json) and [James Q Quick](https://www.youtube.com/@JamesQQuick)
 
 ### Content 🔹
 

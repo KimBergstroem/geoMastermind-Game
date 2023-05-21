@@ -202,7 +202,8 @@ h5 {
 
 
 /* **************** QUIZ WRAPPER STARTS HERE **************** */
-.quiz-section {
+.quiz-section,
+.scoreboard-section {
   background: var(--clr-contentBg);
   width: 90%;
   max-width: 600px;
@@ -367,7 +368,20 @@ h5 {
   margin-top: 1rem;
 }
 /* **************** ERROR WRAPPER ENDS HERE **************** */
+#highScoresList {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 4rem;
+}
 
+.high-score {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.high-score:hover {
+  transform: scale(1.025);
+}
 
 /* **************** MOBILE RESPONSIVE STYLESHEET STARTS HERE **************** */
 @media (max-width: 30rem) /* 480px */ {

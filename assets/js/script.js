@@ -29,6 +29,7 @@ function openPopup() {
 // Variable declarations for DOM elements
 const mainWrapper = document.querySelector(".main-wrapper"); // Represents the main wrapper element
 const quizWrapper = document.getElementById("quiz-wrapper"); // Represents the quiz wrapper element
+const scoreboardWrapper = document.getElementById("scoreboard-wrapper"); // Represents the Score Dashboard wrapper element
 const image = document.getElementById("quiz-image"); // Represents the image element within the quiz
 
 const questionElement = document.getElementById("question"); // Represents the question within the quiz
@@ -47,13 +48,21 @@ let timeValue = 10;
   function showQuiz() {
     mainWrapper.classList.add("hidden");
     quizWrapper.classList.remove("hidden");
+    scoreboardWrapper.classList.add("hidden");
   }
 
   function backToMain() {
     mainWrapper.classList.remove("hidden");
     quizWrapper.classList.add("hidden");
+    scoreboardWrapper.classList.add("hidden");
   }
   
+  function showScoreBoard(){
+    mainWrapper.classList.add("hidden");
+    quizWrapper.classList.add("hidden");
+    scoreboardWrapper.classList.remove("hidden");
+  }
+
 /**
  * Represents an array of quiz questions, their associated images, and answer options.
  * Each question object contains the question text, image, and an array of answer options.
@@ -161,6 +170,59 @@ const questions = [
     ]
   }
 ];
+
+/**
+ * Represents an array of users scoreboard.
+ * Each scoreboard object contains the "score" and the "name" of the users choice.
+ * The one with best score will be displayed on top, only the top 3 will be displayed on top!
+ */
+
+let scoreboard = [];
+
+function addScore() {
+  const username = document.getElementById("username-input").value;
+  const scored =  showScore();
+  // Retrieve the score from the game
+
+  // Add the username and score to the scoreboard array
+  scoreboard.push({ scored, name: username });
+
+  // Save the updated scoreboard array in localStorage
+  localStorage.setItem("scoreboard", JSON.stringify(scoreboard));
+
+  // Update the scoreboard display
+  updateScoreboard();
+}
+
+function updateScoreboard() {
+  const scoreboardContainer = document.getElementById("scoreboard");
+
+  // Clear the existing scoreboard display
+  scoreboardContainer.innerHTML = "";
+
+  // Retrieve the scoreboard array from localStorage
+  if (localStorage.getItem("scoreboard")) {
+    scoreboard = JSON.parse(localStorage.getItem("scoreboard"));
+  }
+
+  // Sort the scoreboard based on the scores
+
+  // Display the scoreboard
+  scoreboard.forEach((entry, index) => {
+    const row = document.createElement("div");
+    row.textContent = `Username: ${entry.name}, Score: ${entry.scored}`;
+    scoreboardContainer.appendChild(row);
+  });
+}
+
+// Call the updateScoreboard() function initially to load the scoreboard
+updateScoreboard();
+
+/**
+ * *******************************************************************************
+ * Ends here
+ * *******************************************************************************
+ */
 
 function startQuiz(){
   currentQuestionIndex = 0; // Reset the current question index to the beginning
