@@ -67,11 +67,11 @@ With different levels of difficulty, you can compete against yourself or challen
 * As a user, I want clear instructions on how to play the game effectively.
 * As a user, I want to receive confirmation if my answer is correct, allowing me to increase my score and perform well.
 * As a user, I want to see the remaining time while playing, so I don't run out of time.
-* As a user, I want to view my final score to assess my proficiency in JavaScript or Python syntax.
+* As a user, I want to view my final score to assess my proficiency.
 
 #### Returning Visitor Goals
 
-* As a user, I want different questions each time I play to test my knowledge even further.
+* As a user, I want to see if anybody beat my score in order to play again and be number one at this game.
 * As a user, I want the option to play again to improve my previous score.
 
 
