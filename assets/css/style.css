@@ -78,7 +78,8 @@ body {
 
 h1 {
   font-family: 'Lato', sans-serif;
-  color: var(--clr-headers);
+  font-size: 4rem;
+  color: white;
 }
 
 h2{
@@ -95,7 +96,7 @@ h5 {
 
 
 /* **************** MAIN WRAPPER STARTS HERE **************** */
-#main-wrapper {
+.main-wrapper {
   position: absolute;
   top: 53%;
   left: 50%;
@@ -112,13 +113,13 @@ h5 {
   font-weight: bold;
   margin: 2rem auto;
 }
-
-.main-title h2 {
-  font-size: clamp(2.5rem, 6vw, 3.75rem);
-  color: white;
+.main-title h2{
+  color: var(--clr-headers);
+  font-size: 2.5rem;
 }
 
-/* Main-Button Style */
+
+/* Main Button */
 .button-group .main-btn {
   background-color: var(--clr-contentBg);
   color: rgb(19, 131, 19);
@@ -137,7 +138,7 @@ h5 {
   display: block;
 }
 
-.button-group .main-btn:not(:last-child) { /* Prevent double borders */
+.button-group .main-btn:not(:last-child) {
   border-bottom: none;
 }
 
@@ -145,12 +146,12 @@ h5 {
   background-color: #d3d043;
 }
 
-/* Hidden by default */
+/* Hidden */
 .hidden {
   display: none;
 }
 
-/* Popup Rules Style */
+/* Popup */
 #popup {
   position: fixed;
   top: 40%;
@@ -164,7 +165,7 @@ h5 {
   z-index: 1;
 }
 
-#return-btn{
+#return-btn {
   background-color: lightcoral;
   color: var(--clr-neutral-black);
   font-weight: 800;
@@ -181,9 +182,6 @@ h5 {
   font-weight: bold;
   margin: 15px 45px;
   list-style-type: square;
-}
-
-.button-group ol {
   text-align: left;
 }
 
@@ -192,6 +190,7 @@ h5 {
   color: rgb(69, 191, 196);
 }
 
+/* Title Section */
 .title-section,
 .quiz-section .title-section {
   font-palette: --titleSection;
@@ -199,15 +198,11 @@ h5 {
   text-align: center;
   font-size: 3rem;
 }
-
-.hidden {
-  display: none;
-}
 /* **************** MAIN WRAPPER ENDS HERE **************** */
 
 
 /* **************** QUIZ WRAPPER STARTS HERE **************** */
-.quiz-section{
+.quiz-section {
   background: var(--clr-contentBg);
   width: 90%;
   max-width: 600px;
@@ -216,7 +211,7 @@ h5 {
   padding: 30px;
 }
 
-.quiz-section h1{
+.quiz-section h1 {
   font-size: 25px;
   color: var(--clr-neutral-black);
   font-weight: 600;
@@ -224,15 +219,15 @@ h5 {
   padding-bottom: 30px;
 }
 
-.quiz{
+.quiz {
   padding: 20px 0;
 }
 
-.quiz h2{
+.quiz h2 {
   font-size: 18px;
 }
 
-.quiz-btn{
+.quiz-btn {
   background: white;
   color: var(--clr-neutral-black);
   font-weight: 500;
@@ -246,17 +241,17 @@ h5 {
   transition: all 0.3s;
 }
 
-.quiz-btn:hover:not([disabled]){ /* If disabled, no black over effect will be displayed */
+.quiz-btn:hover:not([disabled]) {
   background: var(--clr-neutral-black);
   color: var(--clr-neutral-white);
 }
 
-.quiz-btn:disabled{ /* Changes the mouse icon to a "block" icon when hovering the question. */
+.quiz-btn:disabled {
   cursor: no-drop;
 }
 
-#next-btn, 
-#back-btn{
+#next-btn,
+#back-btn {
   background-color: lightcoral;
   color: var(--clr-neutral-black);
   font-weight: 800;
@@ -268,26 +263,26 @@ h5 {
   display: none;
 }
 
-.correct{
+.correct {
   background-color: rgb(152, 207, 152);
 }
 
-.incorrect{
+.incorrect {
   background-color: rgb(230, 134, 134);
 }
 
-#question{
+#question {
   text-align: center;
 }
 
-.quiz-image{
+.quiz-image {
   width: 80%;
   height: 80%;
   margin: auto;
   padding: 10px;
 }
 
-.calc-section{
+.calc-section {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -307,10 +302,9 @@ h5 {
   padding: 5px;
   justify-content: space-between;
   border-radius: 5px;
-  
 }
 
-.timer-sec{
+.timer-sec {
   font-size: 1.3rem;
   font-weight: bold;
   font-family: 'Lato', sans-serif;
@@ -325,7 +319,6 @@ h5 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: auto 100%;
-  /* Scale image to 100% of container width */
   background-position: center;
   margin: 0;
   padding: 0;
@@ -351,7 +344,7 @@ h5 {
 }
 
 #error-wrapper span {
- color: hsl(1.78deg 98.06% 59.61%);
+  color: hsl(1.78deg 98.06% 59.61%);
 }
 
 #error-wrapper p {
@@ -377,17 +370,15 @@ h5 {
 
 
 /* **************** MOBILE RESPONSIVE STYLESHEET STARTS HERE **************** */
-@media (max-width: 30rem) {
+@media (max-width: 30rem) /* 480px */ {
   body {
     background-image: url('../images/geoMasterdtfmind\ \(360\ ×\ 640px\).png');
     background-size: auto 100%;
     background-color: var(--clr-primary);
-    /* Scale image to 100% of container height */
     background-position: top;
-    /* Align image to the top */
   }
 
-  #main-wrapper {
+  .main-wrapper {
     position: absolute;
     top: 53%;
     left: 50%;
@@ -422,23 +413,21 @@ h5 {
     font-size: 1rem;
   }
 
-  .main-title h2 {
+  .main-title h1 {
     font-size: 8vw;
   }
 }
 
-@media (max-width: 58.75rem) {
+@media (max-width: 58.75rem) /* 940px */ {
   body {
     background-image: url('../images/geoMasterdtfmind\ \(1366\ ×\ 768px\).png');
     background-size: auto 100%;
     background-color: var(--clr-primary);
-    /* Scale image to 100% of container height */
     background-position: top;
-    /* Align image to the top */
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 37.5rem) /* 600px */ {
   #popup {
     width: 100%;
   }
@@ -450,11 +439,12 @@ h5 {
     margin: 15px 15px;
     list-style-type: square;
   }
+
   .button-group ol {
     text-align: left;
   }
-  
-  .return-button{
+
+  .return-button {
     background-color: lightcoral;
     font-weight: bold;
     border: none;
@@ -466,7 +456,7 @@ h5 {
     width: 7rem;
     height: 2rem;
   }
-  
+
   .title-section {
     font-palette: --titleSection;
     font-family: 'Rocher';

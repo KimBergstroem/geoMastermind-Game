@@ -27,7 +27,7 @@ function openPopup() {
  */
 
 // Variable declarations for DOM elements
-const mainWrapper = document.getElementById("main-wrapper"); // Represents the main wrapper element
+const mainWrapper = document.querySelector(".main-wrapper"); // Represents the main wrapper element
 const quizWrapper = document.getElementById("quiz-wrapper"); // Represents the quiz wrapper element
 const image = document.getElementById("quiz-image"); // Represents the image element within the quiz
 
