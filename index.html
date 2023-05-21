@@ -33,30 +33,33 @@
         <section aria-label="Main Content">
             <div class="main-section">
                 <h3>10 PLACES 10 QUESTIONS</h3>
-
-                <div class="button-group">
-                    <button aria-label="Start" class="main-btn button-start" onclick="showQuiz()"><i
-                            class="fa-solid fa-minus"></i> Start <i class="fa-solid fa-minus"></i></button>
-                    <button aria-label="Highscore" class="main-btn button-highScore"><i class="fa-solid fa-crown"></i>
-                        Highscore</button>
-                    <button aria-label="Rules" class="main-btn" onclick="openPopup()"><i class="fa-solid fa-book"></i>
-                        Rules</button>
-                    <div id="popup" class="hidden">
-                        <h1 class="title-section">Rules</h1>
-                        <p class="rules-p">
-                            <ol>
-                                <li>You will have only <span>10 seconds</span> per each question.</li>
-                                <li>Once you select your answer, it can't be undone.</li>
-                                <li>You can't select any option once time goes off.</li>
-                                <li>You can't exit from the Quiz while you're playing.</li>
-                                <li>You'll get points when having correct answers.</li>
-                            </ol>
-                        </p>
-                        <button aria-label="Return" id="return-btn" onclick="closePopup()">Return</button>
-                    </div>
+                <nav>
+                    <div class="button-group">
+                        <button aria-label="Start" class="main-btn button-start" onclick="showQuiz()"><i
+                                class="fa-solid fa-minus"></i> Start <i class="fa-solid fa-minus"></i></button>
+                        <button aria-label="Highscore" class="main-btn button-highScore"><i
+                                class="fa-solid fa-crown"></i>
+                            Highscore</button>
+                        <button aria-label="Rules" class="main-btn" onclick="openPopup()"><i
+                                class="fa-solid fa-book"></i>
+                            Rules</button>
+                </nav>
+                <div id="popup" class="hidden">
+                    <h1 class="title-section">Rules</h1>
+                    <p class="rules-p">
+                        <ol>
+                            <li>You will have only <span>10 seconds</span> per each question.</li>
+                            <li>Once you select your answer, it can't be undone.</li>
+                            <li>You can't select any option once time goes off.</li>
+                            <li>You can't exit from the Quiz while you're playing.</li>
+                            <li>You'll get points when having correct answers.</li>
+                        </ol>
+                    </p>
+                    <button aria-label="Return" id="return-btn" onclick="closePopup()">Return</button>
                 </div>
             </div>
-        </section>
+    </div>
+    </section>
     </div>
     <!-- 
     ######################################################################################
@@ -83,11 +86,13 @@
                         <button aria-label="Answer 3" class="quiz-btn">Answer 3</button>
                         <button aria-label="Answer 4" class="quiz-btn">Answer 4</button>
                     </div>
-                    
+
                     <div class="calc-section">
                         <h2 id="question-counter"></h2>
                         <div class="timer">
-                            <div class="time-text"><h2>Time Left</h2></div>
+                            <div class="time-text">
+                                <h2>Time Left</h2>
+                            </div>
                             <div class="timer-sec">15</div>
                         </div>
                     </div>

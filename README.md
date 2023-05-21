@@ -45,9 +45,8 @@ With different levels of difficulty, you can compete against yourself or challen
     * [How to Clone](#how-to-clone)
 
 * [Testing](#testing)
-  * [Functionality Testing](#Bugs)
-  * [Bugs](#Bugs)
-  * [Validation](#Validation)
+  * [Solved Bugs](#Bugs)
+  * [Known Bugs](#Bugs)
 
 * [Credits](#credits)
   * [Code Used](#code-used)
@@ -60,24 +59,20 @@ With different levels of difficulty, you can compete against yourself or challen
 
 ## User Experience (UX) 🔵
 
-#### Key information for the site
-
-
 ### User Stories 🔹
-
-#### Client Goals
-
-
 
 #### First Time Visitor Goals
 
-
+* As a user, I want to understand the game just by looking at it, so I can play without needing additional information.
+* As a user, I want clear instructions on how to play the game effectively.
+* As a user, I want to receive confirmation if my answer is correct, allowing me to increase my score and perform well.
+* As a user, I want to see the remaining time while playing, so I don't run out of time.
+* As a user, I want to view my final score to assess my proficiency in JavaScript or Python syntax.
 
 #### Returning Visitor Goals
 
-
-
-#### Frequent Visitor Goals
+* As a user, I want different questions each time I play to test my knowledge even further.
+* As a user, I want the option to play again to improve my previous score.
 
 
 
@@ -112,7 +107,7 @@ Google Fonts was used for the following fonts:
 
 ### Imagery 🔹
 
-All the images displayed in this site was originelly downloaded by the sites below, and modified in Photoshop.
+All the images displayed in this site was originelly downloaded by the sites below mentioned in Credit, Media section, and modified by me in Photoshop.
 
 ### Wireframes 🔹
 
@@ -122,13 +117,13 @@ Wireframes were created for mobile and desktop. I used the webbapplication calle
 
 Click on the links below to see an large seperated image of each page.
 
-[Home Page](assets/readme/wireframes/wireframeIndex.png)
+* [Home Page](assets/readme/wireframes/wireframeIndex.png)
 
-[HighScore Page](assets/readme/wireframes/wireframeHighscore.png)
+* [HighScore Page](assets/readme/wireframes/wireframeHighscore.png)
 
-[Game Page](assets/readme/wireframes/wireframeGame.png)
+* [Game Page](assets/readme/wireframes/wireframeGame.png)
 
-[Mobile Version Design](assets/readme/wireframes/wireframeMobile.png)
+* [Mobile Version Design](assets/readme/wireframes/wireframeMobile.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -164,25 +159,27 @@ Hyper Text Markup Language (<b>HTML</b>), Cascading Style Sheets (<b>CSS</b>) an
 
 ### Frameworks, Libraries & Programs Used 🔹
 
-[Balsamiq](https://balsamiq.cloud/) - Used to create wireframes.
+* [Balsamiq](https://balsamiq.cloud/) - Used to create wireframes.
 
-[Git](https://git-scm.com/) - For version control. Which my profiles hours was ended and i needed to upload the last commits by github, therfore my commit message and description isnt good enough at the end.
+* [Git](https://git-scm.com/) - For version control. Which my profiles hours was ended and i needed to upload the last commits by github, therfore my commit message and description isnt good enough at the end.
 
-[Github](https://www.github.com/) - To save and store the files for the website.
+* [Github](https://www.github.com/) - To save and store the files for the website.
 
-[Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
+* [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
 
-[Font Awesome](https://fontawesome.com/) - For the iconography on the website.
+* [Font Awesome](https://fontawesome.com/) - For the iconography on the website.
 
-Google Dev Tools (Google Browser) - To troubleshoot and test features, solve issues with responsiveness and styling.
+* [Google fonts](https://fonts.google.com/) - To troubleshoot and test features, solve issues with responsiveness and styling.
 
-[Tiny PNG](https://tinypng.com/) To compress images.
+* [Tiny PNG](https://tinypng.com/) To compress images.
 
-[Favicon.io](https://favicon.io/) To create favicon.
+* [Birme](https://www.birme.net/) - To change format of image to webp format.
 
-[Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
+* [Favicon.io](https://favicon.io/) To create favicon.
 
-[Shields.io](https://shields.io/) To add badges to the README
+* [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
+
+* [Shields.io](https://shields.io/) To add badges to the README
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -228,27 +225,23 @@ To clone the PP1 repository:
 
 ## Testing 🔵
 
-### Functionality Testing 🔹
+All testing was carried out in [Testing.md](TESTING.md). 
 
 
-### Buggs 🔹
+### Solved Bugs 🔹
+| Type   | Bug                                                                                                                                                                                                                                                                                                                                           | Solution                                                                                                                                                                                                                                                                                                                                                                    |
+|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Script.js | Couldn't get my images right in the array that would be displayed in every question. | Solution was the root and also change to display with tring html "image.innerHTML = currentQuestion.image; - image.classList.add("quiz-image");" |
+| Script.js | When clicking on a question, even if it was right or not, user had chance to click on other questions as well. | Added: "button.disabled = true;" so when the user has clicked or answered, the other buttons will be disabled. |  
+| Script.js | The "Next button" was showing all the time while the question was displayed and the button can easily be clicked by mistake and enter next question without any answer or score of user. | Hide the button until the answer is answered or once one button is clicked, then the "Next button" will show for entering next question. | 
+Script.js | How to stop the timer when a user clicked on the answer button | Just added the "clearInterval(counter);" in my selectAnswer function. clearInterval was learned here [wc3](https://www.w3schools.com/jsref/met_win_clearinterval.asp). |                                                                                                                                                                                       
 
-
-### Validation 🔹
-
-
-#### W3C Validator
-
-
-#### Lighthouse Report
-
-
-#### Contrast checker - WebAIM
-
-
-
-#### Full Testing
-
+### Known Bugs 🔹
+| Type   | Bug                                                                                                                                                                                                                                                                                                                                           | Solution                                                                                                                                                                                                                                                                                                                                                                    |
+|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Script.js | When the last question is answered, the last picture is still displaying, when only the scoreboard should be displaying. | Still a bugg | 
+| Script.js | If you click refresh on the browser while playing your game, you are going back to the main menu and the game is turned off. | Still a bugg |                                                                                                                                                         |
+<br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -261,11 +254,16 @@ To clone the PP1 repository:
 
 I used this YouTube channels [Kevin Powell](https://www.youtube.com/@KevinPowell) , [CodingNepal](https://www.youtube.com/@CodingNepal) , [Easy Tutorials](https://www.youtube.com/@EasyTutorials)
 
+Learnt how to stop countdown here [W3 Schools](https://www.w3schools.com/jsref/met_win_clearinterval.asp)
+
 Small code snippets and how to create different type of elements [W3 Schools](https://www.w3schools.com/css/css_form.asp)
 
 
 ### Content 🔹
 
+Paragraphs / text for the webpage/readme was written together with [ChatGPT](https://chat.openai.com/)
+
+Tips and inspiration on how to create a better readme.md file [kera-cudmore powerpoint](https://docs.google.com/presentation/d/19_7r_To5bu7UjnZD87hrzWQi63Ij0YpaRH1XFnPZZe8/edit#slide=id.g35f391192_00)
 
 ###  Media 🔹
 
