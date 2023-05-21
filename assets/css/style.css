@@ -186,6 +186,7 @@ h5 {
 .button-group ol {
   text-align: left;
 }
+
 .button-group span {
   font-size: 1.3rem;
   color: rgb(69, 191, 196);
@@ -206,7 +207,6 @@ h5 {
 
 
 /* **************** QUIZ WRAPPER STARTS HERE **************** */
-
 .quiz-section{
   background: var(--clr-contentBg);
   width: 90%;
@@ -279,6 +279,7 @@ h5 {
 #question{
   text-align: center;
 }
+
 .quiz-image{
   width: 80%;
   height: 80%;
@@ -292,6 +293,7 @@ h5 {
   align-content: flex-start;
   justify-content: space-between;
 }
+
 .timer {
   background: #c1bd93;
   color: hsl(0, 0%, 3%);
@@ -307,12 +309,71 @@ h5 {
   border-radius: 5px;
   
 }
+
 .timer-sec{
   font-size: 1.3rem;
   font-weight: bold;
   font-family: 'Lato', sans-serif;
 }
 /* **************** QUIZ WRAPPER ENDS HERE **************** */
+
+
+/* **************** ERROR WRAPPER STARTS HERE **************** */
+#error-page {
+  background-image: url('../images/errorBackground.png');
+  background-color: hsl(0deg 0% 37.65%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto 100%;
+  /* Scale image to 100% of container width */
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#error-wrapper {
+  font-weight: bold;
+  text-align: center;
+}
+
+#error-wrapper img {
+  max-width: 100%;
+}
+
+#error-wrapper h2 {
+  margin-top: 1rem;
+  font-size: 3rem;
+}
+
+#error-wrapper span {
+ color: hsl(1.78deg 98.06% 59.61%);
+}
+
+#error-wrapper p {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 900;
+  line-height: 1.5;
+  color: var(--clr-neutral-black);
+}
+
+#error-wrapper .error-p {
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: auto 10px;
+}
+
+#error-wrapper a {
+  display: inline-block;
+  margin-top: 1rem;
+}
+/* **************** ERROR WRAPPER ENDS HERE **************** */
 
 
 /* **************** MOBILE RESPONSIVE STYLESHEET STARTS HERE **************** */
