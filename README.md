@@ -1,6 +1,6 @@
 # geoMastermind 🔵
 
-![geoMastermind WebbApp Responsiveness](assets/readme/geoMastermindBanner.png)
+![geoMastermind WebbApp Responsiveness](docs/geoMastermindBanner.png)
 
 <b>Visit the deployed site:</b> [geoMastermind](https://kimbergstroem.github.io/PP2/)
 
@@ -85,7 +85,7 @@ With different levels of difficulty, you can compete against yourself or challen
 
 ### Colour Scheme 🔹
 
-![geoMastermind WebbApp Colour Palette](assets/readme/colorPalette.png)
+![geoMastermind WebbApp Colour Palette](docs/colorPalette.png)
 
 We wanted to choose colours that reflected the environment of the universum, so we have chosen a variety of Blue(<b>water</b>), Green(<b>nature</b>) and Yellow(<b>sun</b>) for our site.
 
@@ -99,11 +99,11 @@ Google Fonts was used for the following fonts:
 
 * "Lato" is used for headings and bigger content on the site. It is a sans serif typeface family.
 
-![LatoBlack900](assets/readme/fontstyleBlack900Lato.png)
+![LatoBlack900](docs/fontstyleBlack900Lato.png)
 
 * "Nunito" is used for the body text, paragraphs which are the questions and answer. Nunito is a sans-serif typeface designed by Vernon Adams. It has a rounded, friendly and modern style, and its letterforms are clean and legible.
 
-![PoppinsRegular400](assets/readme/fontstyleNunito.png)
+![PoppinsRegular400](docs/fontstyleNunito.png)
 
 ### Imagery 🔹
 
@@ -111,19 +111,19 @@ All the images displayed in this site was originelly downloaded by the sites bel
 
 ### Wireframes 🔹
 
-![geoMastermind Web app Overview](assets/readme/wireframes/wireframeOverview.png)
+![geoMastermind Web app Overview](docs/wireframes/wireframeOverview.png)
 
 Wireframes were created for mobile and desktop. I used the webbapplication called [Balsamiq](https://balsamiq.cloud/suu74na/psiivfn/r6B57) for creating the wireframes for webbapplication <b>geoMastermind</b>.
 
 Click on the links below to see an large seperated image of each page.
 
-* [Home Page](assets/readme/wireframes/wireframeIndex.png)
+* [Home Page](docs/wireframes/wireframeIndex.png)
 
-* [HighScore Page](assets/readme/wireframes/wireframeHighscore.png)
+* [HighScore Page](docs/wireframes/wireframeHighscore.png)
 
-* [Game Page](assets/readme/wireframes/wireframeGame.png)
+* [Game Page](docs/wireframes/wireframeGame.png)
 
-* [Mobile Version Design](assets/readme/wireframes/wireframeMobile.png)
+* [Mobile Version Design](docs/wireframes/wireframeMobile.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
