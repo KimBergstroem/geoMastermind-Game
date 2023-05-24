@@ -239,14 +239,17 @@ All testing was carried out in [Testing.md](TESTING.md).
 | Script.js | Couldn't get my images right in the array that would be displayed in every question. | Solution was the root and also change to display with tring html "image.innerHTML = currentQuestion.image; - image.classList.add("quiz-image");" |
 | Script.js | When clicking on a question, even if it was right or not, user had chance to click on other questions as well. | Added: "button.disabled = true;" so when the user has clicked or answered, the other buttons will be disabled. |  
 | Script.js | The "Next button" was showing all the time while the question was displayed and the button can easily be clicked by mistake and enter next question without any answer or score of user. | Hide the button until the answer is answered or once one button is clicked, then the "Next button" will show for entering next question. | 
-Script.js | How to stop the timer when a user clicked on the answer button | Just added the "clearInterval(counter);" in my selectAnswer function. clearInterval was learned here [wc3](https://www.w3schools.com/jsref/met_win_clearinterval.asp). |                                                                                                                                                                                       
+Script.js | How to stop the timer when a user clicked on the answer button | Just added the "clearInterval(counter);" in my selectAnswer function. clearInterval was learned here [wc3](https://www.w3schools.com/jsref/met_win_clearinterval.asp). |                                                                                                                                                                                      
 &nbsp;
 ### **Known Bugs**🔹
 | Type   | Bug                                                                                                                                                                                                                                                                                                                                           | Solution                                                                                                                                                                                                                                                                                                                                                                    |
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Script.js | When the last question is answered, the last picture is still displaying, when only the scoreboard should be displaying. | Still a bugg | 
-| Script.js | If you click refresh on the browser while playing your game, you are going back to the main menu and the game is turned off. | Still a bugg |                                                                                                                                                         |
-<br>
+| Script.js | If you click refresh on the browser while playing your game, you are going back to the main menu and the game is turned off. | Still a bugg |   
+Script.js | When user clicks on Exit Button(Home) in the quiz game, it is not reseting the game when the user pressing Start once again | Still a bugg |   
+
+&nbsp;
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -175,59 +175,6 @@ const questions = [
   }
 ];
 
-/**
- * Represents an array of users scoreboard.
- * Each scoreboard object contains the "score" and the "name" of the users choice.
- * The one with best score will be displayed on top, only the top 3 will be displayed on top!
- */
-
-let scoreboard = [];
-
-function addScore() {
-  const username = document.getElementById("username-input").value;
-  const scored =  showScore();
-  // Retrieve the score from the game
-
-  // Add the username and score to the scoreboard array
-  scoreboard.push({ scored, name: username });
-
-  // Save the updated scoreboard array in localStorage
-  localStorage.setItem("scoreboard", JSON.stringify(scoreboard));
-
-  // Update the scoreboard display
-  updateScoreboard();
-}
-
-function updateScoreboard() {
-  const scoreboardContainer = document.getElementById("scoreboard");
-
-  // Clear the existing scoreboard display
-  scoreboardContainer.innerHTML = "";
-
-  // Retrieve the scoreboard array from localStorage
-  if (localStorage.getItem("scoreboard")) {
-    scoreboard = JSON.parse(localStorage.getItem("scoreboard"));
-  }
-
-  // Sort the scoreboard based on the scores
-
-  // Display the scoreboard
-  scoreboard.forEach((entry, index) => {
-    const row = document.createElement("div");
-    row.textContent = `Username: ${entry.name}, Score: ${entry.scored}`;
-    scoreboardContainer.appendChild(row);
-  });
-}
-
-// Call the updateScoreboard() function initially to load the scoreboard
-updateScoreboard();
-
-/**
- * *******************************************************************************
- * array of users scoreboard Ends here
- * *******************************************************************************
- */
-
 function startQuiz(){
   currentQuestionIndex = 0; // Reset the current question index to the beginning
   score = 0; // Reset the score to 0
@@ -347,6 +294,7 @@ function startTimer(time){
 function resetState(){
   nextButton.style.display = "none";
   backButton.style.display = "none";
+  questionImage.style.display = "block";
   while(answerButtons.firstChild){
     answerButtons.removeChild(answerButtons.firstChild);
   }
