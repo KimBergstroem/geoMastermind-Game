@@ -1,29 +1,22 @@
 /**
- * ########################################################################################
  * ############################# POPUP BOX WITH RULES #####################################
- * ########################################################################################.
  */
 
-function openPopup() {
-    // Get the popup element
-    var popup = document.getElementById("popup");
-    
-    // Remove the "hidden" class to show the popup
+// Variable declarations for DOM elements
+const popup = document.getElementById("popup");
+const showButton = document.getElementById("show-btn");
+const returnButton = document.getElementById("return-btn");
+
+  showButton.addEventListener("click", () => { // EventListener to the show Button to open up Rules Popup page
     popup.classList.remove("hidden");
-  }
+  });
   
-  function closePopup() {
-    // Get the popup element
-    var popup = document.getElementById("popup");
-    
-    // Add the "hidden" class to hide the popup
+  returnButton.addEventListener("click", () => { // EventListener to the return Button to close the popup page with rules
     popup.classList.add("hidden");
-  }
+  });
 
 /**
- * ########################################################################################
  * ############################## QUIZ GAME DASHBOARD #####################################
- * ########################################################################################.
  */
 
 // Variable declarations for DOM elements
@@ -38,6 +31,8 @@ const questionTimer = quizWrapper.querySelector(".timer .timer-sec"); // Represe
 const answerButtons = document.getElementById("answer-buttons"); // Represents the container for answer buttons
 const nextButton = document.getElementById("next-btn"); // Represents the next button element to take user to next question
 const backButton = document.getElementById("back-btn"); // Represents the back button element to take user back to mainWrapper
+const highscoreButton = document.getElementById("show-highscore"); // Represents the button element to take user to Highscore page
+const quizButton = document.getElementById("show-quiz"); // Represents the start quiz button for user to enter the quiz game
 
 // Variable declarations for quiz tracking
 let currentQuestionIndex = 0; // Keeps track of the current question index
@@ -45,23 +40,17 @@ let score = 0; // Stores the score accumulated by the user
 let counter;
 let timeValue = 10;
 
-  function showQuiz() {
-    mainWrapper.classList.add("hidden");
-    quizWrapper.classList.remove("hidden");
-    scoreboardWrapper.classList.add("hidden");
-  }
+    quizButton.addEventListener("click", () => { // EventListener to the quiz Button to show all other content besides Quiz Content
+      mainWrapper.classList.add("hidden");
+      quizWrapper.classList.remove("hidden");
+      scoreboardWrapper.classList.add("hidden");
+    });
 
-  function backToMain() {
-    mainWrapper.classList.remove("hidden");
-    quizWrapper.classList.add("hidden");
-    scoreboardWrapper.classList.add("hidden");
-  }
-  
-  function showScoreBoard(){
-    mainWrapper.classList.add("hidden");
-    quizWrapper.classList.add("hidden");
-    scoreboardWrapper.classList.remove("hidden");
-  }
+    highscoreButton.addEventListener("click", () => { // EventListener to the highscore Button to show all other content besides HighScore Content
+      mainWrapper.classList.add("hidden");
+      quizWrapper.classList.add("hidden");
+      scoreboardWrapper.classList.remove("hidden");
+    });
 
 /**
  * Represents an array of quiz questions, their associated images, and answer options.
@@ -74,7 +63,7 @@ const questions = [
     question: "Where can you find this buildings?", // Question 1
     answers: [
       { text: "Mexico", correct: false},
-      { text: "Marocco", correct: false},
+      { text: "Morocco", correct: false},
       { text: "Egypt", correct: true}, // Correct Answer
       { text: "Iraq", correct: false},
     ]
@@ -153,7 +142,7 @@ const questions = [
     image: "<img src='assets/images/quiz/q9-green-light.svg' alt='Green sky light'>",
     question: "This sky can you find in which country?", // Question 9
     answers: [
-      { text: "Nordwegian", correct: true}, // Correct Answer
+      { text: "Norwegian", correct: true}, // Correct Answer
       { text: "Denmark", correct: false},
       { text: "Latvia", correct: false},
       { text: "Amsterdam", correct: false},
@@ -220,7 +209,7 @@ updateScoreboard();
 
 /**
  * *******************************************************************************
- * Ends here
+ * array of users scoreboard Ends here
  * *******************************************************************************
  */
 
@@ -296,7 +285,11 @@ function showScore(){
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "block";
   backButton.style.display = "block";
-  backButton.addEventListener("click", backToMain);
+  backButton.addEventListener("click", () => {
+    mainWrapper.classList.remove("hidden");
+    quizWrapper.classList.add("hidden");
+    scoreboardWrapper.classList.add("hidden");
+  });
 }
 
 nextButton.addEventListener("click", () => {

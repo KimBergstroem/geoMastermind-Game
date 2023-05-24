@@ -32,15 +32,13 @@
             <div class="main-section">
                 <h3>10 PLACES 10 QUESTIONS</h3>
                 <div class="button-group"> <!-- Main Menu Buttons -->
-                    <button aria-label="Start quiz game" class="main-btn button-start" onclick="showQuiz()"><i
+                    <button aria-label="Start quiz game" class="main-btn button-start" id="show-quiz"><i
                             class="fa-solid fa-minus" alt="Minus icon"></i> Start <i class="fa-solid fa-minus"
                             alt="Minus icon"></i></button> <!-- start quiz button -->
-                    <button aria-label="View current highscore" class="main-btn button-highScore"
-                        onclick="showScoreBoard()"><i class="fa-solid fa-crown" alt="Crown icon"></i>
-                        Highscore</button> <!-- show highscore button -->
-                    <button aria-label="View game rules" class="main-btn" onclick="openPopup()"><i
-                            class="fa-solid fa-book" alt="Book icon"></i>
-                        Rules</button> <!-- show rule button -->
+                    <button aria-label="View current highscore" class="main-btn button-highScore" id="show-highscore"><i class="fa-solid fa-crown" alt="Crown icon"></i>
+                        Highscore</button> <!-- open highscore page -->
+                    <button aria-label="View game rules" class="main-btn" id="show-btn"><i class="fa-solid fa-book" alt="Book icon"></i>
+                        Rules</button> <!-- open rule popup -->
                     <div id="popup" class="hidden"> <!-- Popup Window, showing rules -->
                         <h1 class="title-section">Rules</h1>
                         <p class="rules-p">
@@ -52,8 +50,7 @@
                                 <li>You'll get points when having correct answers.</li>
                             </ol>
                         </p>
-                        <button aria-label="Return back to main menu" id="return-btn"
-                            onclick="closePopup()">Return</button>
+                        <button aria-label="Return back to main menu" id="return-btn">Return</button>
                     </div>
                 </div>
             </div>
@@ -84,14 +81,14 @@
                     <div class="calc-section"> 
                         <h2 id="question-counter"></h2> <!-- question counter -->
                         <div class="timer">
-                            <div class="time-text"> <!-- time left of each question -->
+                            <div class="time-text"> <!-- time left of each question counter -->
                                 <h2>Time Left</h2>
                             </div>
                             <div class="timer-sec">15</div>
                         </div>
                     </div>
-                    <button aria-label="Next question" id="next-btn">Next</button>
-                    <button aria-label="Return to main menu" id="back-btn">Return to Main</button>
+                    <button aria-label="Next question" id="next-btn">Next</button> <!-- moving to next question button -->
+                    <button aria-label="Return to main menu" id="back-btn">Return to Main</button><!-- return back to main menu from game page -->
                 </div>
             </div>
         </section>

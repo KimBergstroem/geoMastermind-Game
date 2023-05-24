@@ -16,7 +16,6 @@ With different levels of difficulty, you can compete against yourself or challen
 
 
 ---
-&nbsp;
 
 ## <span id="readme-top">**CONTENTS**</span>🔵
 &nbsp;
@@ -58,7 +57,6 @@ With different levels of difficulty, you can compete against yourself or challen
 &nbsp;
 
 ---
-&nbsp;
 
 ## **User Experience (UX)🔵**
 &nbsp;
@@ -83,7 +81,6 @@ With different levels of difficulty, you can compete against yourself or challen
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 --- 
-&nbsp;
 
 ## **Design**🔵
 &nbsp; 
@@ -136,7 +133,6 @@ Click on the links below to see an large seperated image of each page.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 --- 
-&nbsp;
 
 ## **Features**🔵
 &nbsp;
@@ -156,7 +152,6 @@ I have been mindful during coding to ensure that the website is as accessible fr
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 --- 
-&nbsp;
 
 ## **Technologies Used**🔵
 &nbsp;
@@ -193,7 +188,6 @@ Hyper Text Markup Language (<b>HTML</b>), Cascading Style Sheets (<b>CSS</b>) an
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 --- 
-&nbsp;
 
 ## **Deployment & Local Development**🔵
 &nbsp;
@@ -231,7 +225,6 @@ To clone the <b>PP2</b> repository:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 --- 
-&nbsp;
 
 ## **Testing**🔵
 &nbsp;
@@ -257,7 +250,6 @@ Script.js | How to stop the timer when a user clicked on the answer button | Jus
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 --- 
-&nbsp;
 
 ## **Credits**🔵
 &nbsp;
