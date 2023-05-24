@@ -70,6 +70,7 @@ With different levels of difficulty, you can compete against yourself or challen
 * As a user, I want to receive confirmation if my answer is correct, allowing me to increase my score and perform well.
 * As a user, I want to see the remaining time while playing, so I don't run out of time.
 * As a user, I want to view my final score to assess my proficiency.
+* As a user, I want to be able to cancel the game if idon't want to continue.
 
 #### Returning Visitor Goals
 

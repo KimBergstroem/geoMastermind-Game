@@ -1,5 +1,5 @@
 /**
- * ############################# POPUP BOX WITH RULES #####################################
+ * ############################# POPUP BOX WITH RULES SECTION #####################################
  */
 
 // Variable declarations for DOM elements
@@ -11,23 +11,39 @@ showButton.addEventListener("click", () => popup.classList.remove("hidden")); //
 returnButton.addEventListener("click", () => popup.classList.add("hidden")); // EventListener to the return Button to close the popup page with rules
 
 /**
- * ############################## QUIZ GAME DASHBOARD #####################################
+ * ############################## QUIZ GAME SECTION #####################################
  */
 
-// Variable declarations for DOM elements
-const mainWrapper = document.querySelector(".main-wrapper"); // Represents the main wrapper element
-const quizWrapper = document.getElementById("quiz-wrapper"); // Represents the quiz wrapper element
-const scoreboardWrapper = document.getElementById("scoreboard-wrapper"); // Represents the Score Dashboard wrapper element
-const image = document.getElementById("quiz-image"); // Represents the image element within the quiz
-
-const questionElement = document.getElementById("question"); // Represents the question within the quiz
-const questionCounter = document.getElementById("question-counter"); // Represents the question counter within the quiz
-const questionTimer = quizWrapper.querySelector(".timer .timer-sec"); // Represents the time the user have on each question in the quiz
-const answerButtons = document.getElementById("answer-buttons"); // Represents the container for answer buttons
-const nextButton = document.getElementById("next-btn"); // Represents the next button element to take user to next question
-const backButton = document.getElementById("back-btn"); // Represents the back button element to take user back to mainWrapper
-const highscoreButton = document.getElementById("show-highscore"); // Represents the button element to take user to Highscore page
-const quizButton = document.getElementById("show-quiz"); // Represents the start quiz button for user to enter the quiz game
+// Using destructuring assignment to assign selected elements from the DOM to variables
+const [
+  mainWrapper,           // Represents the main wrapper element
+  quizWrapper,           // Represents the quiz wrapper element
+  scoreboardWrapper,     // Represents the scoreboard wrapper element
+  questionImage,         // Represents the quiz image element
+  questionElement,       // Represents the question element
+  questionCounter,       // Represents the question counter element
+  questionTimer,         // Represents the question timer element
+  answerButtons,         // Represents the answer buttons element
+  nextButton,            // Represents the next button element
+  backButton,            // Represents the back button element
+  exitButton,            // Represents the exit button element
+  highscoreButton,       // Represents the highscore button element
+  quizButton             // Represents the quiz button element
+] = [
+  ".main-wrapper",       
+  "#quiz-wrapper",       
+  "#scoreboard-wrapper", 
+  "#quiz-image",         
+  "#question",           
+  "#question-counter",   
+  ".timer .timer-sec",   
+  "#answer-buttons",     
+  "#next-btn",           
+  "#back-btn", 
+  "#exit-btn",          
+  "#show-highscore",     
+  "#show-quiz"           
+].map(selector => document.querySelector(selector)); // Mapping the selectors to corresponding DOM elements
 
 // Variable declarations for quiz tracking
 let currentQuestionIndex = 0; // Keeps track of the current question index
@@ -35,17 +51,21 @@ let score = 0; // Stores the score accumulated by the user
 let counter;
 let timeValue = 10;
 
-    quizButton.addEventListener("click", () => { // EventListener to the quiz Button to show all other content besides Quiz Content
-      mainWrapper.classList.add("hidden");
-      quizWrapper.classList.remove("hidden");
-      scoreboardWrapper.classList.add("hidden");
-    });
+function toggleSections(elementToShow, ...elementsToHide) {
+  elementToShow.classList.remove("hidden"); // Show the specified element
 
-    highscoreButton.addEventListener("click", () => { // EventListener to the highscore Button to show all other content besides HighScore Content
-      mainWrapper.classList.add("hidden");
-      quizWrapper.classList.add("hidden");
-      scoreboardWrapper.classList.remove("hidden");
-    });
+  for (const element of elementsToHide) {
+    element.classList.add("hidden"); // Hide all other specified elements
+  }
+}
+
+quizButton.addEventListener("click", () => toggleSections(quizWrapper, mainWrapper, scoreboardWrapper));
+highscoreButton.addEventListener("click", () => toggleSections(scoreboardWrapper, mainWrapper, quizWrapper));
+exitButton.addEventListener("click", () => {
+  resetState(); // Reset the quiz state
+  toggleSections(mainWrapper, quizWrapper, scoreboardWrapper); // Hide quiz and scoreboard, show main wrapper
+});
+
 
 /**
  * Represents an array of quiz questions, their associated images, and answer options.
@@ -226,8 +246,8 @@ function showQuestion(){
   questionCounter.innerHTML = `${questionNumber} of 10 Questions`;
   
   // Set the image source
-  image.innerHTML = currentQuestion.image;
-  image.classList.add("quiz-image");
+  questionImage.innerHTML = currentQuestion.image;
+  questionImage.classList.add("quiz-image");
 
     // Populate answer buttons with answer text from the array
     currentQuestion.answers.forEach(answer => {
@@ -280,11 +300,8 @@ function showScore(){
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "block";
   backButton.style.display = "block";
-  backButton.addEventListener("click", () => {
-    mainWrapper.classList.remove("hidden");
-    quizWrapper.classList.add("hidden");
-    scoreboardWrapper.classList.add("hidden");
-  });
+  questionImage.style.display = "None";
+  backButton.addEventListener("click", () => toggleSections(mainWrapper, quizWrapper, scoreboardWrapper));
 }
 
 nextButton.addEventListener("click", () => {
