@@ -7,13 +7,8 @@ const popup = document.getElementById("popup");
 const showButton = document.getElementById("show-btn");
 const returnButton = document.getElementById("return-btn");
 
-  showButton.addEventListener("click", () => { // EventListener to the show Button to open up Rules Popup page
-    popup.classList.remove("hidden");
-  });
-  
-  returnButton.addEventListener("click", () => { // EventListener to the return Button to close the popup page with rules
-    popup.classList.add("hidden");
-  });
+showButton.addEventListener("click", () => popup.classList.remove("hidden")); // EventListener to the show Button to open up Rules Popup page
+returnButton.addEventListener("click", () => popup.classList.add("hidden")); // EventListener to the return Button to close the popup page with rules
 
 /**
  * ############################## QUIZ GAME DASHBOARD #####################################
@@ -228,8 +223,8 @@ function showQuestion(){
   let currentQuestion = questions[currentQuestionIndex];
   let questionNumber = currentQuestionIndex + 1;
   questionElement.innerHTML = currentQuestion.question;
-  questionCounter.innerHTML = questionNumber + " of 10 Questions";
-
+  questionCounter.innerHTML = `${questionNumber} of 10 Questions`;
+  
   // Set the image source
   image.innerHTML = currentQuestion.image;
   image.classList.add("quiz-image");
