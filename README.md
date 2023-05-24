@@ -1,6 +1,6 @@
 # geoMastermind 🔵
 
-![geoMastermind WebbApp Responsiveness](docs/geoMastermindBanner.png)
+![geoMastermind WebbApp Responsiveness](docs/screenshots/readme-geomastermind-banner.png)
 
 <b>Visit the deployed site:</b> [geoMastermind](https://kimbergstroem.github.io/PP2/)
 
@@ -16,50 +16,54 @@ With different levels of difficulty, you can compete against yourself or challen
 
 
 ---
+&nbsp;
 
+## <span id="readme-top">**CONTENTS**</span>🔵
+&nbsp;
 
-## <span id="readme-top">CONTENTS</span> 🔵
+* [**User Experience**](#user-experience-ux🔵)
+  * [User Stories](#user-stories🔹)
 
-* [User Experience](#user-experience-ux)
-  * [User Stories](#user-stories)
+* [**Design**](#design🔵)
+  * [Colour Scheme](#colour-scheme🔹)
+  * [Typography](#typography🔹)
+  * [Imagery](#imagery🔹)
+  * [Wireframes](#wireframes🔹)
 
-* [Design](#design)
-  * [Colour Scheme](#colour-scheme)
-  * [Typography](#typography)
-  * [Imagery](#imagery)
-  * [Wireframes](#wireframes)
+* [**Features**](#features🔵)
+  * [General Features on Each Page](#general-features-on-each-page🔹)
+  * [Future Implementations](#future-implementations🔹)
+  * [Accessibility](#accessibility🔹)
 
-* [Features](#features)
-  * [General Features on Each Page](#general-features-on-each-page)
-  * [Future Implementations](#future-implementations)
-  * [Accessibility](#accessibility)
+* [**Technologies Used**](#technologies-used🔵)
+  * [Languages Used](#languages-used🔹)
+  * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used🔹)
 
-* [Technologies Used](#technologies-used)
-  * [Languages Used](#languages-used)
-  * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
+* [**Deployment & Local Development**](#deployment--local-development🔵)
+  * [Deployment](#deployment🔹)
+  * [Local Development](#local-development🔹)
+    * [How to Fork](#how-to-fork🔹)
+    * [How to Clone](#how-to-clone🔹)
 
-* [Deployment & Local Development](#deployment--local-development)
-  * [Deployment](#deployment)
-  * [Local Development](#local-development)
-    * [How to Fork](#how-to-fork)
-    * [How to Clone](#how-to-clone)
+* [**Testing**](#testing🔵)
+  * [Solved Bugs](#Bugs🔹)
+  * [Known Bugs](#Bugs🔹)
 
-* [Testing](#testing)
-  * [Solved Bugs](#Bugs)
-  * [Known Bugs](#Bugs)
+* [**Credits**](#credits🔵)
+  * [Code Used](#code-used🔹)
+  * [Content](#content🔹)
+  * [Media](#media🔹)
+  * [Acknowledgments](#acknowledgments🔹)
 
-* [Credits](#credits)
-  * [Code Used](#code-used)
-  * [Content](#content)
-  * [Media](#media)
-  * [Acknowledgments](#acknowledgments)
+&nbsp;
 
 ---
+&nbsp;
 
+## **User Experience (UX)🔵**
+&nbsp;
 
-## User Experience (UX) 🔵
-
-### User Stories 🔹
+### **User Stories**🔹
 
 #### First Time Visitor Goals
 
@@ -79,13 +83,14 @@ With different levels of difficulty, you can compete against yourself or challen
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 --- 
+&nbsp;
 
+## **Design**🔵
+&nbsp; 
 
-## Design 🔵
+### **Colour Scheme**🔹
 
-### Colour Scheme 🔹
-
-![geoMastermind WebbApp Colour Palette](docs/colorPalette.png)
+![geoMastermind WebbApp Colour Palette](docs/screenshots/readme-color-palette.png)
 
 We wanted to choose colours that reflected the environment of the universum, so we have chosen a variety of Blue(<b>water</b>), Green(<b>nature</b>) and Yellow(<b>sun</b>) for our site.
 
@@ -93,47 +98,50 @@ This colors are going to be implemented as <b>60-30-10</b> rule with the base of
 
 The colour palette was created using the [Coolors website](https://coolors.co/aeffd8-8affc1-8fdc97-ac8887-9f4a54).
 
-### Typography 🔹
+&nbsp;
+### **Typography**🔹
 
 Google Fonts was used for the following fonts:
 
 * "Lato" is used for headings and bigger content on the site. It is a sans serif typeface family.
 
-![LatoBlack900](docs/fontstyleBlack900Lato.png)
+![LatoBlack900](docs/screenshots/readme-font-lato-black900.png)
 
 * "Nunito" is used for the body text, paragraphs which are the questions and answer. Nunito is a sans-serif typeface designed by Vernon Adams. It has a rounded, friendly and modern style, and its letterforms are clean and legible.
 
-![PoppinsRegular400](docs/fontstyleNunito.png)
+![PoppinsRegular400](docs/screenshots/readme-font-nunito-light300.png)
 
-### Imagery 🔹
+&nbsp;
+### **Imagery**🔹
 
 All the images displayed in this site was originelly downloaded by the sites below mentioned in Credit, Media section, and modified by me in Photoshop.
 
-### Wireframes 🔹
+&nbsp;
+### **Wireframes**🔹
 
-![geoMastermind Web app Overview](docs/wireframes/wireframeOverview.png)
+![geoMastermind Web app Overview](docs/wireframes/wireframe-overview.png)
 
 Wireframes were created for mobile and desktop. I used the webbapplication called [Balsamiq](https://balsamiq.cloud/suu74na/psiivfn/r6B57) for creating the wireframes for webbapplication <b>geoMastermind</b>.
 
 Click on the links below to see an large seperated image of each page.
 
-* [Home Page](docs/wireframes/wireframeIndex.png)
+* [Home Page](docs/wireframes/wireframe-index.png)
 
-* [HighScore Page](docs/wireframes/wireframeHighscore.png)
+* [HighScore Page](docs/wireframes/wireframe-highscore.png)
 
-* [Game Page](docs/wireframes/wireframeGame.png)
+* [Game Page](docs/wireframes/wireframe-game.png)
 
-* [Mobile Version Design](docs/wireframes/wireframeMobile.png)
+* [Mobile Version Design](docs/wireframes/wireframe-mobile.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 --- 
+&nbsp;
 
+## **Features**🔵
+&nbsp;
 
-## Features 🔵
-
-
-### Accessibility 🔹
+### **Accessibility**🔹
 
 I have been mindful during coding to ensure that the website is as accessible friendly as possible. I have achieved this by:
 
@@ -148,16 +156,17 @@ I have been mindful during coding to ensure that the website is as accessible fr
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 --- 
+&nbsp;
 
+## **Technologies Used**🔵
+&nbsp;
 
-## Technologies Used 🔵
-
-
-### Languages Used 🔹
+### **Languages Used**🔹
 
 Hyper Text Markup Language (<b>HTML</b>), Cascading Style Sheets (<b>CSS</b>) and Javascript (<b>JS</b>) were used to create this website.
 
-### Frameworks, Libraries & Programs Used 🔹
+&nbsp;
+### **Frameworks, Libraries & Programs Used**🔹
 
 * [Balsamiq](https://balsamiq.cloud/) - Used to create wireframes.
 
@@ -184,25 +193,26 @@ Hyper Text Markup Language (<b>HTML</b>), Cascading Style Sheets (<b>CSS</b>) an
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 --- 
+&nbsp;
 
-
-## Deployment & Local Development 🔵
+## **Deployment & Local Development**🔵
+&nbsp;
 
 Github Pages was used to deploy the live website. The instructions to achieve this are below:
 
 1. Log in (or sign up) to Github.com.
-2. Find the repository for this project, "PP2".
+2. Find the repository for this project, <b>"PP2"</b>.
 3. Click on the Settings link.
 4. Click on the Pages link in the left hand side navigation bar.
 5. In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
 6. Click Save. Your live Github Pages site is now deployed at the URL shown.
 
-
-### Local Development 🔹
+&nbsp;
+### **Local Development**🔹
 
 #### How to Fork
 
-To fork the PP1 repository:
+To fork the <b>PP2</b> repository:
 
 1. Log in (or sign up) to Github.
 2. Go to the repository for this project, https://github.com/KimBergstroem/PP2.
@@ -210,7 +220,7 @@ To fork the PP1 repository:
 
 #### How to Clone
 
-To clone the PP1 repository:
+To clone the <b>PP2</b> repository:
 
 1. Log in (or sign up) to GitHub.
 2. Go to the repository for this project, https://github.com/KimBergstroem/PP2.
@@ -221,22 +231,23 @@ To clone the PP1 repository:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 --- 
+&nbsp;
 
-
-## Testing 🔵
+## **Testing**🔵
+&nbsp;
 
 All testing was carried out in [Testing.md](TESTING.md). 
 
-
-### Solved Bugs 🔹
+&nbsp;
+### **Solved Bugs**🔹
 | Type   | Bug                                                                                                                                                                                                                                                                                                                                           | Solution                                                                                                                                                                                                                                                                                                                                                                    |
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Script.js | Couldn't get my images right in the array that would be displayed in every question. | Solution was the root and also change to display with tring html "image.innerHTML = currentQuestion.image; - image.classList.add("quiz-image");" |
 | Script.js | When clicking on a question, even if it was right or not, user had chance to click on other questions as well. | Added: "button.disabled = true;" so when the user has clicked or answered, the other buttons will be disabled. |  
 | Script.js | The "Next button" was showing all the time while the question was displayed and the button can easily be clicked by mistake and enter next question without any answer or score of user. | Hide the button until the answer is answered or once one button is clicked, then the "Next button" will show for entering next question. | 
 Script.js | How to stop the timer when a user clicked on the answer button | Just added the "clearInterval(counter);" in my selectAnswer function. clearInterval was learned here [wc3](https://www.w3schools.com/jsref/met_win_clearinterval.asp). |                                                                                                                                                                                       
-
-### Known Bugs 🔹
+&nbsp;
+### **Known Bugs**🔹
 | Type   | Bug                                                                                                                                                                                                                                                                                                                                           | Solution                                                                                                                                                                                                                                                                                                                                                                    |
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Script.js | When the last question is answered, the last picture is still displaying, when only the scoreboard should be displaying. | Still a bugg | 
@@ -246,11 +257,12 @@ Script.js | How to stop the timer when a user clicked on the answer button | Jus
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 --- 
+&nbsp;
 
-## Credits 🔵
+## **Credits**🔵
+&nbsp;
 
-
-### Code Used 🔹
+### **Code Used**🔹
 
 I used this YouTube channels [Kevin Powell](https://www.youtube.com/@KevinPowell) , [CodingNepal](https://www.youtube.com/@CodingNepal) , [Easy Tutorials](https://www.youtube.com/@EasyTutorials)
 
@@ -260,19 +272,22 @@ Small code snippets and how to create different type of elements [W3 Schools](ht
 
 How to save user inputs locally and display it with JSON.stringify() [W3 Schools](https://www.w3schools.com/js/js_json_stringify.asp), [Learn with Jason](https://www.learnwithjason.dev/blog/get-form-values-as-json) and [James Q Quick](https://www.youtube.com/@JamesQQuick)
 
-### Content 🔹
+&nbsp;
+### **Content**🔹
 
 Paragraphs / text for the webpage/readme was written together with [ChatGPT](https://chat.openai.com/)
 
 Tips and inspiration on how to create a better readme.md file [kera-cudmore powerpoint](https://docs.google.com/presentation/d/19_7r_To5bu7UjnZD87hrzWQi63Ij0YpaRH1XFnPZZe8/edit#slide=id.g35f391192_00)
 
-###  Media 🔹
+&nbsp;
+###  **Media**🔹
 
 The photos used throughout the quiz is coming from [Canvas Pro](https://unsplash.com/).
 
 The background image on the front page is created by me and the program used are [Canvas Pro](https://unsplash.com/).
-  
-###  Acknowledgments 🔹
+
+&nbsp;
+###  **Acknowledgments**🔹
 
 I'd like to give recognition to the individuals who supported me in finishing this project:
 
@@ -282,5 +297,5 @@ I'd like to give recognition to the individuals who supported me in finishing th
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 --- 
-
+&nbsp;
 

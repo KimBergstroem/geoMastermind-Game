@@ -18,9 +18,7 @@
 <body>
 
     <!-- 
-    ######################################################################################
     ############################ MAIN PAGE - STARTS HERE #################################
-    ######################################################################################
     -->
     <main class="main-wrapper">
         <header>
@@ -33,17 +31,17 @@
         <section aria-label="Main content">
             <div class="main-section">
                 <h3>10 PLACES 10 QUESTIONS</h3>
-                <div class="button-group">
+                <div class="button-group"> <!-- Main Menu Buttons -->
                     <button aria-label="Start quiz game" class="main-btn button-start" onclick="showQuiz()"><i
                             class="fa-solid fa-minus" alt="Minus icon"></i> Start <i class="fa-solid fa-minus"
-                            alt="Minus icon"></i></button>
+                            alt="Minus icon"></i></button> <!-- start quiz button -->
                     <button aria-label="View current highscore" class="main-btn button-highScore"
                         onclick="showScoreBoard()"><i class="fa-solid fa-crown" alt="Crown icon"></i>
-                        Highscore</button>
+                        Highscore</button> <!-- show highscore button -->
                     <button aria-label="View game rules" class="main-btn" onclick="openPopup()"><i
                             class="fa-solid fa-book" alt="Book icon"></i>
-                        Rules</button>
-                    <div id="popup" class="hidden">
+                        Rules</button> <!-- show rule button -->
+                    <div id="popup" class="hidden"> <!-- Popup Window, showing rules -->
                         <h1 class="title-section">Rules</h1>
                         <p class="rules-p">
                             <ol aria-labelledby="rules-heading" aria-describedby="rules-description">
@@ -62,35 +60,31 @@
         </section>
     </main>
     <!-- 
-    ######################################################################################
     ############################# MAIN PAGE - ENDS HERE ##################################
-    ######################################################################################
     -->
 
 
     <!-- 
-    ######################################################################################
     ############################ GAME PAGE - STARTS HERE #################################
-    ######################################################################################
     -->
     <div id="quiz-wrapper" class="quiz-wrapper hidden">
         <section aria-label="Quiz game content">
             <div class="quiz-section">
                 <h1 class="title-section">QUIZ</h1>
                 <div class="quiz">
-                    <div class="quiz-image" id="quiz-image"></div>
-                    <h2 id="question"></h2>
-                    <div id="answer-buttons">
+                    <div class="quiz-image" id="quiz-image"></div> <!-- game picture -->
+                    <h2 id="question"></h2> <!-- game question -->
+                    <div id="answer-buttons"> <!-- game answer buttons -->
                         <button aria-label="Alternative answer 1" class="quiz-btn">Answer 1</button>
                         <button aria-label="Alternative answer 2" class="quiz-btn">Answer 2</button>
                         <button aria-label="Alternative answer 3" class="quiz-btn">Answer 3</button>
                         <button aria-label="Alternative answer 4" class="quiz-btn">Answer 4</button>
                     </div>
 
-                    <div class="calc-section">
-                        <h2 id="question-counter"></h2>
+                    <div class="calc-section"> 
+                        <h2 id="question-counter"></h2> <!-- question counter -->
                         <div class="timer">
-                            <div class="time-text">
+                            <div class="time-text"> <!-- time left of each question -->
                                 <h2>Time Left</h2>
                             </div>
                             <div class="timer-sec">15</div>
@@ -103,15 +97,11 @@
         </section>
     </div>
     <!-- 
-    ######################################################################################
     ############################# GAME PAGE - ENDS HERE ##################################
-    ######################################################################################
     -->
 
     <!-- 
-    ######################################################################################
     ######################### SCORE DASHBOARD - STARTS HERE ##############################
-    ######################################################################################
     -->
     <div id="scoreboard-wrapper" class="scoreboard-wrapper hidden">
         <section aria-label="Scoreboard dashboard">
@@ -129,9 +119,7 @@
         </section>
     </div>
     <!-- 
-    ######################################################################################
     ########################## SCORE DASHBOARD - ENDS HERE ###############################
-    ######################################################################################
     -->
 
     <script src="https://kit.fontawesome.com/66c113ad0a.js" crossorigin="anonymous"></script>
