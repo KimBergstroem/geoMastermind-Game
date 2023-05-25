@@ -1,41 +1,33 @@
-let scoreboard = [];
-  
-export function addScore() {
-  const username = document.getElementById("username-input").value;
-  const scored =  showScore();
-  // Retrieve the score from the game
 
-  // Add the username and score to the scoreboard array
-  scoreboard.push({ scored, name: username });
+// Retrieve names from Local Storage or initialize an empty array
+      const nameArray = JSON.parse(localStorage.getItem("names")) || [];
 
-  // Save the updated scoreboard array in localStorage
-  localStorage.setItem("scoreboard", JSON.stringify(scoreboard));
+      const nameForm = document.getElementById("nameForm");
+      const nameInput = document.getElementById("nameInput");
+      const nameList = document.getElementById("nameList");
 
-  // Update the scoreboard display
-  updateScoreboard();
-}
+      nameForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const name = nameInput.value;
+        nameArray.push(name);
+        nameInput.value = "";
+        updateNameList();
+        saveNamesToLocalStorage(); // Save names to Local Storage
+      });
 
-export function updateScoreboard() {
-  const scoreboardContainer = document.getElementById("scoreboard");
+      export function updateNameList() {
+        nameList.innerHTML = "";
+        for (const name of nameArray) {
+          const listItem = document.createElement("li");
+          listItem.textContent = name;
+          nameList.appendChild(listItem);
+        }
+      }
 
-  // Clear the existing scoreboard display
-  scoreboardContainer.innerHTML = "";
+      export function saveNamesToLocalStorage() {
+        localStorage.setItem("names", JSON.stringify(nameArray));
+      }
 
-  // Retrieve the scoreboard array from localStorage
-  if (localStorage.getItem("scoreboard")) {
-    scoreboard = JSON.parse(localStorage.getItem("scoreboard"));
-  }
-
-  // Sort the scoreboard based on the scores
-
-  // Display the scoreboard
-  scoreboard.forEach((entry, index) => {
-    const row = document.createElement("div");
-    row.textContent = `Username: ${entry.name}, Score: ${entry.scored}`;
-    scoreboardContainer.appendChild(row);
-  });
-}
-
-// Call the updateScoreboard() function initially to load the scoreboard
-updateScoreboard();
-
+      // Call the initial updateNameList() function to display the names on page load
+      updateNameList();
+    

@@ -82,13 +82,12 @@ h1 {
   color: white;
 }
 
-h2{
+h2, h4{
   font-family: 'Lato', sans-serif;
 }
 
 p,
 h3,
-h4,
 h5 {
   font-family: 'Nunito', 'Roboto', sans-serif;
   color: var(--clr-neutral-white);
@@ -310,7 +309,38 @@ h5 {
   font-weight: bold;
   font-family: 'Lato', sans-serif;
 }
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.add-submit {
+  background-color: lightcoral;
+  color: var(--clr-neutral-black);
+  font-weight: 800;
+  width: 150px;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
 /* **************** QUIZ WRAPPER ENDS HERE **************** */
+
+
+/* **************** SCOREBOARD WRAPPER STARTS HERE **************** */
+#scoreboard-wrapper{
+  text-align: center;
+  
+}
+
+
+/* **************** SCOREBOARD WRAPPER ENDS **************** */
 
 
 /* **************** ERROR WRAPPER STARTS HERE **************** */

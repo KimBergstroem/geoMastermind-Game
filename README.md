@@ -138,6 +138,18 @@ Click on the links below to see an large seperated image of each page.
 ## **Features**🔵
 &nbsp;
 
+### **Future-implementations**🔹
+Features that I will and want to implement in the future in this project would be  better visualisation about scoreboard and how points are calculated. I want to implement a timer based point score system. The final score will be calculated based on how fast the user was answering the questions and how many correct answers. 
+At the scoreboard page, the user will also see how much time was left on the quiz and how much time user was using and also the calculation of it.
+
+Maybe implement some pictures as well along to the username. User should be able to pick a profile picture along with the username, to have a better and more nice UX design in the HighScore Dashboard page.
+
+I would also love to connect the questions and the 10 quiz questions to an google Geoprahy API, were the question can be randomly displayed and changed. Atleast have more questions, and everytime it can be displayed different question. If we have 30 questions in our array, we should randomly displaying 10 questions everytime a user presses Start button. This will impact the user in a way of not memorizing the quiz and score 10/10 every attempt after tried the quiz multiple times.
+
+Implement 2-3 different category mini quiz games so that user can chooice. Example, Countrys, Landmarks, country-flags.
+
+
+&nbsp;
 ### **Accessibility**🔹
 
 I have been mindful during coding to ensure that the website is as accessible friendly as possible. I have achieved this by:
@@ -239,14 +251,14 @@ All testing was carried out in [Testing.md](TESTING.md).
 | Script.js | Couldn't get my images right in the array that would be displayed in every question. | Solution was the root and also change to display with tring html "image.innerHTML = currentQuestion.image; - image.classList.add("quiz-image");" |
 | Script.js | When clicking on a question, even if it was right or not, user had chance to click on other questions as well. | Added: "button.disabled = true;" so when the user has clicked or answered, the other buttons will be disabled. |  
 | Script.js | The "Next button" was showing all the time while the question was displayed and the button can easily be clicked by mistake and enter next question without any answer or score of user. | Hide the button until the answer is answered or once one button is clicked, then the "Next button" will show for entering next question. | 
-Script.js | How to stop the timer when a user clicked on the answer button | Just added the "clearInterval(counter);" in my selectAnswer function. clearInterval was learned here [wc3](https://www.w3schools.com/jsref/met_win_clearinterval.asp). |                                                                                                                                                                                      
+Script.js | How to stop the timer when a user clicked on the answer button | Just added the "clearInterval(counter);" in my selectAnswer function. clearInterval was learned here [wc3](https://www.w3schools.com/jsref/met_win_clearinterval.asp). |      
+Script.js / index.html | When user clicks on Exit Button(Home) in the quiz game, it is not reseting the game when the user pressing Start once again | Maybe it is not the best solution, but i just added in the html code instead a lin attribute to index.html page. Everytime a use click on the exit button, its takes and load the index.html page again, which showing the main menu with the start button as in the beginning. |                                                                                                                                                                                   
 &nbsp;
 ### **Known Bugs**🔹
 | Type   | Bug                                                                                                                                                                                                                                                                                                                                           | Solution                                                                                                                                                                                                                                                                                                                                                                    |
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Script.js | When the last question is answered, the last picture is still displaying, when only the scoreboard should be displaying. | Still a bugg | 
 | Script.js | If you click refresh on the browser while playing your game, you are going back to the main menu and the game is turned off. | Still a bugg |   
-Script.js | When user clicks on Exit Button(Home) in the quiz game, it is not reseting the game when the user pressing Start once again | Still a bugg |   
+  
 
 &nbsp;
 

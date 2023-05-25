@@ -11,6 +11,41 @@ showButton.addEventListener("click", () => popup.classList.remove("hidden")); //
 returnButton.addEventListener("click", () => popup.classList.add("hidden")); // EventListener to the return Button to close the popup page with rules
 
 /**
+ * ############################## Scoreboard SECTION #####################################
+ */
+
+// Retrieve names from Local Storage or initialize an empty array
+const usernameArray = JSON.parse(localStorage.getItem("names")) || [];
+
+const usernameForm = document.getElementById("nameForm");
+const usernameInput = document.getElementById("nameInput");
+const usernameList = document.getElementById("nameList");
+
+usernameForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+  const name = usernameInput.value;
+  usernameArray.push(name);
+  usernameInput.value = "";
+  updateNameList();
+  saveNamesToLocalStorage(); // Save names to Local Storage
+});
+
+function updateNameList() {
+  usernameList.innerHTML = "";
+  for (const name of usernameArray) {
+    const listItem = document.createElement("li");
+    listItem.textContent = name;
+    usernameList.appendChild(listItem);
+  }
+}
+
+function saveNamesToLocalStorage() {
+  localStorage.setItem("names", JSON.stringify(usernameArray));
+}
+
+updateNameList()
+
+/**
  * ############################## QUIZ GAME SECTION #####################################
  */
 
@@ -26,7 +61,6 @@ const [
   answerButtons,         // Represents the answer buttons element
   nextButton,            // Represents the next button element
   backButton,            // Represents the back button element
-  exitButton,            // Represents the exit button element
   highscoreButton,       // Represents the highscore button element
   quizButton             // Represents the quiz button element
 ] = [
@@ -39,8 +73,7 @@ const [
   ".timer .timer-sec",   
   "#answer-buttons",     
   "#next-btn",           
-  "#back-btn", 
-  "#exit-btn",          
+  "#back-btn",        
   "#show-highscore",     
   "#show-quiz"           
 ].map(selector => document.querySelector(selector)); // Mapping the selectors to corresponding DOM elements
@@ -61,11 +94,6 @@ function toggleSections(elementToShow, ...elementsToHide) {
 
 quizButton.addEventListener("click", () => toggleSections(quizWrapper, mainWrapper, scoreboardWrapper));
 highscoreButton.addEventListener("click", () => toggleSections(scoreboardWrapper, mainWrapper, quizWrapper));
-exitButton.addEventListener("click", () => {
-  resetState(); // Reset the quiz state
-  toggleSections(mainWrapper, quizWrapper, scoreboardWrapper); // Hide quiz and scoreboard, show main wrapper
-});
-
 
 /**
  * Represents an array of quiz questions, their associated images, and answer options.
@@ -109,7 +137,7 @@ const questions = [
     answers: [
       { text: "Toronto", correct: false},
       { text: "New York", correct: true}, // Correct Answer
-      { text: "Dalas", correct: false},
+      { text: "Dallas", correct: false},
       { text: "Singapore", correct: false},
     ]
   },
@@ -175,12 +203,13 @@ const questions = [
   }
 ];
 
-function startQuiz(){
+function startQuiz() {
   currentQuestionIndex = 0; // Reset the current question index to the beginning
   score = 0; // Reset the score to 0
   startTimer(10);
   nextButton.innerHTML = "Next"; // Set the innerHTML of the Next button to "Next"
   backButton.innerHTML = "Back"; // Set the innerHTML of the Back button to "Back"
+  answerButtons.innerHTML = ""; // Clear the answer buttons
   showQuestion(); // Display the first question
 }
 
@@ -244,10 +273,12 @@ function showScore(){
     }else{
       questionElement.innerHTML = `You scored ${score} out of ${questions.length} <br> Better luck next time!`;
     }
+    
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "block";
   backButton.style.display = "block";
-  questionImage.style.display = "None";
+  questionImage.style.display = "none";
+  nameForm.style.display = "block";
   backButton.addEventListener("click", () => toggleSections(mainWrapper, quizWrapper, scoreboardWrapper));
 }
 
@@ -294,6 +325,7 @@ function startTimer(time){
 function resetState(){
   nextButton.style.display = "none";
   backButton.style.display = "none";
+  nameForm.style.display = "none";
   questionImage.style.display = "block";
   while(answerButtons.firstChild){
     answerButtons.removeChild(answerButtons.firstChild);
