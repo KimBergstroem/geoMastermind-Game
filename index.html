@@ -54,7 +54,7 @@
                                 <li>You'll get points when having correct answers.</li>
                             </ol>
                         </p>
-                        <button aria-label="Return back to main menu" id="return-btn">Return</button>
+                        <button aria-label="Return back to main menu" class="return-btn">Return</button>
                     </div>
                 </div>
             </div>
@@ -98,7 +98,7 @@
                     <form id="nameForm" class="nameForm"> <!-- Enter user input form -->
                         <label for="nameInput"><h4>Enter your username</h4></label>
                         <input aria-label="Enter your username" type="text" id="nameInput" name="username" required/>
-                        <button aria-label="Add username to scoreboard button" type="submit" id="return-btn">Add</button>
+                        <button aria-label="Add username to scoreboard button" type="submit" class="return-btn">Add</button>
                     </form>
                     <button aria-label="Next question" id="next-btn">Next</button>
                     <!-- moving to next question button -->
@@ -122,15 +122,12 @@
                     <h1 class="title-section">Highscore</h1>
                         <h2>
                             <i class="fa-solid fa-crown" alt="Crown icon"></i> 
-                            Top 10 Players 
+                            Players
                             <i class="fa-solid fa-crown" alt="Crown icon"></i>
                         </h2>
                     <ul id="nameList"></ul> <!-- Displaying all usernames that have been entered -->
-                    <h4>Score:</h4>
-                    <p id="scoreDisplay"></p> <!-- Displaying all scores that have been entered -->
-
-                    <div id="scoreboard"></div>
-                    <a href="index.html" id="return-btn">Return</a> 
+                    <h4 id="score">Score:</h4>
+                    <a href="index.html" class="return-btn">Return</a> 
                 </div>
             </div>
         </section>
