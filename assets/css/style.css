@@ -164,7 +164,7 @@ h5 {
   z-index: 1;
 }
 
-#return-btn {
+.return-btn {
   background-color: lightcoral;
   color: var(--clr-neutral-black);
   font-weight: 800;
@@ -173,6 +173,10 @@ h5 {
   margin: 20px auto 0;
   border-radius: 10px;
   cursor: pointer;
+}
+
+#score {
+  margin-bottom: 2rem;
 }
 
 .button-group ol li {

@@ -5,7 +5,7 @@
 // Variable declarations for DOM elements
 const popup = document.getElementById("popup");
 const showButton = document.getElementById("show-btn");
-const returnButton = document.getElementById("return-btn");
+const returnButton = document.querySelector(".return-btn");
 
 showButton.addEventListener("click", () => popup.classList.remove("hidden")); // EventListener to the show Button to open up Rules Popup page
 returnButton.addEventListener("click", () => popup.classList.add("hidden")); // EventListener to the return Button to close the popup page with rules
@@ -25,7 +25,9 @@ const usernameList = document.getElementById("nameList");
 usernameForm.addEventListener("submit", function (event) {
   event.preventDefault();
   const name = usernameInput.value;
-  usernameArray.push(name);
+  const userScore = score; // Get the score from the quiz game
+  const userObject = { name, score: userScore }; // Create an object with username and score
+  usernameArray.push(userObject);
   usernameInput.value = "";
   updateNameList();
   saveNamesToLocalStorage(); // Save names to Local Storage
@@ -33,9 +35,9 @@ usernameForm.addEventListener("submit", function (event) {
 
 function updateNameList() {
   usernameList.innerHTML = "";
-  for (const name of usernameArray) {
+  for (const user of usernameArray) {
     const listItem = document.createElement("li");
-    listItem.textContent = name;
+    listItem.textContent = `${user.name} - Score: ${user.score}`;
     usernameList.appendChild(listItem);
   }
 }
@@ -75,7 +77,6 @@ function currentTime() { // Code copied from flexiple
 
   setTimeout(currentTime, 1000);
 }
-
 // Start the currentTime() function
 currentTime();
 
