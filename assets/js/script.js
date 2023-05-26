@@ -52,7 +52,7 @@ function saveNamesToLocalStorage() {
 
 updateNameList();
 
-function currentTime() {
+function currentTime() { // Code copied from flexiple
   let date = new Date();
   let hh = date.getHours();
   let mm = date.getMinutes();
