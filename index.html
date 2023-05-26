@@ -34,30 +34,28 @@
                 <div class="button-group">
                     <!-- main menu buttons -->
                     <button aria-label="start quiz game" class="main-btn button-start" id="show-quiz"><i
-                            class="fa-solid fa-minus" alt="minus icon"></i> Start <i class="fa-solid fa-minus"
-                            alt="minus icon"></i></button> <!-- start quiz button -->
+                            class="fa-solid fa-minus"></i> Start <i class="fa-solid fa-minus"></i></button> <!-- start quiz button -->
                     <button aria-label="view current highscore" class="main-btn button-highScore" id="show-highscore"><i
-                            class="fa-solid fa-crown" alt="crown icon"></i>
+                            class="fa-solid fa-crown"></i>
                         Highscore</button> <!-- open highscore page -->
-                    <button aria-label="view game rules" class="main-btn" id="show-btn"><i class="fa-solid fa-book"
-                            alt="book icon"></i>
+                    <button aria-label="view game rules" class="main-btn" id="show-btn"><i class="fa-solid fa-book"></i>
                         Rules</button> <!-- open rule popup -->
-                    <div id="popup" class="hidden">
-                        <!-- popup window, showing rules -->
-                        <h1 class="title-section">Rules</h1>
-                        <p class="rules-p">
-                            <ol aria-labelledby="rules-heading" aria-describedby="rules-description">
-                                <li>You will have only <span>10 seconds</span> per each question.</li>
-                                <li>Once you select your answer, it can't be undone.</li>
-                                <li>You can't select any option once time goes off.</li>
-                                <li>Pressing the exit button will quit and reset the quiz.</li>
-                                <li>You'll get points when having correct answers.</li>
-                            </ol>
-                        </p>
-                        <button aria-label="return back to main menu" class="return-btn">Return</button>
+                        <div id="popup" class="hidden"><!-- popup window, showing rules -->
+                            <div class="rules-p">
+                                <h2 id="rules-heading" class="title-section">Rules</h2>
+                                <p id="rules-description">These are the rules for the quiz game:</p>
+                                <ol aria-labelledby="rules-heading" aria-describedby="rules-description">
+                                    <li>You will have only <span>10 seconds</span> per each question.</li>
+                                    <li>Once you select your answer, it can't be undone.</li>
+                                    <li>You can't select any option once time goes off.</li>
+                                    <li>Pressing the exit button will quit and reset the quiz.</li>
+                                    <li>You'll get points when having correct answers.</li>
+                                </ol>
+                            </div>
+                            <button aria-label="return back to main menu" class="return-btn">Return</button><!-- back to main menu -->
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
     </main>
     <!-- 
@@ -73,10 +71,10 @@
             <div class="quiz-section">
                 <div><a href="index.html"><i class="fa-sharp fa-solid fa-right-from-bracket fa-2xl"
                             style="color: #303030;"></i></a></div>
-                <h1 class="title-section">QUIZ</h1>
+                <h2 class="title-section">QUIZ</h2>
                 <div class="quiz">
                     <div class="quiz-image" id="quiz-image"></div> <!-- game picture -->
-                    <h2 id="question"></h2> <!-- game question -->
+                    <h2 id="question">Question</h2> <!-- game question -->
                     <div id="answer-buttons">
                         <!-- game answer buttons -->
                         <button aria-label="alternative answer 1" class="quiz-btn">Answer 1</button>
@@ -86,7 +84,7 @@
                     </div>
 
                     <div class="calc-section">
-                        <h2 id="question-counter"></h2> <!-- question counter -->
+                        <h2 id="question-counter">Question counter</h2> <!-- question counter -->
                         <div class="timer">
                             <div class="time-text">
                                 <!-- time left of each question counter -->
@@ -97,10 +95,10 @@
                     </div>
                     <form id="nameForm" class="nameForm">
                         <!-- Enter user input form -->
-                        <label for="nameInput">
-                            <h4>Enter your username</h4>
+                        <label class="large-label" for="nameInput">
+                            Enter your username
+                            <input aria-label="enter your username" type="text" id="nameInput" name="username" required>
                         </label>
-                        <input aria-label="enter your username" type="text" id="nameInput" name="username" required />
                         <button aria-label="add username to scoreboard button" type="submit"
                             class="return-btn">Add</button>
                     </form>
@@ -123,15 +121,15 @@
         <section aria-label="scoreboard dashboard">
             <div class="scoreboard-section">
                 <div class="scoreboard-content">
-                    <h1 class="title-section">Highscore</h1>
+                    <h2 class="title-section">Highscore</h2>
                     <h2>
-                        <i class="fa-solid fa-crown" alt="crown icon"></i>
+                        <i class="fa-solid fa-crown"></i>
                         Players
-                        <i class="fa-solid fa-crown" alt="crown icon"></i>
+                        <i class="fa-solid fa-crown"></i>
                     </h2>
                     <ul id="nameList"></ul> <!-- Displaying all usernames that have been entered -->
                     <h4 id="score">Score:</h4>
-                    <a href="index.html" class="return-btn" alt="return to main menu">Return</a>
+                    <a href="index.html" class="return-btn">Return</a>
                 </div>
             </div>
         </section>
