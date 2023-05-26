@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Nunito:wght@300&family=Roboto&display=swap');
 
-/* Thank you "Ollie Williams" for cool text style */
+/* Thank you "Ollie Williams" at codepen.io for cool text style */
 @font-face {
   font-family: 'Rocher';
   src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
-}
-
-@font-palette-values --titleSection {
-  font-family: Rocher;
-  base-palette: 7;
 }
 /* ******************************************************************* */
 
@@ -83,11 +78,15 @@ h1 {
 }
 
 h2, 
-h4 {
+h4,
+.large-label {
   font-family: 'Lato', sans-serif;
 }
 
-p,
+p{
+  font-family: 'Nunito', 'Roboto', sans-serif;
+}
+
 h3,
 h5 {
   font-family: 'Nunito', 'Roboto', sans-serif;
@@ -195,9 +194,7 @@ h5 {
 }
 
 /* Title Section */
-.title-section,
-.quiz-section .title-section {
-  font-palette: --titleSection;
+.title-section {
   font-family: 'Rocher';
   text-align: center;
   font-size: 3rem;
@@ -335,6 +332,7 @@ input[type=text], select {
   border-radius: 10px;
   cursor: pointer;
 }
+
 /* **************** QUIZ WRAPPER ENDS HERE **************** */
 
 
@@ -507,7 +505,6 @@ input[type=text], select {
   }
 
   .title-section {
-    font-palette: --titleSection;
     font-family: 'Rocher';
     text-align: center;
     font-size: 3rem;
