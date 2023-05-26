@@ -27,22 +27,27 @@ I shared my project with the peer code review channel on Slack, but no concerns 
 
 ## Automated Testing 
 
+The W3C validator was used to validate the HTML on all pages of the website and the STYLESHEET in css file. JSHint was used to validate all my javascript files used for this project. Click on the below links to have the full validation. No error was found.
+
 ### W3C Validator 
 
-* [W3C validation for index.html](https://github.com/KimBergstroem)
+* [W3C validation for **index.html**](https://github.com/KimBergstroem)
   * Coming soon
-* [W3C validation for 404.html](https://github.com/KimBergstroem)
+* [W3C validation for **404.html**](https://github.com/KimBergstroem)
   * Coming soon
-* [Jigsaw W3C Validation for style.css](https://github.com/KimBergstroem) 
+* [Jigsaw W3C Validation for **style.css**](https://github.com/KimBergstroem) 
   *  Coming soon
 
 
 ### JavaScript Validator 
 
-* [Js Hint validation for script.js](https://github.com/KimBergstroem) 
+* [Js Hint validation for **main.js**](https://github.com/KimBergstroem) 
   * Coming soon
+* [Js Hint validation for **quiz.js**](https://github.com/KimBergstroem)
   * Coming soon
-* [Js Hint validation for questions.js](https://github.com/KimBergstroem)
+* [Js Hint validation for **scoreboard.js**](https://github.com/KimBergstroem)
+  * Coming soon
+* [Js Hint validation for **popup.js**](https://github.com/KimBergstroem)
   * Coming soon
 
 ### Lighthouse 

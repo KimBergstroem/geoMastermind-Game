@@ -379,6 +379,12 @@ input[type=text], select {
 #error-wrapper {
   font-weight: bold;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: center;
+  justify-content: center;
 }
 
 #error-wrapper img {
@@ -410,7 +416,6 @@ input[type=text], select {
 }
 
 #error-wrapper a {
-  display: inline-block;
   margin-top: 1rem;
 }
 /* **************** ERROR WRAPPER ENDS HERE **************** */

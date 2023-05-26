@@ -1,14 +1,10 @@
 // quiz.js
 
 import { updateNameList, resetScoreboard, saveNamesToLocalStorage, currentTime } from "./scoreboard.js";
-document.addEventListener("DOMContentLoaded", function() {
-  updateNameList();
-  resetScoreboard();
-  saveNamesToLocalStorage();
-  currentTime();
-});
+// Call the functions in scoreboard.js when the DOM is loaded
+document.addEventListener("DOMContentLoaded", updateNameList, resetScoreboard, saveNamesToLocalStorage, currentTime);
 
-export function initializeQuiz() {
+
 
 // Using destructuring assignment to assign selected elements from the DOM to variables
 const [
@@ -23,7 +19,7 @@ const [
   nextButton,            // Represents the next button element
   backButton,            // Represents the back button element
   highscoreButton,       // Represents the highscore button element
-  quizButton             // Represents the quiz button element
+  quizButton,            // Represents the quiz button element
 ] = [
   ".main-wrapper",       
   "#quiz-wrapper",       
@@ -36,7 +32,7 @@ const [
   "#next-btn",           
   "#back-btn",        
   "#show-highscore",     
-  "#show-quiz"           
+  "#show-quiz",
 ].map(selector => document.querySelector(selector)); // Mapping the selectors to corresponding DOM elements
 
 // Variable declarations for quiz tracking
@@ -45,7 +41,7 @@ let score = 0; // Stores the score accumulated by the user
 let counter;
 let timeValue = 10;
 
-function toggleSections(elementToShow, ...elementsToHide) {
+export function toggleSections(elementToShow, ...elementsToHide) {
   elementToShow.classList.remove("hidden"); // Show the specified element
 
   for (const element of elementsToHide) {
@@ -164,7 +160,7 @@ const questions = [
   }
 ];
 
-function startQuiz() {
+export function startQuiz() {
   currentQuestionIndex = 0; // Reset the current question index to the beginning
   score = 0; // Reset the score to 0
   startTimer(10);
@@ -174,7 +170,7 @@ function startQuiz() {
   showQuestion(); // Display the first question
 }
 
-function showQuestion(){ 
+export function showQuestion(){ 
   resetState();
   // Retrieves the current question and its corresponding question number, then updates the HTML elements to display them
   let currentQuestion = questions[currentQuestionIndex];
@@ -201,7 +197,7 @@ function showQuestion(){
 
 startQuiz(); // Initializes the quiz by resetting the question index and score
 
-function selectAnswer(event){ // Handles the selection of an answer
+export function selectAnswer(event){ // Handles the selection of an answer
   const selectedBtn = event.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
   clearInterval(counter);
@@ -224,7 +220,7 @@ function selectAnswer(event){ // Handles the selection of an answer
   nextButton.style.display = "block"; // Display the Next button for moving to the next question
 }
 
-function showScore(){
+export function showScore(){
   resetState(); 
    // The character "`" (backtick) is used in this code snippet to define a template literal or a template string in JavaScript.  Becomes more readable and easier to work with. 
     if (score === 10){
@@ -251,7 +247,7 @@ nextButton.addEventListener("click", () => {
   }
 });
 
-function handleNextButton(){ // Handles the click on the Next Button
+export function handleNextButton(){ // Handles the click on the Next Button
   currentQuestionIndex++; // Increase the index to move to the next question in the array
   if (currentQuestionIndex < questions.length) { 
     showQuestion(); // Display the next question if there are more questions in the array
@@ -262,7 +258,7 @@ function handleNextButton(){ // Handles the click on the Next Button
   }
 }
 
-function startTimer(time){
+export function startTimer(time){
   counter = setInterval(timer, 1000); 
   function timer(){
     questionTimer.textContent = time; // Updates the content of the 'questionTimer' element with the current 'time' value
@@ -283,14 +279,13 @@ function startTimer(time){
 
 
 // Reset function
-function resetState(){
+export function resetState(){
   nextButton.style.display = "none";
   backButton.style.display = "none";
-  nameForm.style.display = "none";
   questionImage.style.display = "block";
+  nameForm.style.display = "none";
   while(answerButtons.firstChild){
     answerButtons.removeChild(answerButtons.firstChild);
   }
   questionCounter.innerHTML = '';
-}
 }

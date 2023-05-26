@@ -1,8 +1,11 @@
-// scoreboard.js
+/**
+ * ############################## SCOREBOARD SECTION #####################################
+ */
+import { toggleSections, startQuiz, showQuestion, selectAnswer, showScore, handleNextButton, startTimer, resetState } from "./quiz.js";
+document.addEventListener("DOMContentLoaded", toggleSections, startQuiz, showQuestion, selectAnswer, showScore, handleNextButton, startTimer, resetState);
 
 // Retrieve names from Local Storage or initialize an empty array
 const usernameArray = JSON.parse(localStorage.getItem("names")) || [];
-
 const usernameForm = document.getElementById("nameForm");
 const usernameInput = document.getElementById("nameInput");
 const usernameList = document.getElementById("nameList");
@@ -27,7 +30,7 @@ export function updateNameList() {
   }
 }
 
- export function resetScoreboard() {
+export function resetScoreboard() {
   localStorage.clear();
   usernameArray.length = 0; // Clear the array as well
   updateNameList();
@@ -64,4 +67,3 @@ export function currentTime() { // Code copied from flexiple
 }
 // Start the currentTime() function
 currentTime();
-
