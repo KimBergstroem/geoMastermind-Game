@@ -1,12 +1,16 @@
-import { updateNameList, saveNamesToLocalStorage } from "./scoreboard.js";
+// quiz.js
+
+import { updateNameList, resetScoreboard, saveNamesToLocalStorage, currentTime } from "./scoreboard.js";
 document.addEventListener("DOMContentLoaded", function() {
   updateNameList();
+  resetScoreboard();
   saveNamesToLocalStorage();
+  currentTime();
 });
 
 export function initializeQuiz() {
 
-  // Using destructuring assignment to assign selected elements from the DOM to variables
+// Using destructuring assignment to assign selected elements from the DOM to variables
 const [
   mainWrapper,           // Represents the main wrapper element
   quizWrapper,           // Represents the quiz wrapper element
@@ -94,7 +98,7 @@ const questions = [
     answers: [
       { text: "Toronto", correct: false},
       { text: "New York", correct: true}, // Correct Answer
-      { text: "Dalas", correct: false},
+      { text: "Dallas", correct: false},
       { text: "Singapore", correct: false},
     ]
   },
@@ -166,8 +170,8 @@ function startQuiz() {
   startTimer(10);
   nextButton.innerHTML = "Next"; // Set the innerHTML of the Next button to "Next"
   backButton.innerHTML = "Back"; // Set the innerHTML of the Back button to "Back"
-  answerButtons.innerHTML = "";  // Clear the answer buttons
-  showQuestion();                // Display the first question
+  answerButtons.innerHTML = ""; // Clear the answer buttons
+  showQuestion(); // Display the first question
 }
 
 function showQuestion(){ 
@@ -230,10 +234,12 @@ function showScore(){
     }else{
       questionElement.innerHTML = `You scored ${score} out of ${questions.length} <br> Better luck next time!`;
     }
+    
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "block";
   backButton.style.display = "block";
   questionImage.style.display = "none";
+  nameForm.style.display = "block";
   backButton.addEventListener("click", () => toggleSections(mainWrapper, quizWrapper, scoreboardWrapper));
 }
 
@@ -280,6 +286,7 @@ function startTimer(time){
 function resetState(){
   nextButton.style.display = "none";
   backButton.style.display = "none";
+  nameForm.style.display = "none";
   questionImage.style.display = "block";
   while(answerButtons.firstChild){
     answerButtons.removeChild(answerButtons.firstChild);

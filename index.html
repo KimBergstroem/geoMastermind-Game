@@ -28,22 +28,22 @@
             </div>
         </header>
 
-        <section aria-label="Main content">
+        <section aria-label="main content">
             <div class="main-section">
                 <h3>10 PLACES 10 QUESTIONS</h3>
                 <div class="button-group">
-                    <!-- Main Menu Buttons -->
-                    <button aria-label="Start quiz game" class="main-btn button-start" id="show-quiz"><i
-                            class="fa-solid fa-minus" alt="Minus icon"></i> Start <i class="fa-solid fa-minus"
-                            alt="Minus icon"></i></button> <!-- start quiz button -->
-                    <button aria-label="View current highscore" class="main-btn button-highScore" id="show-highscore"><i
-                            class="fa-solid fa-crown" alt="Crown icon"></i>
+                    <!-- main menu buttons -->
+                    <button aria-label="start quiz game" class="main-btn button-start" id="show-quiz"><i
+                            class="fa-solid fa-minus" alt="minus icon"></i> Start <i class="fa-solid fa-minus"
+                            alt="minus icon"></i></button> <!-- start quiz button -->
+                    <button aria-label="view current highscore" class="main-btn button-highScore" id="show-highscore"><i
+                            class="fa-solid fa-crown" alt="crown icon"></i>
                         Highscore</button> <!-- open highscore page -->
-                    <button aria-label="View game rules" class="main-btn" id="show-btn"><i class="fa-solid fa-book"
-                            alt="Book icon"></i>
+                    <button aria-label="view game rules" class="main-btn" id="show-btn"><i class="fa-solid fa-book"
+                            alt="book icon"></i>
                         Rules</button> <!-- open rule popup -->
                     <div id="popup" class="hidden">
-                        <!-- Popup Window, showing rules -->
+                        <!-- popup window, showing rules -->
                         <h1 class="title-section">Rules</h1>
                         <p class="rules-p">
                             <ol aria-labelledby="rules-heading" aria-describedby="rules-description">
@@ -54,7 +54,7 @@
                                 <li>You'll get points when having correct answers.</li>
                             </ol>
                         </p>
-                        <button aria-label="Return back to main menu" class="return-btn">Return</button>
+                        <button aria-label="return back to main menu" class="return-btn">Return</button>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@
     ############################ GAME PAGE - STARTS HERE #################################
     -->
     <div id="quiz-wrapper" class="quiz-wrapper hidden">
-        <section aria-label="Quiz game content">
+        <section aria-label="quiz game content">
             <div class="quiz-section">
                 <div><a href="index.html"><i class="fa-sharp fa-solid fa-right-from-bracket fa-2xl"
                             style="color: #303030;"></i></a></div>
@@ -79,10 +79,10 @@
                     <h2 id="question"></h2> <!-- game question -->
                     <div id="answer-buttons">
                         <!-- game answer buttons -->
-                        <button aria-label="Alternative answer 1" class="quiz-btn">Answer 1</button>
-                        <button aria-label="Alternative answer 2" class="quiz-btn">Answer 2</button>
-                        <button aria-label="Alternative answer 3" class="quiz-btn">Answer 3</button>
-                        <button aria-label="Alternative answer 4" class="quiz-btn">Answer 4</button>
+                        <button aria-label="alternative answer 1" class="quiz-btn">Answer 1</button>
+                        <button aria-label="alternative answer 2" class="quiz-btn">Answer 2</button>
+                        <button aria-label="alternative answer 3" class="quiz-btn">Answer 3</button>
+                        <button aria-label="alternative answer 4" class="quiz-btn">Answer 4</button>
                     </div>
 
                     <div class="calc-section">
@@ -95,14 +95,18 @@
                             <div class="timer-sec">15</div>
                         </div>
                     </div>
-                    <form id="nameForm" class="nameForm"> <!-- Enter user input form -->
-                        <label for="nameInput"><h4>Enter your username</h4></label>
-                        <input aria-label="Enter your username" type="text" id="nameInput" name="username" required/>
-                        <button aria-label="Add username to scoreboard button" type="submit" class="return-btn">Add</button>
+                    <form id="nameForm" class="nameForm">
+                        <!-- Enter user input form -->
+                        <label for="nameInput">
+                            <h4>Enter your username</h4>
+                        </label>
+                        <input aria-label="enter your username" type="text" id="nameInput" name="username" required />
+                        <button aria-label="add username to scoreboard button" type="submit"
+                            class="return-btn">Add</button>
                     </form>
-                    <button aria-label="Next question" id="next-btn">Next</button>
+                    <button aria-label="next question" id="next-btn">Next</button>
                     <!-- moving to next question button -->
-                    <button aria-label="Return to main menu" id="back-btn">Return to Main</button>
+                    <button aria-label="return to main menu" id="back-btn">Return to Main</button>
                     <!-- return back to main menu from game page -->
                 </div>
             </div>
@@ -116,18 +120,18 @@
     ######################### SCORE DASHBOARD - STARTS HERE ##############################
     -->
     <div id="scoreboard-wrapper" class="scoreboard-wrapper hidden">
-        <section aria-label="Scoreboard dashboard">
+        <section aria-label="scoreboard dashboard">
             <div class="scoreboard-section">
                 <div class="scoreboard-content">
                     <h1 class="title-section">Highscore</h1>
-                        <h2>
-                            <i class="fa-solid fa-crown" alt="Crown icon"></i> 
-                            Players
-                            <i class="fa-solid fa-crown" alt="Crown icon"></i>
-                        </h2>
+                    <h2>
+                        <i class="fa-solid fa-crown" alt="crown icon"></i>
+                        Players
+                        <i class="fa-solid fa-crown" alt="crown icon"></i>
+                    </h2>
                     <ul id="nameList"></ul> <!-- Displaying all usernames that have been entered -->
                     <h4 id="score">Score:</h4>
-                    <a href="index.html" class="return-btn">Return</a> 
+                    <a href="index.html" class="return-btn" alt="return to main menu">Return</a>
                 </div>
             </div>
         </section>
@@ -137,7 +141,7 @@
     -->
 
     <script src="https://kit.fontawesome.com/66c113ad0a.js" crossorigin="anonymous"></script>
-    <script src="assets/js/script.js" type="module"></script>
+    <script src="assets/js/main.js" type="module"></script>
 </body>
 
 </html>
