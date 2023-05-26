@@ -280,6 +280,8 @@ Small code snippets and how to create different type of elements [W3 Schools](ht
 
 How to save user inputs locally and display it with JSON.stringify() [W3 Schools](https://www.w3schools.com/js/js_json_stringify.asp), [Learn with Jason](https://www.learnwithjason.dev/blog/get-form-values-as-json) and [James Q Quick](https://www.youtube.com/@JamesQQuick)
 
+Make a 24 timer clock, for reseting my updateNameList() for the scoreboard every 24h [Flexiple](https://flexiple.com/javascript/javascript-clock/)
+
 &nbsp;
 ### **Content**🔹
 

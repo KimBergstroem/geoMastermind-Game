@@ -10,8 +10,9 @@ const returnButton = document.getElementById("return-btn");
 showButton.addEventListener("click", () => popup.classList.remove("hidden")); // EventListener to the show Button to open up Rules Popup page
 returnButton.addEventListener("click", () => popup.classList.add("hidden")); // EventListener to the return Button to close the popup page with rules
 
+
 /**
- * ############################## Scoreboard SECTION #####################################
+ * ############################## SCOREBOARD SECTION #####################################
  */
 
 // Retrieve names from Local Storage or initialize an empty array
@@ -39,11 +40,45 @@ function updateNameList() {
   }
 }
 
+function resetScoreboard() {
+  localStorage.clear();
+  usernameArray.length = 0; // Clear the array as well
+  updateNameList();
+}
+
 function saveNamesToLocalStorage() {
   localStorage.setItem("names", JSON.stringify(usernameArray));
 }
 
-updateNameList()
+updateNameList();
+
+function currentTime() {
+  let date = new Date();
+  let hh = date.getHours();
+  let mm = date.getMinutes();
+  let ss = date.getSeconds();
+  let session = "AM";
+
+  if (hh >= 12) {
+    session = "PM";
+  }
+
+  if (hh === 18 && mm === 0 && ss === 0) {
+    resetScoreboard();
+  }
+
+  hh = hh > 12 ? hh - 12 : hh;
+  hh = hh === 0 ? 12 : hh;
+  hh = hh < 10 ? "0" + hh : hh;
+  mm = mm < 10 ? "0" + mm : mm;
+  ss = ss < 10 ? "0" + ss : ss;
+
+  setTimeout(currentTime, 1000);
+}
+
+// Start the currentTime() function
+currentTime();
+
 
 /**
  * ############################## QUIZ GAME SECTION #####################################

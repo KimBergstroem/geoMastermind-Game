@@ -9,5 +9,4 @@ export function initializePopup() {
   
     showButton.addEventListener("click", () => popup.classList.remove("hidden"));
     returnButton.addEventListener("click", () => popup.classList.add("hidden"));
-
   }
