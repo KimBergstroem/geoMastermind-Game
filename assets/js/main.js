@@ -1,4 +1,5 @@
 // main.js
+
 import { initializePopup } from './popup.js';
 
 // Call the imported function to initialize the popup functionality
@@ -27,11 +28,11 @@ usernameForm.addEventListener("submit", function (event) {
 });
 
 function updateNameList() {
-  usernameList.innerHTML = "";
+  usernameList.innerHTML = ""; // Clear the existing content of the usernameList element
   for (const user of usernameArray) {
-    const listItem = document.createElement("li");
-    listItem.textContent = `${user.name} - Score: ${user.score}`;
-    usernameList.appendChild(listItem);
+    const listItem = document.createElement("li"); // Create a new list item element
+    listItem.textContent = `${user.name} - Score: ${user.score}`; // Set the text content of the list item to display the user's name and score
+    usernameList.appendChild(listItem); // Append the list item to the usernameList element
   }
 }
 
@@ -47,7 +48,7 @@ function saveNamesToLocalStorage() {
 
 updateNameList();
 
-function currentTime() { // Code copied from flexiple
+function currentTime() { // Code copied from flexiple *More detialed in my readme
   let date = new Date();
   let hh = date.getHours();
   let mm = date.getMinutes();
