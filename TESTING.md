@@ -50,36 +50,32 @@ The code was passed through JSHint for testing, and no errors were found. Additi
 
 ### Lighthouse 
 
-**index.html** 
+  **index.html** 
   * Desktop 
 
     [index.html lighthouse desktop](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
-    ![Popup.js file](docs/validation/validation-lighthouse-index.JPG)
+    ![Popup.js file](docs/validation/validation-lighthouse-index.jpg)
 
     
   * Mobile
 
     [index.html lighthouse mobile](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
-    ![Popup.js file](docs/validation/validation-lighthouse-index.JPG)
+    ![Popup.js file](docs/validation/validation-lighthouse-index.jpg)
+
 
 **404.html**
-  * Desktop
-    * Lightmode - Coming soon
+  * Desktop 
 
-    ![404.html lighthouse desktop(light)](https://github.com/KimBergstroem)
+    [404.html lighthouse desktop](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
+    ![Popup.js file](docs/validation/validation-lighthouse-404.jpg)
 
-    * Darkmode - Coming soon
-
-    ![404.html lighthouse desktop(dark)](https://github.com/KimBergstroem)
-
+    
   * Mobile
-    * Lightmode - Coming soon
 
-    ![404.html lighthouse mobile(light)](https://github.com/KimBergstroem)
+    [404.html lighthouse mobile](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
+    ![Popup.js file](docs/validation/validation-lighthouse-404.jpg)
 
-    * Darkmode - Coming soon
 
-    ![404.html lighthouse mobile(dark)](https://github.com/KimBergstroem)
 
 ### Wave
 
