@@ -1,8 +1,10 @@
-# geoMastermind Quiz Testing 
+# geoMastermind Testing 
 
-![geoMastermin viewed in different screens]()
+![geoMastermin viewed in different screens](docs/screenshots/readme-responsive-pp2.JPG)
 
 [View Live site here](https://kimbergstroem.github.io/PP2/)
+
+[View Live site responsive here](https://ui.dev/amiresponsive?url=https://kimbergstroem.github.io/PP2/)
 
 ---
 
