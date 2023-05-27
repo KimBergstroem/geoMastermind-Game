@@ -282,6 +282,9 @@ How to save user inputs locally and display it with JSON.stringify() [W3 Schools
 
 Make a 24 timer clock, for reseting my updateNameList() for the scoreboard every 24h [Flexiple](https://flexiple.com/javascript/javascript-clock/)
 
+Add multiple eventlistener 
+[codeinwp](https://www.codeinwp.com/snippets/add-event-listener-to-multiple-elements-with-javascript/)
+
 &nbsp;
 ### **Content**🔹
 

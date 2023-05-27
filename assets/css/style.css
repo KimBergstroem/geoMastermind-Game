@@ -361,7 +361,7 @@ input[type=text], select {
 
 /* **************** ERROR WRAPPER STARTS HERE **************** */
 #error-page {
-  background-image: url('../images/error-background.png');
+  background-image: url('../images/error-background.webp');
   background-color: hsl(0deg 0% 37.65%);
   background-repeat: no-repeat;
   background-attachment: fixed;

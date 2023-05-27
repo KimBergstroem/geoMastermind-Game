@@ -134,7 +134,7 @@ highscoreButton.addEventListener("click", () => toggleSections(scoreboardWrapper
  */
 const questions = [
   {
-    image: "<img src='assets/images/quiz/q1-pyramid.svg' alt='Pyramid'>",
+    image: "<img src='assets/images/quiz/q1-pyramid.png' alt='Pyramid'>",
     question: "Where can you find this buildings?", // Question 1
     answers: [
       { text: "Mexico", correct: false},
@@ -144,7 +144,7 @@ const questions = [
     ]
   },
   {
-    image: "<img src='assets/images/quiz/q2-eiffel-tower.svg' alt='Eiffel tower'>",
+    image: "<img src='assets/images/quiz/q2-eiffel-tower.png' alt='Eiffel tower'>",
     question: "In wich city is this statue?", // Question 2
     answers: [
       { text: "Paris", correct: true}, // Correct Answer
@@ -154,7 +154,7 @@ const questions = [
     ]
   },
   {
-    image: "<img src='assets/images/quiz/q3-sagrada-familia.svg' alt='Sagrada Familia'>",
+    image: "<img src='assets/images/quiz/q3-sagrada-familia.png' alt='Sagrada Familia'>",
     question: "Were can you find this church?", // Question 3
     answers: [
       { text: "Barcelona, Spain", correct: true}, // Correct Answer
@@ -164,7 +164,7 @@ const questions = [
     ]
   },
   {
-    image: "<img src='assets/images/quiz/q4-statue-of-liberty.svg' alt='Statue of liberty'>",
+    image: "<img src='assets/images/quiz/q4-statue-of-liberty.png' alt='Statue of liberty'>",
     question: "Were is this building?", // Question 4
     answers: [
       { text: "Toronto", correct: false},
@@ -174,7 +174,7 @@ const questions = [
     ]
   },
   {
-    image: "<img src='assets/images/quiz/q5-burjkhalifa.svg' alt='Burj Khalifa'>",
+    image: "<img src='assets/images/quiz/q5-burjkhalifa.png' alt='Burj Khalifa'>",
     question: "What city is this?", // Question 5
     answers: [
       { text: "Abu Dhabi", correct: false}, 
@@ -184,7 +184,7 @@ const questions = [
     ]
   },
   {
-    image: "<img src='assets/images/quiz/q6-portugal.svg' alt='Famous cave in Algarve cost'>",
+    image: "<img src='assets/images/quiz/q6-portugal.png' alt='Famous cave in Algarve cost'>",
     question: "Were can you find this cave?", // Question 6
     answers: [
       { text: "Portugal", correct: true}, // Correct Answer
@@ -194,7 +194,7 @@ const questions = [
     ]
   },
   {
-    image: "<img src='assets/images/quiz/q7-singapore.svg' alt='Marina Bay Sands'>",
+    image: "<img src='assets/images/quiz/q7-singapore.png' alt='Marina Bay Sands'>",
     question: "Were is this?", // Question 7
     answers: [
       { text: "Tokyo", correct: false},
@@ -204,7 +204,7 @@ const questions = [
     ]
   },
   {
-    image: "<img src='assets/images/quiz/q8-indonesia.svg' alt='Sewu Temple'>",
+    image: "<img src='assets/images/quiz/q8-indonesia.png' alt='Sewu Temple'>",
     question: "In what Country can you find this temple?", // Question 8
     answers: [
       { text: "Mexico", correct: false},
@@ -214,7 +214,7 @@ const questions = [
     ]
   },
   {
-    image: "<img src='assets/images/quiz/q9-green-light.svg' alt='Green sky light'>",
+    image: "<img src='assets/images/quiz/q9-green-light.png' alt='Green sky light'>",
     question: "This sky can you find in which country?", // Question 9
     answers: [
       { text: "Norwegian", correct: true}, // Correct Answer
@@ -224,7 +224,7 @@ const questions = [
     ]
   },
   {
-    image: "<img src='assets/images/quiz/q10-greece.svg' alt='White and blue buildings on a island'>",
+    image: "<img src='assets/images/quiz/q10-greece.png' alt='White and blue buildings on a island'>",
     question: "Wich island is this?", // Question 10
     answers: [
       { text: "Santorini, Greece", correct: true}, // Correct Answer

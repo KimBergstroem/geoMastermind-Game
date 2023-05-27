@@ -31,42 +31,36 @@ The W3C validator was used to validate the HTML on all pages of the website and 
 
 ### W3C Validator 
 
-* [W3C validation for **index.html**](https://github.com/KimBergstroem)
-  * Coming soon
-* [W3C validation for **404.html**](https://github.com/KimBergstroem)
-  * Coming soon
-* [Jigsaw W3C Validation for **style.css**](https://github.com/KimBergstroem) 
-  *  Coming soon
+* [W3C validation for **index.html**](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2Findex.html)
+   ![Index Page](docs/validation/validation-index.jpg)
+* [W3C validation for **404.html**](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2F404.html)
+   ![404 Page](docs/validation/validation-404.jpg)
+* [Jigsaw W3C Validation for **style.css**](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) 
+   ![Stylesheet Doc](docs/validation/validation-stylesheet.jpg)
 
 
 ### JavaScript Validator 
 
-* [Js Hint validation for **main.js**](https://github.com/KimBergstroem) 
-  * Coming soon
-  * Audit usage of navigator.userAgent, navigator.appVersion, and navigator.platform - fixed by code "if (typeof window.localStorage !== 'undefined')"
-* [Js Hint validation for **popup.js**](https://github.com/KimBergstroem)
-  * Coming soon
+The code was passed through JSHint for testing, and no errors were found. Additionally, various metrics were returned, including the number of functions, the size of the largest function, and the complexity of the most complex function.
+
+* [Js Hint validation for **main.js**](https://jshint.com/) 
+  ![Main.js file](docs/validation/validation-main.jpg)
+* [Js Hint validation for **popup.js**](https://jshint.com/)
+  ![Popup.js file](docs/validation/validation-popup.jpg)
 
 ### Lighthouse 
 
 **index.html** 
   * Desktop 
-    * Lightmode - Coming soon
 
-    ![index.html lighthouse desktop(light)](https://github.com/KimBergstroem)
+    [index.html lighthouse desktop](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
+    ![Popup.js file](docs/validation/validation-lighthouse-index.JPG)
 
-    * Darkmode - Coming soon
-
-    ![index.html lighthouse desktop(dark)](https://github.com/KimBergstroem)
-
+    
   * Mobile
-    * Lightmode - Coming soon
 
-    ![index.html lighthouse mobile(light)](https://github.com/KimBergstroem)
-
-    * Darkmode - Coming soon
-
-    ![index.html lighthouse mobile(dark)](https://github.com/KimBergstroem)
+    [index.html lighthouse mobile](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
+    ![Popup.js file](docs/validation/validation-lighthouse-index.JPG)
 
 **404.html**
   * Desktop
