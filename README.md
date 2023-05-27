@@ -116,7 +116,7 @@ Google Fonts was used for the following fonts:
 &nbsp;
 ### **Imagery**🔹
 
-All the images displayed in this site was originelly downloaded by the sites below mentioned in Credit, Media section, and modified by me in Photoshop.
+All the images displayed in this site was originelly downloaded by the sites mentioned in Credit section, Media section and was modified by me in Photoshop or in canva.
 
 &nbsp;
 ### **Wireframes**🔹
@@ -143,14 +143,19 @@ Click on the links below to see an large seperated image of each page.
 &nbsp;
 
 ### **Future-implementations**🔹
-Features that I will and want to implement in the future in this project would be  better visualisation about scoreboard and how points are calculated. I want to implement a timer based point score system. The final score will be calculated based on how fast the user was answering the questions and how many correct answers. 
-At the scoreboard page, the user will also see how much time was left on the quiz and how much time user was using and also the calculation of it.
 
-Maybe implement some pictures as well along to the username. User should be able to pick a profile picture along with the username, to have a better and more nice UX design in the HighScore Dashboard page.
+In the future, there will be exciting plans to enhance this project. The focus will be on improving the scoreboard to make it clearer and visually more appealing. A new scoring system that incorporates a timer and to add a variety of different game modes to enhance the overall experience. These enhancements will make the project more engaging and enjoyable for users.
 
-I would also love to connect the questions and the 10 quiz questions to an google Geoprahy API, were the question can be randomly displayed and changed. Atleast have more questions, and everytime it can be displayed different question. If we have 30 questions in our array, we should randomly displaying 10 questions everytime a user presses Start button. This will impact the user in a way of not memorizing the quiz and score 10/10 every attempt after tried the quiz multiple times.
+* **Scoring system**, will take into account the speed at which the user answers questions, as well as the number of correct answers. This means that the final score will be determined by how quickly and accurately the user responds.
 
-Implement 2-3 different category mini quiz games so that user can chooice. Example, Countrys, Landmarks, country-flags.
+* **Scoreboard page**, users will be able to create a unique profile with a username and the option to select a profile picture. This addition will not only personalize their experience but also contribute to a visually pleasing HighScore dashboard page. This includes the remaining time for the quiz, the time the user has already spent, and a calculation based on these time values. These additions will provide users with a comprehensive overview of their performance during the quiz along with a more appealing UX design and comparing with other users.
+
+* **Quiz Game**, integrating the Google Geography API with the quiz questions. This integration will allow for a dynamic and ever-changing quiz experience. Instead of a fixed set of questions, the quiz will draw from a larger pool of questions stored in the API along with images from the Google Maps system.<br>
+Each time a user presses the "Start" button, the quiz system will randomly select 10 questions from the API. This randomness ensures that the quiz is different every time and prevents users from memorizing the questions and scoring a perfect 10/10 on subsequent attempts. By introducing this variability, users will have a more engaging and challenging experience, as their knowledge of geography will truly be tested.
+
+* **Game mode**, increase 2-3 different categories, providing users with a choice of topics. These category options could include Countries, Landmarks, and Country Flags for example.<br>
+Users will be able to select their preferred category before starting the quiz. For instance, if they choose the Countries category, the quiz will exclusively present questions related to different countries around the world. Similarly, if they select Landmarks, the quiz will focus on famous landmarks from various locations. Lastly, the Country Flags category will test their knowledge of country flags.<br>
+By offering these diverse category options, users can explore different aspects of geography and engage in quizzes tailored to their interests. This variety will add excitement and encourage users to play multiple mini quizzes, enhancing their overall learning experience.
 
 
 &nbsp;
@@ -175,7 +180,7 @@ I have been mindful during coding to ensure that the website is as accessible fr
 
 ### **Languages Used**🔹
 
-Hyper Text Markup Language (<b>HTML</b>), Cascading Style Sheets (<b>CSS</b>) and Javascript (<b>JS</b>) were used to create this website.
+Hyper Text Markup Language (<b>HTML</b>), Cascading Style Sheets (<b>CSS</b>) and Javascript (<b>JS</b>) were used to create this webbapplication.
 
 &nbsp;
 ### **Frameworks, Libraries & Programs Used**🔹
@@ -209,7 +214,7 @@ Hyper Text Markup Language (<b>HTML</b>), Cascading Style Sheets (<b>CSS</b>) an
 ## **Deployment & Local Development**🔵
 &nbsp;
 
-Github Pages was used to deploy the live website. The instructions to achieve this are below:
+Github Pages was used to deploy the live webapplication. The instructions to achieve this are below:
 
 1. Log in (or sign up) to Github.com.
 2. Find the repository for this project, <b>"PP2"</b>.
@@ -252,16 +257,17 @@ All testing was carried out in [Testing.md](TESTING.md).
 ### **Solved Bugs**🔹
 | Type   | Bug                                                                                                                                                                                                                                                                                                                                           | Solution                                                                                                                                                                                                                                                                                                                                                                    |
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Script.js | Couldn't get my images right in the array that would be displayed in every question. | Solution was the root and also change to display with tring html "image.innerHTML = currentQuestion.image; - image.classList.add("quiz-image");" |
-| Script.js | When clicking on a question, even if it was right or not, user had chance to click on other questions as well. | Added: "button.disabled = true;" so when the user has clicked or answered, the other buttons will be disabled. |  
-| Script.js | The "Next button" was showing all the time while the question was displayed and the button can easily be clicked by mistake and enter next question without any answer or score of user. | Hide the button until the answer is answered or once one button is clicked, then the "Next button" will show for entering next question. | 
-Script.js | How to stop the timer when a user clicked on the answer button | Just added the "clearInterval(counter);" in my selectAnswer function. clearInterval was learned here [wc3](https://www.w3schools.com/jsref/met_win_clearinterval.asp). |      
-Script.js / index.html | When user clicks on Exit Button(Home) in the quiz game, it is not reseting the game when the user pressing Start once again | Maybe it is not the best solution, but i just added in the html code instead a lin attribute to index.html page. Everytime a use click on the exit button, its takes and load the index.html page again, which showing the main menu with the start button as in the beginning. |                                                                                                                                                                                   
+| Script.js | Couldn't get my images right in the array that would be displayed in every question. | Solution was the root and also change to display with string html "image.innerHTML = currentQuestion.image; - image.classList.add("quiz-image");" |
+| Script.js | When clicking on a question, even if it was right or not, user had chance to click on other answers as well. | Added: "button.disabled = true;" so when the user has clicked or answered, the other buttons will be disabled. |  
+| Script.js | The "Next" button was constantly visible while the question was displayed, and it could be easily clicked by mistake, causing the user to move to the next question without providing an answer or earning any score. | Keep the button hidden until the user has provided an answer or until one of the answer buttons is clicked. Once a button is clicked, the "Next" button will appear, allowing the user to proceed to the next question. Code fix: "nextButton.style.display = "block";" | 
+Script.js | How to stop the timer when a user clicked on the answer button | Added the "clearInterval(counter);" in my selectAnswer function. clearInterval was learned here [wc3](https://www.w3schools.com/jsref/met_win_clearinterval.asp). |      
+Script.js / index.html | When user clicks on Exit Button(Home) in the quiz game, it is not reseting the game when the user pressing Start button once again | Perhaps it's not the optimal solution, add a link attribute directly in the HTML code of the index.html page. When a user clicks on the exit button, it takes them back to the index.html page, effectively reloading the main menu with the start button, just like it was at the beginning. |                                                                                                                                                                                   
 &nbsp;
 ### **Known Bugs**🔹
 | Type   | Bug                                                                                                                                                                                                                                                                                                                                           | Solution                                                                                                                                                                                                                                                                                                                                                                    |
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Script.js | If you click refresh on the browser while playing your game, you are going back to the main menu and the game is turned off. | Still a bugg |   
+| Script.js | If you refresh the browser while playing the game with browser refresh button, you will be redirected back to the main menu, and the game will be reset, effectively turning it off. | Still a bugg | 
+| Script.js | Sometimes, the timer runs slower, and the displayed time does not accurately correspond with the question. | Still a bugg |  
   
 
 &nbsp;
@@ -276,7 +282,7 @@ Script.js / index.html | When user clicks on Exit Button(Home) in the quiz game,
 
 ### **Code Used**🔹
 
-I used this YouTube channels [Kevin Powell](https://www.youtube.com/@KevinPowell) , [CodingNepal](https://www.youtube.com/@CodingNepal) , [Easy Tutorials](https://www.youtube.com/@EasyTutorials)
+I used this YouTube channels for inspiration and code tips [Kevin Powell](https://www.youtube.com/@KevinPowell) , [CodingNepal](https://www.youtube.com/@CodingNepal) , [Easy Tutorials](https://www.youtube.com/@EasyTutorials)
 
 Learnt how to stop countdown here [W3 Schools](https://www.w3schools.com/jsref/met_win_clearinterval.asp)
 
@@ -301,15 +307,17 @@ Tips and inspiration on how to create a better readme.md file [kera-cudmore powe
 
 The photos used throughout the quiz is coming from [Canvas Pro](https://unsplash.com/).
 
-The background image on the front page is created by me and the program used are [Canvas Pro](https://unsplash.com/).
+The background image on the webbapplication was created by myself and the program used [Canvas Pro](https://unsplash.com/).
 
 &nbsp;
 ###  **Acknowledgments**🔹
 
 I'd like to give recognition to the individuals who supported me in finishing this project:
 
-* I'd like to express my appreciation to my family for their patience and helping me spot spell mistakes and testing issues.
-* [Jubril](https://github.com/jubril), my Code Institute Mentor.
+* I would like to express my heartfelt appreciation to my family for their patience and assistance in identifying spelling mistakes and testing issues. Their support has been invaluable in improving the quality of this project.
+I would also like to extend my gratitude to two testers who have made significant contributions: [Debbie B](https://github.com/DebbieBergstrom) and [Sandra B](https://github.com/SandraBergstrom). They have been instrumental in providing necessary feedback, identifying errors, and offering valuable tips. Their involvement has greatly contributed to the overall refinement of the project.
+
+* [Jubril](https://github.com/Jubrillionaire), my Code Institute Mentor, for his exceptional guidance and expertise. His mentorship has been a source of inspiration and has greatly contributed to my growth as a developer.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
