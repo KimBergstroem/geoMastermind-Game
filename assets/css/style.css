@@ -8,7 +8,7 @@
 /* ******************************************************************* */
 
 :root {
-  --clr-primary: hsl(215deg 66.67% 24.71%);
+  --clr-primary: hsl(215, 67%, 25%);
   --clr-headers: hsl(73, 87%, 69%);
   --clr-neutraldark: hsl(212, 23%, 46%);
   --clr-contentBg: hsl(55, 48%, 78%);

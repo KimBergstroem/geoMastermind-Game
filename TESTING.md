@@ -10,28 +10,26 @@
 
 ## CONTENTS
 
-* [Automated Testing](#Automated-Testing)
-  * [W3C Validator](#W3C-Validator)
-  * [JavaScript Validator](#JavaScript-Validator)
-  * [Lighthouse](#Lighthouse)
-  * [Wave Accessibility Test](#Wave)
-* [Manual Testing](#Manual-Testing)
-  * [Testing User Stories](#Testing-User-Stories)
-  * [Full Testing](#Full-Testing)
-
-  ---
-
-Throughout the game development process, I relied on Google Developer Tools to experiment with different elements and phases of the game. Additionally, I leveraged the console section in Chrome Dev Tools to test JavaScript code and address any problems or glitches that occurred in the code.
-
-I shared my project with the peer code review channel on Slack, but no concerns or problems were raised regarding it.
+* [**Automated Testing**](#automated-testing)
+  * [W3C Validator](#w3c-validator)
+  * [JavaScript Validator](#javaScript-validator)
+  * [Lighthouse](#lighthouse)
+  * [Wave Accessibility Test](#wave)
+* [**Manual Testing**](#manual-testing)
+  * [Testing User Stories](#testing-user-stories)
+  * [Full Testing](#full-testing)
 
 ---
 
-## Automated Testing 
+**Throughout the game development process, I relied on Google Developer Tools to experiment with different elements and phases of the game. Additionally, I leveraged the console section in Chrome Dev Tools to test JavaScript code and address any problems or glitches that occurred in the code.**
+
+---
+
+## **Automated Testing**
 
 The W3C validator was used to validate the HTML on all pages of the website and the STYLESHEET in css file. JSHint was used to validate all my javascript files used for this project. Click on the below links to have the full validation. No error was found.
 
-### W3C Validator 
+### **W3C Validator** 
 
 * [W3C validation for **index.html**](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2Findex.html)
    ![Index Page](docs/validation/validation-index.jpg)
@@ -41,7 +39,7 @@ The W3C validator was used to validate the HTML on all pages of the website and 
    ![Stylesheet Doc](docs/validation/validation-stylesheet.jpg)
 
 
-### JavaScript Validator 
+### **JavaScript Validator** 
 
 The code was passed through JSHint for testing, and no errors were found. Additionally, various metrics were returned, including the number of functions, the size of the largest function, and the complexity of the most complex function.
 
@@ -50,36 +48,29 @@ The code was passed through JSHint for testing, and no errors were found. Additi
 * [Js Hint validation for **popup.js**](https://jshint.com/)
   ![Popup.js file](docs/validation/validation-popup.jpg)
 
-### Lighthouse 
+### **Lighthouse** 
 
-  **index.html** 
-  * Desktop 
+index.html
 
-    [index.html lighthouse desktop](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
-    ![Popup.js file](docs/validation/validation-lighthouse-index.jpg)
-
-    
-  * Mobile
-
-    [index.html lighthouse mobile](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
-    ![Popup.js file](docs/validation/validation-lighthouse-index.jpg)
-
-
-**404.html**
-  * Desktop 
-
-    [404.html lighthouse desktop](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
-    ![Popup.js file](docs/validation/validation-lighthouse-404.jpg)
+  * [index.html lighthouse desktop](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
+    ![index.html file](docs/validation/validation-lighthouse-index.jpg)
 
     
-  * Mobile
-
-    [404.html lighthouse mobile](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
-    ![Popup.js file](docs/validation/validation-lighthouse-404.jpg)
+  * [index.html lighthouse mobile](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
+    ![index.html](docs/validation/validation-lighthouse-index.jpg)
 
 
+404.html
+  * [404.html lighthouse desktop](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
+    ![404.html](docs/validation/validation-lighthouse-404.jpg)
 
-### Wave
+    
+  * [404.html lighthouse mobile](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
+    ![404.html](docs/validation/validation-lighthouse-404.jpg)
+
+
+
+### **Wave**
 
 ![Wave test for quiz game](https://github.com/KimBergstroem)
 
@@ -88,9 +79,10 @@ What was testet - Coming soon
 
 ---
 
-## Manual Testing
+## **Manual Testing**
 
-### Testing User Stories
+### **Testing User Stories**
+
 
 **First Time Visitors** 
 
@@ -111,7 +103,7 @@ What was testet - Coming soon
 | More information is coming| More information is coming| 
 
 ---
-### Full Testing 
+### **Full Testing**
 
 Full Testing was performed on these devices and browsers for each section of game 
 
