@@ -205,7 +205,7 @@ const questions = [
   },
   {
     image: "<img src='assets/images/quiz/q8-indonesia.png' alt='Sewu Temple'>",
-    question: "In what Country can you find this temple?", // Question 8
+    question: "In what country can you find this temple?", // Question 8
     answers: [
       { text: "Mexico", correct: false},
       { text: "Thailand", correct: false},
@@ -217,10 +217,10 @@ const questions = [
     image: "<img src='assets/images/quiz/q9-green-light.png' alt='Green sky light'>",
     question: "This sky can you find in which country?", // Question 9
     answers: [
-      { text: "Norwegian", correct: true}, // Correct Answer
+      { text: "Norway", correct: true}, // Correct Answer
       { text: "Denmark", correct: false},
       { text: "Latvia", correct: false},
-      { text: "Amsterdam", correct: false},
+      { text: "Netherlands", correct: false},
     ]
   },
   {
