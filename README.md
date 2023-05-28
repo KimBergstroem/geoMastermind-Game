@@ -266,8 +266,9 @@ Script.js / index.html | When user clicks on Exit Button(Home) in the quiz game,
 ### **Known Bugs**🔹
 | Type   | Bug                                                                                                                                                                                                                                                                                                                                           | Solution                                                                                                                                                                                                                                                                                                                                                                    |
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Script.js | If you refresh the browser while playing the game with browser refresh button, you will be redirected back to the main menu, and the game will be reset, effectively turning it off. | Still a bugg | 
-| Script.js | Sometimes, the timer runs slower, and the displayed time does not accurately correspond with the question. | Still a bugg |  
+| Script.js | If you refresh the browser while playing the game with browser refresh button, you will be redirected back to the main menu, and the game will be reset, effectively turning it off. | When user refresh webbrowser, the page will still display the current quiz game and take user back to main menu. | 
+| Script.js | Sometimes, the timer runs slower, and the displayed time does not accurately correspond with the question. | Better way of coding the timer that are currently used. |  
+| Script.js | Automatically arrange the usernames in descending order of their scores, so that the user with the highest score is listed at the top in the highscore dashboard. |Incorporate a comparison function that takes into account the score attempts and compares them with the attempts made by other users.|
   
 
 &nbsp;
@@ -286,7 +287,7 @@ I used this YouTube channels for inspiration and code tips [Kevin Powell](https:
 
 Learnt how to stop countdown here [W3 Schools](https://www.w3schools.com/jsref/met_win_clearinterval.asp)
 
-Small code snippets and how to create different type of elements [W3 Schools](https://www.w3schools.com/css/css_form.asp)
+Small code snippets and how to create different type of elements, functions [W3 Schools](https://www.w3schools.com/css/css_form.asp) , [MDN Web Docs](https://developer.mozilla.org/en-US/)
 
 How to save user inputs locally and display it with JSON.stringify() [W3 Schools](https://www.w3schools.com/js/js_json_stringify.asp), [Learn with Jason](https://www.learnwithjason.dev/blog/get-form-values-as-json) and [James Q Quick](https://www.youtube.com/@JamesQQuick)
 
