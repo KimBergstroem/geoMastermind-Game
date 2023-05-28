@@ -100,7 +100,7 @@ const [
 ] = [
   ".main-wrapper",       
   "#quiz-wrapper",       
-  "#scoreboard-wrapper", 
+  "#scoreboard-wrapper",
   "#quiz-image",         
   "#question",           
   "#question-counter",   
@@ -110,7 +110,7 @@ const [
   "#back-btn",        
   "#show-highscore",     
   "#show-quiz",
-  "#nameForm"           
+  "#nameForm"          
 ].map(selector => document.querySelector(selector)); // Mapping the selectors to corresponding DOM elements
 
 // Variable declarations for quiz tracking
