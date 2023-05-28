@@ -74,8 +74,8 @@ index.html
 
 ![Wave test for quiz game](https://github.com/KimBergstroem)
 
-What was testet - Coming soon
-* Coming soon
+* To check the color contrast ratio between foreground and background elements, ensuring that the website is accessible to all users, including those with visual impairments. No errors or contrast error was found.
+  ![index.html](docs/validation/validation-wave.jpg)
 
 ---
 
