@@ -24,7 +24,7 @@ usernameForm.addEventListener("submit", function (event) {
   const userObject = { name, score: userScore }; // Create an object with username and score
   usernameArray.push(userObject);
   usernameInput.value = "";
-  addUsername.innerHTML = "Your username and score have been added!";
+  addUsername.innerHTML = "Your username and score has been added!";
   updateNameList();
   saveNamesToLocalStorage(); // Save names to Local Storage
 });
