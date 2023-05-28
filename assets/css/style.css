@@ -180,6 +180,12 @@ h5 {
   display: block;
   padding: 7px;
 }
+.return-btn:hover,
+.returnn-btn:hover,
+#next-btn:hover,
+#back-btn:hover {
+  background-color: hsl(0, 84%, 66%);
+}
 
 .button-group ol li {
   color: var(--clr-neutral-black);
