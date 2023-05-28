@@ -34,28 +34,31 @@
                 <div class="button-group">
                     <!-- main menu buttons -->
                     <button aria-label="start quiz game" class="main-btn button-start" id="show-quiz"><i
-                            class="fa-solid fa-minus"></i> Start <i class="fa-solid fa-minus"></i></button> <!-- start quiz button -->
+                            class="fa-solid fa-minus"></i> Start <i class="fa-solid fa-minus"></i></button>
+                    <!-- start quiz button -->
                     <button aria-label="view current highscore" class="main-btn button-highScore" id="show-highscore"><i
                             class="fa-solid fa-crown"></i>
                         Highscore</button> <!-- open highscore page -->
                     <button aria-label="view game rules" class="main-btn" id="show-btn"><i class="fa-solid fa-book"></i>
                         Rules</button> <!-- open rule popup -->
-                        <div id="popup" class="hidden"><!-- popup window, showing rules -->
-                            <div class="rules-p">
-                                <h2 id="rules-heading" class="title-section">Rules</h2>
-                                <p id="rules-description">These are the rules for the quiz game:</p>
-                                <ol aria-labelledby="rules-heading" aria-describedby="rules-description">
-                                    <li>You will have only <span>10 seconds</span> per each question.</li>
-                                    <li>Once you select your answer, it can't be undone.</li>
-                                    <li>You can't select any option once time goes off.</li>
-                                    <li>Pressing the exit button will quit and reset the quiz.</li>
-                                    <li>You'll get points when having correct answers.</li>
-                                </ol>
-                            </div>
-                            <button aria-label="return back to main menu" class="return-btn">Return</button><!-- back to main menu -->
+                    <div id="popup" class="hidden">
+                        <!-- popup window, showing rules -->
+                        <div class="rules-p">
+                            <h2 id="rules-heading" class="title-section">Rules</h2>
+                            <p id="rules-description">These are the rules for the quiz game:</p>
+                            <ol aria-labelledby="rules-heading" aria-describedby="rules-description">
+                                <li>You will have only <span>10 seconds</span> per each question.</li>
+                                <li>Once you select your answer, it can't be undone.</li>
+                                <li>You can't select any option once time goes off.</li>
+                                <li>Pressing the exit button will quit and reset the quiz.</li>
+                                <li>You'll get points when having correct answers.</li>
+                            </ol>
                         </div>
+                        <button aria-label="return back to main menu" class="return-btn">Return</button>
+                        <!-- back to main menu -->
                     </div>
                 </div>
+            </div>
         </section>
     </main>
     <!-- 
@@ -69,8 +72,9 @@
     <div id="quiz-wrapper" class="quiz-wrapper hidden">
         <section aria-label="quiz game content">
             <div class="quiz-section">
-                <div><a aria-label="quit game" href="index.html"><i class="fa-sharp fa-solid fa-right-from-bracket fa-2xl"
-                            style="color: #303030;"></i></a></div>
+                <div><a aria-label="quit game" href="index.html"><i
+                            class="fa-sharp fa-solid fa-right-from-bracket fa-2xl" style="color: #303030;"></i></a>
+                </div>
                 <h2 class="title-section">QUIZ</h2>
                 <div class="quiz">
                     <div class="quiz-image" id="quiz-image"></div> <!-- game picture -->
@@ -93,15 +97,17 @@
                             <div class="timer-sec">15</div>
                         </div>
                     </div>
-                        <form id="nameForm" class="nameForm">
-                            <!-- Enter user input form -->
-                            <label class="large-label" for="nameInput">
-                                Enter your username
-                                <input aria-label="enter your username" type="text" id="nameInput" name="username" autocomplete="username" required>
-                            </label>
-                            <button aria-label="add username to scoreboard button" type="submit"
-                                class="return-btn">Add</button> <p id="add-username"></p>
-                        </form>
+                    <form id="nameForm" class="nameForm">
+                        <!-- Enter user input form -->
+                        <label class="large-label" for="nameInput">
+                            Enter your username
+                            <input aria-label="enter your username" type="text" id="nameInput" name="username"
+                                autocomplete="username" required>
+                        </label>
+                        <button aria-label="add username to scoreboard button" type="submit"
+                            class="return-btn">Add</button>
+                        <p id="add-username"></p>
+                    </form>
                     <button aria-label="next question" id="next-btn">Next</button>
                     <!-- moving to next question button -->
                     <button aria-label="return to main menu" id="back-btn">Return to Main</button>
