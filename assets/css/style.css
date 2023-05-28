@@ -14,6 +14,7 @@
   --clr-contentBg: hsl(55, 48%, 78%);
   --clr-neutral-white: hsl(0, 0%, 93%);
   --clr-neutral-black: hsl(0, 0%, 3%);
+  --clr-buttons-red: hsl(0, 79%, 72%);
 }
 
 /* Tips from this css reset https://andy-bell.co.uk/a-modern-css-reset/ */
@@ -74,7 +75,7 @@ body {
 h1 {
   font-family: 'Lato', sans-serif;
   font-size: 4rem;
-  color: white;
+  color: var(--clr-neutral-white);
 }
 
 h2, 
@@ -159,14 +160,14 @@ h5 {
   background-color: var(--clr-contentBg);
   width: 600px;
   padding: 20px;
-  border: 1px solid black;
+  border: 1px solid var(--clr-neutral-black);
   border-radius: 1rem;
   z-index: 1;
 }
 
 .return-btn,
 .returnn-btn {
-  background-color: lightcoral;
+  background-color: var(--clr-buttons-red);
   color: var(--clr-neutral-black);
   font-weight: 800;
   width: 150px;
@@ -218,7 +219,7 @@ h5 {
   font-size: 25px;
   color: var(--clr-neutral-black);
   font-weight: 600;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid var(--clr-neutral-black);
   padding-bottom: 30px;
 }
 
@@ -231,7 +232,7 @@ h5 {
 }
 
 .quiz-btn {
-  background: white;
+  background: var(--clr-neutral-white);
   color: var(--clr-neutral-black);
   font-weight: 500;
   width: 100%;
@@ -255,7 +256,7 @@ h5 {
 
 #next-btn,
 #back-btn {
-  background-color: lightcoral;
+  background-color: var(--clr-buttons-red);
   color: var(--clr-neutral-black);
   font-weight: 800;
   width: 150px;
@@ -267,11 +268,11 @@ h5 {
 }
 
 .correct {
-  background-color: rgb(152, 207, 152);
+  background-color: hsl(120, 36%, 70%);
 }
 
 .incorrect {
-  background-color: rgb(230, 134, 134);
+  background-color: hsl(0, 66%, 71%);
 }
 
 #question {
@@ -324,7 +325,7 @@ input[type=text], select {
 }
 
 .add-submit {
-  background-color: lightcoral;
+  background-color: var(--clr-buttons-red);
   color: var(--clr-neutral-black);
   font-weight: 800;
   width: 150px;
@@ -402,7 +403,7 @@ input[type=text], select {
 }
 
 #error-wrapper span {
-  color: hsl(1.78deg 98.06% 59.61%);
+  color: hsl(52, 59%, 83%);
 }
 
 #error-wrapper p {
@@ -414,7 +415,7 @@ input[type=text], select {
 }
 
 #error-wrapper .error-p {
-  background-color: white;
+  background-color: var(--clr-neutral-white);
   border-radius: 5px;
   padding: 5px;
   margin: auto 10px;
@@ -450,7 +451,7 @@ input[type=text], select {
 
   .button-group .main-btn {
     background-color: var(--clr-contentBg);
-    color: green;
+    color: hsl(120, 100%, 25%);
     font-size: 1.125rem;
     font-weight: bold;
     border: none;
@@ -502,7 +503,7 @@ input[type=text], select {
   }
 
   .return-button {
-    background-color: lightcoral;
+    background-color: var(--clr-buttons-red);
     font-weight: bold;
     border: none;
     margin-top: 2rem;
