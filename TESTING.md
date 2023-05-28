@@ -89,23 +89,27 @@ To check the color contrast ratio between foreground and background elements, en
 ### **Testing User Stories**
 
 
-`First Time Visitors`
+**`First Time Visitors`**
 
-|First Time User Goals| How this was achieved| Screenshot|
-| :--- | :--- | :--- | 
-| As a user, my objective is to discover the instructions on how to play the game in order to enhance my gameplay efficiency.| The game has a "rules" page popup which can be seen when you click on "rules" button on the main page.| <details><summary>Screenshot of result</summary>![Result](docs/user-stories/screenshot-rulespopup.png)</details>|
-| As a user, I desire the ability to validate the correctness of my answers, thereby increasing my score| When a user clicks on the answer buttons, a visual indication is provided by changing the color of the button. If the selected answer is correct, the button turns green; otherwise, it turns red.| <details><summary>Screenshot of result</summary>![Result](docs/user-stories/screenshot-correctanswer.png)</details>| 
-| As a user, I would like to have visibility of the remaining time so that I can maintain a suitable pace during gameplay and avoid running out of time.| The user is provided with a countdown timer that is visible during their gameplay. The countdown timer is also displaying different color depending on the urgency of time left.| <details><summary>Screenshot of result</summary>![Result](docs/user-stories/screenshot-timer.png)</details>| 
-| As a user, I would like to view my final score at the end of the game in order to the scoreboard and dashbaord| Upon completion of the game, the user is presented with their score along with a performance message that reflects their performance, varying based on how well or poorly they performed.| <details><summary>Screenshot of result</summary>![Result](docs/user-stories/screenshot-score.png)</details>|
-|As a user, I want to be able to cancel the game anytime during the play if not want to continue| Upon completion of the game, the user is presented with a quit icon displaying in the upper right corner of the quiz game. By pressing this icon, it takes the user back to main menu, existing and reseting the game.| <details><summary>Screenshot of result</summary>![Result](docs/user-stories/screenshot-exitbutton.png)</details>|
-|
+| First Time User Goals | How this was achieved | Screenshot |
+| --- | --- | --- |
+| As a user, my objective is to discover the instructions on how to play the game in order to enhance my gameplay efficiency. | The game has a "rules" page popup which can be accessed by clicking on the "rules" button on the main page. | <details><summary>Screenshot of result</summary>![Result](docs/user-stories/userstories-rulespopup.png)</details> |
+| As a user, I desire the ability to validate the correctness of my answers, thereby increasing my score. | When a user clicks on the answer buttons, a visual indication is provided by changing the color of the button. If the selected answer is correct, the button turns green; otherwise, it turns red. | <details><summary>Screenshot of result</summary>![Result](docs/user-stories/userstories-correctanswer.png)</details> |
+| As a user, I would like to have visibility of the remaining time so that I can maintain a suitable pace during gameplay and avoid running out of time. | The user is provided with a countdown timer that is visible during their gameplay. The countdown timer also changes color depending on the urgency of time left. | <details><summary>Screenshot of result</summary>![Result](docs/user-stories/userstories-timer.png)</details> |
+| As a user, I would like to view my final score at the end of the game in order to see my performance on the scoreboard and dashboard. | Upon completion of the game, the user is presented with their score along with a performance message that reflects their performance, varying based on how well or poorly they performed. | <details><summary>Screenshot of result</summary>![Result](docs/user-stories/userstories-score.png)</details> |
+| As a user, I want to be able to cancel the game at any time during play if I do not want to continue. | Upon completion of the game, the user is presented with a quit icon displayed in the upper right corner of the quiz game. By clicking this icon, the user is taken back to the main menu, exiting and resetting the game. | <details><summary>Screenshot of result</summary>![Result](docs/user-stories/userstories-exitbutton.png)</details> |
 
-`Returning Visitors`
 
-|Returning User Goals| How this was achieved|
-| :--- | :--- |
-| More information is coming| More information is coming|
-| More information is coming| More information is coming| 
+**`Returning Visitors`**
+
+| Returning User Goals | How this was achieved | Screenshot |
+| --- | --- | --- |
+| Review past scores | Returning users can access the dashboard that displays their previous quiz scores and username. They can view their improvement over time and compare their scores with other users. | <details><summary>Screenshot of result</summary>![Result](docs/user-stories/userstories-highscore.png)</details> |
+| Engage in competitive challenge | The quiz game offers leaderboard functionality where returning users can compete with other players to achieve high scores. | <details><summary>Screenshot of result</summary>![Result](docs/user-stories/userstories-leaderboard.png)</details> |
+| Play multiple times without limitations | Users, whether new or returning, have the freedom to play the quiz game multiple times. There are no restrictions on the number of attempts, allowing users to enjoy the game, improve their scores, and challenge themselves without limitations. | <details><summary>Screenshot of result</summary>![Result](docs/user-stories/userstories-playagain.png)</details> |
+ 
+
+&nbsp;
 
 ---
 ### **Full Testing**
@@ -155,7 +159,7 @@ The scores below are the average results obtained from three users who attempted
 
 &nbsp;
 
-`Home Page Section` 
+**`Home Page Section`** 
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
@@ -166,7 +170,7 @@ The scores below are the average results obtained from three users who attempted
 | Cursor | The cursor should change when the user moves the mouse over a button | Moved the mouse over each button to check for cursor changes | The cursor changed from the arrow cursor to the clickable hand cursor | ✅ |
 
 
-`Game Page Section`
+**`Game Page Section`**
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
@@ -182,43 +186,43 @@ The scores below are the average results obtained from three users who attempted
 | Next button - becomes visible | When an answer is clicked, the next button should be displayed to allow the user to progress to the next question or to the end section if all 10 questions have been answered | Clicked on an answer button | The next button was displayed | ✅ |
 | Next button - clicked | When clicked, all answer styles should be removed, the next button should be hidden again, and a new question and set of answers should be loaded if there are remaining questions. If all questions have been answered, the end game should be displayed | Clicked on the next button | All styles were removed, a new question and answers were displayed. After answering question 10, I was taken to the score page | ✅ |
 
-`Show score Section`
+**`Show score Section`**
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Exit game icon | Link direct the user back to the home page and exit the game | Clicked button icon | Directed back to home page and restarted the quiz | ✅ |
-| All buttons - hover effect | All buttons with a red background & black text should change when hovered over to a background colour of dark red with black text. | Hover over each button on the page | Each button displayed the correct styling when hovered over | ✅ |
-| Cursor | The clickable hand should display when a user moves the mouse over a button | Moved the mouse over each button to check the cursor changed upon entering the button | The cursor changed from the arrow cursor to the clickable hand cursor | ✅ |
-| Score Display | The Your Score area should populate with the score you have achieved along with a funny message depends on the score | I added my score as I played, checked the score on the last question & compared to the score displayed | The score displays correctly with funny message | ✅ |
-| Submit Button | The submit button should only work once the user put their username into the input field | I hovered over and clicked the submit button without filling in the username field. I then added a username, hovered over and clicked the submit button | Without a username filled in the cursor displays a required message that a username is missing. Once I filled in a username I was able to click and submit the score | ✅ |
-| Submit button - on submit | Once clicked on the submit button, text message will display "Your username and score has been added!" | Clicked the button with the username filled in | Correct text message is diplayed | ✅ |
-| Play again? button | Clicking on this button will return you to the start of the quiz game again | Clicked on the play again? button | Directed to the beginning of the game and first question is showed | ✅ |
-| Back button | Clicking on this button will take you back to the home page | Clicked the back button | Directed back to the home page | ✅ |
+| Exit game icon | The link should direct the user back to the home page and exit the game | Clicked on the icon | Successfully directed back to the home page and the quiz restarted | ✅ |
+| All buttons - hover effect | When hovered over, buttons with a red background and black text should change to a dark red background with black text | Hovered over each button on the page | Each button displayed the correct styling when hovered over | ✅ |
+| Cursor | The clickable hand cursor should appear when a user moves the mouse over a button | Moved the mouse over each button to check for cursor changes | The cursor changed from the arrow cursor to the clickable hand cursor | ✅ |
+| Score Display | The "Your Score" area should show the score achieved along with a funny message based on the score | Added my score as I played, checked the score on the last question, and compared it to the displayed score | The score is correctly displayed along with a funny message | ✅ |
+| Submit Button | The submit button should only work when the user enters their username into the input field | Hovered over and clicked the submit button without filling in the username field. Then added a username, hovered over, and clicked the submit button | Without a username filled in, a required message is displayed. Once a username is entered, I was able to click and submit the score | ✅ |
+| Submit button - on submit | After clicking the submit button, the text message "Your username and score have been added!" should be displayed | Clicked the button with the username filled in | The correct text message is displayed | ✅ |
+| Play again? button | Clicking this button should return you to the start of the quiz game | Clicked the play again? button | Successfully directed to the beginning of the game, and the first question is shown | ✅ |
+| Back button | Clicking this button should take you back to the home page | Clicked the back button | Successfully directed back to the home page | ✅ |
 
 
-`Highscore Section`
-
-| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
-| Exit game icon | Link direct the user back to the home page and exit the game | Clicked button icon | Directed back to home page and restarted the quiz | ✅ |
-| All buttons - hover effect | All buttons with a red background & black text should change when hovered over to a background colour of dark red with black text. | Hover over each button on the page | Each button displayed the correct styling when hovered over | ✅ |
-| Cursor | The clickable hand should display when a user moves the mouse over a button | Moved the mouse over each button to check the cursor changed upon entering the button | The cursor changed from the arrow cursor to the clickable hand cursor | ✅ |
-| Score Displayed | Your latest attempt will be displayed with your username and score along other users added username and score | Played 5+ games and logged a variety of scores and username. | The attempts and username + score is visible in the highscore page | ✅ |
-| Back button | Clicking on this button will take you back to the home page | Clicked the back button | Directed back to the home page | ✅ |
-
-`Rules Section`
+**`Highscore Section`**
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| All buttons - hover effect | All buttons with a red background & black text should change when hovered over to a background colour of dark red with black text. | Hover over each button on the page | Each button displayed the correct styling when hovered over | ✅ |
-| Cursor | The clickable hand should display when a user moves the mouse over a button | Moved the mouse over each button to check the cursor changed upon entering the button | The cursor changed from the arrow cursor to the clickable hand cursor | ✅ |
-| Return button | Takes the user back to the home page | Clicked the button | Taken to the home page | ✅ |
+| Exit game icon | Clicking the icon should direct the user back to the home page and exit the game | Clicked on the icon | Successfully directed back to the home page and the quiz restarted | ✅ |
+| All buttons - hover effect | When hovered over, buttons with a red background and black text should change to a dark red background with black text | Hovered over each button on the page | Each button displayed the correct styling when hovered over | ✅ |
+| Cursor | The clickable hand cursor should appear when a user moves the mouse over a button | Moved the mouse over each button to check for cursor changes | The cursor changed from the arrow cursor to the clickable hand cursor | ✅ |
+| Score Displayed | The high score page should show your latest attempt with your username and score, along with the usernames and scores of other users | Played 5+ games and logged a variety of scores and usernames | The attempts, usernames, and scores are visible on the high score page | ✅ |
+| Back button | Clicking on this button should take you back to the home page | Clicked the back button | Successfully directed back to the home page | ✅ |
 
-`404 Page`
+**`Rules Section`**
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| All buttons - hover effect | All buttons with a red background & black text should change when hovered over to a background colour of dark red with black text. | Hover over each button on the page | Each button displayed the correct styling when hovered over | ✅ |
-| Cursor | The clickable hand should display when a user moves the mouse over a button | Moved the mouse over each button to check the cursor changed upon entering the button | The cursor changed from the arrow cursor to the clickable hand cursor | ✅ |
-| Return home button | Takes the user back to the home page | Clicked the button | Taken to the home page | ✅ |
+| All buttons - hover effect | All buttons with a red background and black text should change to a dark red background with black text when hovered over | Hovered over each button on the page | Each button displayed the correct styling when hovered over | ✅ |
+| Cursor | The clickable hand cursor should appear when a user moves the mouse over a button | Moved the mouse over each button to check for cursor changes | The cursor changed from the arrow cursor to the clickable hand cursor | ✅ |
+| Return button | Clicking on this button should take the user back to the home page | Clicked the button | Successfully taken to the home page | ✅ |
+
+**`404 Page`**
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| All buttons - hover effect | All buttons with a red background and black text should change to a dark red background with black text when hovered over | Hovered over each button on the page | Each button displayed the correct styling when hovered over | ✅ |
+| Cursor | The clickable hand cursor should appear when a user moves the mouse over a button | Moved the mouse over each button to check for cursor changes | The cursor changed from the arrow cursor to the clickable hand cursor | ✅ |
+| Return home button | Clicking on this button should take the user back to the home page | Clicked the button | Successfully taken to the home page | ✅ |
 
