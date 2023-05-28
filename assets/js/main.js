@@ -1,7 +1,6 @@
 // main.js
 
 import { initializePopup } from './popup.js';
-
 // Call the imported function to initialize the popup functionality
 document.addEventListener("DOMContentLoaded", initializePopup);
 
@@ -11,7 +10,7 @@ document.addEventListener("DOMContentLoaded", initializePopup);
 
 // Retrieve names from Local Storage or initialize an empty array
 const usernameArray = JSON.parse(localStorage.getItem("names")) || [];
-
+// Variable declarations
 const usernameForm = document.getElementById("nameForm");
 const usernameInput = document.getElementById("nameInput");
 const usernameList = document.getElementById("nameList");
@@ -76,7 +75,6 @@ function currentTime() { // Resets scoreboard/dashboard everyday at 6 PM.
 }
 // Start the currentTime() function
 currentTime();
-
 
 /**
  * ############################## QUIZ GAME SECTION #####################################
