@@ -332,6 +332,10 @@ input[type=text], select {
   border-radius: 10px;
   cursor: pointer;
 }
+#add-username {
+  color: var(--clr-neutral-black);
+  font-weight: 800;
+}
 
 /* **************** QUIZ WRAPPER ENDS HERE **************** */
 

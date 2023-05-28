@@ -15,6 +15,7 @@ const usernameArray = JSON.parse(localStorage.getItem("names")) || [];
 const usernameForm = document.getElementById("nameForm");
 const usernameInput = document.getElementById("nameInput");
 const usernameList = document.getElementById("nameList");
+const addUsername = document.getElementById("add-username");
 
 usernameForm.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -23,6 +24,7 @@ usernameForm.addEventListener("submit", function (event) {
   const userObject = { name, score: userScore }; // Create an object with username and score
   usernameArray.push(userObject);
   usernameInput.value = "";
+  addUsername.innerHTML = "Your username and score have been added!";
   updateNameList();
   saveNamesToLocalStorage(); // Save names to Local Storage
 });
@@ -37,7 +39,7 @@ function updateNameList() {
 }
 
 function resetScoreboard() {
-  localStorage.clear();
+  localStorage.clear(); // Clear the local savings on the localStorage
   usernameArray.length = 0; // Clear the array as well
   updateNameList();
 }
@@ -48,7 +50,8 @@ function saveNamesToLocalStorage() {
 
 updateNameList();
 
-function currentTime() { // Code copied from flexiple *More detialed in my readme
+// Code copied from flexiple *More detialed in my readme
+function currentTime() { // Resets scoreboard/dashboard everyday at 6 PM.
   let date = new Date();
   let hh = date.getHours();
   let mm = date.getMinutes();
