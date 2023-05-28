@@ -32,11 +32,11 @@ The W3C validator was used to validate the HTML on all pages of the website and 
 ### **W3C Validator** 
 
 * [W3C validation for **index.html**](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2Findex.html)
-   ![Index Page](docs/validation/validation-index.jpg)
+   ![Index page](docs/validation/w3c/validation-w3c-index.jpg)
 * [W3C validation for **404.html**](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2F404.html)
-   ![404 Page](docs/validation/validation-404.jpg)
-* [Jigsaw W3C Validation for **style.css**](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) 
-   ![Stylesheet Doc](docs/validation/validation-stylesheet.jpg)
+   ![404 page](docs/validation/w3c/validation-w3c-404.jpg)
+* [Jigsaw W3C validation for **style.css**](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) 
+   ![Stylesheet doc](docs/validation/w3c/validation-w3c-stylesheet.jpg)
 
 
 ### **JavaScript Validator** 
@@ -44,29 +44,29 @@ The W3C validator was used to validate the HTML on all pages of the website and 
 The code was passed through JSHint for testing, and no errors were found. Additionally, various metrics were returned, including the number of functions, the size of the largest function, and the complexity of the most complex function.
 
 * [Js Hint validation for **main.js**](https://jshint.com/) 
-  ![Main.js file](docs/validation/validation-main.jpg)
+  ![Main.js file](docs/validation/jshint/validation-jshint-main.jpg)
 * [Js Hint validation for **popup.js**](https://jshint.com/)
-  ![Popup.js file](docs/validation/validation-popup.jpg)
+  ![Popup.js file](docs/validation/jshint/validation-jshint-popup.jpg)
 
 ### **Lighthouse** 
 
 index.html
 
   * [index.html lighthouse desktop](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
-    ![index.html file](docs/validation/validation-lighthouse-index.jpg)
+    ![index.html file](docs/validation/lighthouse/validation-lighthouse-index-desktop.jpg)
 
     
   * [index.html lighthouse mobile](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
-    ![index.html](docs/validation/validation-lighthouse-index.jpg)
+    ![index.html](docs/validation/lighthouse/validation-lighthouse-index-mobile.jpg)
 
 
 404.html
   * [404.html lighthouse desktop](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
-    ![404.html](docs/validation/validation-lighthouse-404.jpg)
+    ![404.html](docs/validation/lighthouse/validation-lighthouse-404-desktop.jpg)
 
     
   * [404.html lighthouse mobile](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fkimbergstroem.github.io%2FPP2%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
-    ![404.html](docs/validation/validation-lighthouse-404.jpg)
+    ![404.html](docs/validation/lighthouse/validation-lighthouse-404-mobile.jpg)
 
 
 
@@ -76,11 +76,11 @@ To check the color contrast ratio between foreground and background elements, en
 
 * [index.html Wave Contrast checker](https://wave.webaim.org/report#/https://kimbergstroem.github.io/PP2/)
 
-    ![index.html](docs/validation/validation-wave-index.jpg)
+    ![index.html](docs/validation/wave/validation-wave-index.jpg)
 
 * [404.html Wave Contrast checker](https://wave.webaim.org/report#/https://kimbergstroem.github.io/PP2/404.html)
 
-    ![404.html](docs/validation/validation-wave-404.jpg)
+    ![404.html](docs/validation/wave/validation-wave-404.jpg)
 
 ---
 
