@@ -5,11 +5,11 @@
 <b>Visit the deployed site:</b> [geoMastermind](https://kimbergstroem.github.io/PP2/)
 
 
-Get ready to put your geography skills to the test with GeoMastermind! 
+Get ready to put your geography skills to the test with geoMastermind! 
 
 This exciting mini game, built with <b>JavaScript</b> as base and <b>HTML/CSS</b>, challenges you to answer ten questions about locations, landmarks, cultures, and more from around the world. 
 
-With different levels of difficulty, you can compete against yourself or challenge your friends to see who can achieve the highest score. With its fun and engaging gameplay, <b>GeoMastermind</b> is the perfect way to learn more about the world and test your knowledge. Are you ready to become a <b>geoMastermind</b>?
+With different levels of difficulty, you can compete against yourself or challenge your friends to see who can achieve the highest score. With its fun and engaging gameplay, <b>geoMastermind</b> is the perfect way to learn more about the world and test your knowledge. Are you ready to become a <b>geoMastermind</b>?
 
 
 ![Language uses](https://img.shields.io/github/languages/count/kimbergstroem/PP2)
@@ -96,7 +96,7 @@ With different levels of difficulty, you can compete against yourself or challen
 
 We wanted to choose colours that reflected the environment of the universum, so we have chosen a variety of Blue(<b>water</b>), Green(<b>nature</b>) and Yellow(<b>sun</b>) for our site.
 
-This colors are going to be implemented as <b>60-30-10</b> rule with the base of the color #0E304F. We want to have a more dark theme on the website, along with the light colors.
+This colors are going to be implemented as <b>60-30-10</b> rule with the base of the color #0E304F. We want to have a more dark theme on the website, along with the light colors that are going to be reflected as different world elements.
 
 The colour palette was created using the [Coolors website](https://coolors.co/aeffd8-8affc1-8fdc97-ac8887-9f4a54).
 
@@ -105,11 +105,11 @@ The colour palette was created using the [Coolors website](https://coolors.co/ae
 
 Google Fonts was used for the following fonts:
 
-* "Lato" is used for headings and bigger content on the site. It is a sans serif typeface family.
+* "<b>Lato</b>" is used for headings and bigger content on the site. It is a sans serif typeface family.
 
 ![LatoBlack900](docs/screenshots/readme-font-lato-black900.png)
 
-* "Nunito" is used for the body text, paragraphs which are the questions and answer. Nunito is a sans-serif typeface designed by Vernon Adams. It has a rounded, friendly and modern style, and its letterforms are clean and legible.
+* "<b>Nunito</b>" is used for the body text, paragraphs which are the questions and answer. Nunito is a sans-serif typeface designed by Vernon Adams. It has a rounded, friendly and modern style, and its letterforms are clean and legible.
 
 ![PoppinsRegular400](docs/screenshots/readme-font-nunito-light300.png)
 
@@ -292,6 +292,8 @@ Small code snippets and how to create different type of elements, functions [W3 
 How to save user inputs locally and display it with JSON.stringify() [W3 Schools](https://www.w3schools.com/js/js_json_stringify.asp), [Learn with Jason](https://www.learnwithjason.dev/blog/get-form-values-as-json) and [James Q Quick](https://www.youtube.com/@JamesQQuick)
 
 Make a 24 timer clock, for reseting my updateNameList() for the scoreboard every 24h [Flexiple](https://flexiple.com/javascript/javascript-clock/)
+
+Code taken for having cool heading text in a custom font style [Harbortype](https://www.harbortype.com/fonts/rocher-color/)
 
 Add multiple eventlistener 
 [codeinwp](https://www.codeinwp.com/snippets/add-event-listener-to-multiple-elements-with-javascript/)
