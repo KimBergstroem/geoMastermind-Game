@@ -25,7 +25,7 @@ With different levels of difficulty, you can compete against yourself or challen
 &nbsp;
 
 * [**User Experience**](#user-experience-ux🔵)
-  * [User Stories](#user-stories🔹)
+  * [User Stories](#user-stories)
 
 * [**Design**](#design🔵)
   * [Colour Scheme](#colour-scheme🔹)
