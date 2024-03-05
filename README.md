@@ -24,35 +24,35 @@ With different levels of difficulty, you can compete against yourself or challen
 ## <span id="readme-top">**CONTENTS**</span>🔵
 &nbsp;
 
-* [**User Experience**](#user-experience-ux🔵)
+* [**User Experience**](#user-experience-ux)
   * [User Stories](#user-stories)
 
-* [**Design**](#design🔵)
+* [**Design**](#design)
   * [Colour Scheme](#colour-scheme)
   * [Typography](#typography)
   * [Imagery](#imagery)
   * [Wireframes](#wireframes)
 
-* [**Features**](#features🔵)
+* [**Features**](#features)
   * [General Features on Each Page](#general-features-on-each-page)
   * [Future Implementations](#future-implementations)
   * [Accessibility](#accessibility)
 
-* [**Technologies Used**](#technologies-used🔵)
+* [**Technologies Used**](#technologies-used)
   * [Languages Used](#languages-used)
   * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 
-* [**Deployment & Local Development**](#deployment--local-development🔵)
+* [**Deployment & Local Development**](#deployment--local-development)
   * [Deployment](#deployment)
   * [Local Development](#local-development)
     * [How to Fork](#how-to-fork)
     * [How to Clone](#how-to-clone)
 
-* [**Testing**](#testing🔵)
+* [**Testing**](#testing)
   * [Solved Bugs](#Bugs)
   * [Known Bugs](#Bugs)
 
-* [**Credits**](#credits🔵)
+* [**Credits**](#credits)
   * [Code Used](#code-used)
   * [Content](#content)
   * [Media](#media)
