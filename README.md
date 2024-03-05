@@ -57,6 +57,7 @@ With different levels of difficulty, you can compete against yourself or challen
   * [Content](#content🔹)
   * [Media](#media🔹)
   * [Acknowledgments](#acknowledgments🔹)
+  * [License](#license🔹)
 
 &nbsp;
 
@@ -321,6 +322,11 @@ I'd like to give recognition to the individuals who supported me in finishing th
 I would also like to extend my gratitude to two testers who have made significant contributions: [Debbie B](https://github.com/DebbieBergstrom) and [Sandra B](https://github.com/SandraBergstrom). They have been instrumental in providing necessary feedback, identifying errors, and offering valuable tips. Their involvement has greatly contributed to the overall refinement of the project.
 
 * [Jubril](https://github.com/Jubrillionaire), my Code Institute Mentor, for his exceptional guidance and expertise. His mentorship has been a source of inspiration and has greatly contributed to my growth as a developer.
+
+&nbsp;
+### **License** 🔹
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
