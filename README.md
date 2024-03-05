@@ -2,7 +2,7 @@
 
 ![geoMastermind WebbApp Responsiveness](docs/screenshots/readme-geomastermind-banner.png)
 
-<b>Visit the deployed site:</b> [geoMastermind](https://kimbergstroem.github.io/PP2/)
+<b>Visit the deployed site:</b> [geoMastermind](https://kimbergstroem.github.io/geoMastermind-Game/)
 
 
 Get ready to put your geography skills to the test with geoMastermind! 
